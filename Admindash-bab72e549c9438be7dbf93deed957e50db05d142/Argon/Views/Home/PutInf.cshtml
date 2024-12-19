@@ -1,0 +1,123 @@
+﻿
+<div class="container mt-5">
+    <div class="card shadow border-0">
+        <div class="card-header bg-gradient-primary text-white">
+            <h3 class="mb-0">Inf əlavə et</h3>
+        </div>
+        <div class="card-body">
+            <form id="categoryForm" method="post" action="" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="CategoryName" class="form-label">Inf Adı</label>
+                    <input type="text" class="form-control" id="InfName" name="infName" required placeholder="Inf adı" required>
+                </div>
+
+               	<div class="mb-3">
+                    <label for="NewspaperDate" class="form-label"> Nəşr Tarixi</label>
+                    <input type="date" class="form-control" id="infPostDate" name="infPostDate" required>
+                </div>
+
+                <div class="mb-3" id="add">
+                    <label for="CategoryCoverUrl" class="form-label">Inf şəkli</label>
+                    <input type="file" class="form-control" id="infPhoto" name="infPhoto" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Əlavə et</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // 'id'yi URL'den almak
+        const path = window.location.pathname; // /Home/PutNewsPaper/123
+        const id = path.split('/').pop(); // '123' kısmını almak için son elemanı ayırıyoruz
+        console.log("ID: ", id); // id'nin doğru alındığını kontrol edin
+
+        // API'den veri almak için
+        fetch(`https://localhost:44314/api/Infographics/id/${id}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log("Veri alındı: ", data); // API'den gelen veriyi kontrol et
+                // API'den gelen verileri form elemanlarına yerleştirme
+                if (data) {
+                    document.getElementById("InfName").value = data.infName;
+                    document.getElementById("infPostDate").value = data.infPostDate.split('T')[0]; // Tarih formatı: YYYY-MM-DD
+                    console.log(document.getElementById("infPostDate").value)
+                    // Üzqapağı (Cover Image) için div oluşturma
+                    const newDiv = document.createElement("div");
+                    newDiv.id = "coverPreview"; // id'yi ayarla
+                    newDiv.style.marginTop = "10px"; // Stil ekle
+
+                    // Yeni div öğesinin içine bir img öğesi ekle
+                    const img = document.createElement("img");
+                    img.src = `https://localhost:44314/${data.infPhoto}`; // data.newspaperCoverUrl ile img src'yi ayarlıyoruz
+                    img.style.maxWidth = "200px"; // Resmin boyutunu ayarla
+                    img.style.maxHeight = "200px";
+                    img.style.objectFit = "cover"; // Resmin boyutlarını orantılı hale getir
+
+                    // img öğesini div içine ekle
+                    newDiv.appendChild(img);
+
+                    // Yeni div öğesini sayfadaki belirli bir elemana ekle
+                    document.getElementById("add").appendChild(newDiv);
+
+                }
+            })
+            .catch(error => {
+                console.error("API çağrısı başarısız:", error);
+                // Hata durumunda SweetAlert ile kullanıcıyı bilgilendir
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Bir hata oluştu',
+                    text: error.message || 'API çağrısı sırasında bir sorun oluştu.'
+                });
+            });
+
+        // Formu gönderme işlemi
+        document.getElementById("updateForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Sayfa yenilenmesinin engellenmesi
+
+            const updatedNews = {
+                newspaperTitle: document.getElementById("NewspaperTitle").value,
+                newspaperLinkFlip: document.getElementById("NewspaperLinkFlip").value,
+                newspaperDate: document.getElementById("NewspaperDate").value,
+                newspaperPrice: document.getElementById("NewspaperPrice").value,
+                newspaperStatus: document.getElementById("NewspaperStatus").checked, // Checkbox ise true/false
+                newspaperCoverUrl: document.getElementById("NewspaperCoverUrl").value, // Resim URL'si
+                newspaperPdfUrl: document.getElementById("NewspaperPdfFile").value // PDF URL'si
+            };
+
+            console.log("Gönderilen Veri: ", updatedNews); // Gönderilen veriyi kontrol et
+
+            // PUT isteği göndermek için
+            fetch(`https://localhost:44314/api/newspaper/edit/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatedNews)
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log("API Yanıtı:", result); // Yanıtın tamamını logla
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Başarılı!',
+                    text: result.Message || 'Haber başarıyla güncellendi.'
+                });
+            })
+            .catch(error => {
+                // SweetAlert2 ile hata mesajı göster
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Bir hata oluştu',
+                    text: error.message || 'API çağrısı başarısız oldu.'
+                });
+                // Hata mesajını konsola yazdır
+                console.error("API çağrısı başarısız:", error);
+            });
+        });
+    });
+</script>

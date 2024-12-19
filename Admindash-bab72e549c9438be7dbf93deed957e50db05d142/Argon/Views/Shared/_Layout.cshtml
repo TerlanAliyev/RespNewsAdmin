@@ -1,0 +1,56 @@
+﻿<!-- _Layout.cshtml -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Argon Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+    <!-- Nucleo Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/nucleo-icons/1.0.0/css/nucleo-icons.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Files -->
+    <link id="pagestyle" href="~/css/argon-dashboard.min.css" rel="stylesheet" />
+</head>
+
+
+
+<body class="g-sidenav-show bg-gray-100">
+
+    <!-- Sidebar -->
+    @await Html.PartialAsync("_Sidebar")
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+    <main class="main-content position-relative border-radius-lg">
+        <!-- Navbar -->
+        @if (ViewData["ShowNavbar"] == null || (bool)ViewData["ShowNavbar"])
+        {
+            @await Html.PartialAsync("_Navbar")
+        }
+
+        <!-- Render Body -->
+        <div class="container-fluid py-4">
+            @RenderBody()
+        </div>
+    </main>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <script src="~/js/argon-dashboard.min.js"></script>
+
+
+    
+
+
+  
+</body>
+
+</html>

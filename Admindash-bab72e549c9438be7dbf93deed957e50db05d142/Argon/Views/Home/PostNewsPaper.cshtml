@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["ShowNavbar"] = false;  // Navbar'ı engelle
+}
+
+<!-- Argon Dashboard ve SweetAlert Stil Dosyalarını Dahil Et -->
+<link href="https://cdn.jsdelivr.net/npm/argon-dashboard-free@1.2.0/assets/css/argon-dashboard.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+<div class="container mt-5">
+    <h2>Yeni Qəzet Əlavə Et</h2>
+    <form id="newspaperForm" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="NewspaperTitle" class="form-label">Qəzet Başlığı</label>
+            <input type="text" class="form-control" id="NewspaperTitle" name="NewspaperTitle" required placeholder="Qəzet başlığını daxil edin">
+        </div>
+
+        <div class="mb-3">
+            <label for="NewspaperLinkFlip" class="form-label">Qəzet Linki</label>
+            <input type="url" class="form-control" id="NewspaperLinkFlip" name="NewspaperLinkFlip" required placeholder="Qəzet linkini daxil edin">
+        </div>
+
+        <div class="mb-3">
+            <label for="NewspaperDate" class="form-label">Qəzet Nəşr Tarixi</label>
+            <input type="date" class="form-control" id="NewspaperDate" name="NewspaperDate" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="NewspaperPrice" class="form-label">Qəzet Qiyməti</label>
+            <input type="text" class="form-control" id="NewspaperPrice" name="NewspaperPrice" required placeholder="Qəzet qiymətini daxil edin">
+        </div>
+
+        <div class="mb-3">
+            <label for="NewspaperStatus" class="form-label">Qəzet Vəziyyəti</label>
+            <select class="form-select" id="NewspaperStatus" name="NewspaperStatus" required>
+                <option value="true">Aktiv</option>
+                <option value="false">Passiv</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="NewspaperCoverUrl" class="form-label">Qəzet Üzqapağı</label>
+            <input type="file" class="form-control" id="NewspaperCoverUrl" name="NewspaperCoverUrl" accept="image/*" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="NewspaperPdfFile" class="form-label">Qəzet PDF Faylı</label>
+            <input type="file" class="form-control" id="NewspaperPdfFile" name="NewspaperPdfFile" accept="application/pdf" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Qəzet Əlavə Et</button>
+    </form>
+</div>
+
+<!-- Argon JS və SweetAlert JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/argon-dashboard-free@1.2.0/assets/js/argon-dashboard.min.js"></script>
+
+<script>
+    document.getElementById("newspaperForm").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Formun yenilənməsini qarşısını alır
+
+        const formData = new FormData(event.target); // Form məlumatlarını alır
+
+        try {
+            const response = await fetch("https://localhost:44314/api/newspaper", { // API URL-nizi burada qeyd edin
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Uğurlu!',
+                    text: 'Qəzet uğurla əlavə edildi.',
+                });
+            } else {
+                const errorText = await response.text();
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Xəta!',
+                    text: errorText,
+                });
+            }
+        } catch (error) {
+            console.error("İstək uğursuz oldu:", error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Bağlantı Xətası',
+                text: error.message,
+            });
+        }
+    });
+</script>

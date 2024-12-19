@@ -1,0 +1,128 @@
+﻿
+<div class="container mt-5">
+    <div class="card shadow border-0">
+        <div class="card-header bg-gradient-primary text-white">
+            <h3 class="mb-0">Inf əlavə et</h3>
+        </div>
+        <div class="card-body">
+            <form id="categoryForm" method="post" action="" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="videoTitle" class="form-label">Video Başlığı</label>
+                    <input type="text" class="form-control" id="videoTitle" name="videoTitle" required placeholder="Video Başlığı">
+                </div>
+
+                <div class="mb-3">
+                    <label for="videoUrl" class="form-label">Video URL</label>
+                    <input type="text" class="form-control" id="videoUrl" name="videoUrl" required placeholder="Video URL">
+                </div>
+                <div class="mb-3">
+                    <label for="videoDate" class="form-label">Video Yayın Tarihi</label>
+                    <input type="datetime-local" class="form-control" id="videoDate" name="videoDate">
+                </div>
+                <div class="mb-3">
+                    <label for="videoStatus" class="form-label">Video Durumu</label>
+                    <select id="videoStatus" name="videoStatus">
+                        <option value="1">Aktiv</option>
+                        <option value="0">DeAktiv</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // 'id'yi URL'den almak
+        const path = window.location.pathname; // /Home/PutNewsPaper/123
+        const id = path.split('/').pop(); // '123' kısmını almak için son elemanı ayırıyoruz
+        console.log("ID: ", id); // id'nin doğru alındığını kontrol edin
+
+        // API'den veri almak için
+        fetch(`https://localhost:44314/api/Youtube/video/${id}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log("Veri alındı: ", data); // API'den gelen veriyi kontrol et
+                // API'den gelen verileri form elemanlarına yerleştirme
+                if (data) {
+                    document.getElementById("videoTitle").value = data.videoTitle;
+                    document.getElementById("videoUrl").value = data.videoUrl;
+                    document.getElementById("videoDate").value = data.videoDate.split('T')[0]; // Tarih formatı: YYYY-MM-DD
+                    // Üzqapağı (Cover Image) için div oluşturma
+                    const newDiv = document.createElement("div");
+                    newDiv.id = "coverPreview"; // id'yi ayarla
+                    newDiv.style.marginTop = "10px"; // Stil ekle
+
+                    // Yeni div öğesinin içine bir img öğesi ekle
+                    const img = document.createElement("img");
+                    img.src = `https://localhost:44314/${data.infPhoto}`; // data.newspaperCoverUrl ile img src'yi ayarlıyoruz
+                    img.style.maxWidth = "200px"; // Resmin boyutunu ayarla
+                    img.style.maxHeight = "200px";
+                    img.style.objectFit = "cover"; // Resmin boyutlarını orantılı hale getir
+
+                    // img öğesini div içine ekle
+                    newDiv.appendChild(img);
+
+                    // Yeni div öğesini sayfadaki belirli bir elemana ekle
+                    document.getElementById("add").appendChild(newDiv);
+
+                }
+            })
+            .catch(error => {
+                console.error("API çağrısı başarısız:", error);
+                // Hata durumunda SweetAlert ile kullanıcıyı bilgilendir
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Bir hata oluştu',
+                    text: error.message || 'API çağrısı sırasında bir sorun oluştu.'
+                });
+            });
+
+        // Formu gönderme işlemi
+        document.getElementById("updateForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Sayfa yenilenmesinin engellenmesi
+
+            const updatedNews = {
+                newspaperTitle: document.getElementById("NewspaperTitle").value,
+                newspaperLinkFlip: document.getElementById("NewspaperLinkFlip").value,
+                newspaperDate: document.getElementById("NewspaperDate").value,
+                newspaperPrice: document.getElementById("NewspaperPrice").value,
+                newspaperStatus: document.getElementById("NewspaperStatus").checked, // Checkbox ise true/false
+                newspaperCoverUrl: document.getElementById("NewspaperCoverUrl").value, // Resim URL'si
+                newspaperPdfUrl: document.getElementById("NewspaperPdfFile").value // PDF URL'si
+            };
+
+            console.log("Gönderilen Veri: ", updatedNews); // Gönderilen veriyi kontrol et
+
+            // PUT isteği göndermek için
+            fetch(`https://localhost:44314/api/newspaper/edit/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updatedNews)
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log("API Yanıtı:", result); // Yanıtın tamamını logla
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Başarılı!',
+                    text: result.Message || 'Haber başarıyla güncellendi.'
+                });
+            })
+            .catch(error => {
+                // SweetAlert2 ile hata mesajı göster
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Bir hata oluştu',
+                    text: error.message || 'API çağrısı başarısız oldu.'
+                });
+                // Hata mesajını konsola yazdır
+                console.error("API çağrısı başarısız:", error);
+            });
+        });
+    });
+</script>

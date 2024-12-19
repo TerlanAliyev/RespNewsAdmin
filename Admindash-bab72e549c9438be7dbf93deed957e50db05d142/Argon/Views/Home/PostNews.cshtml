@@ -1,0 +1,500 @@
+﻿@{
+    ViewData["ShowNavbar"] = false;  // Navbar'ı engelle
+}
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css"
+      rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.bubble.css"
+      rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.core.css"
+      rel="stylesheet" />
+<style>
+    #tooltip {
+        background-color: #333;
+        color: white;
+        border-radius: 4px;
+        padding: 5px;
+        position: absolute;
+        z-index: 9999;
+        visibility: hidden; /* Tooltip başlangıçta gizli olacak */
+    }
+
+        #tooltip[data-show] {
+            visibility: visible; /* Tooltip görünür olacak */
+        }
+
+    #arrow {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #333;
+        transform: rotate(45deg);
+    }
+
+    #editor {
+        height: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    #toolbar {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+
+    header {
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+        margin: auto;
+        s background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input,
+        form textarea,
+        form select,
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        form button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            form button:hover {
+                background-color: #005bb5;
+            }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .form-container input[type="file"] {
+            padding: 5px;
+            background-color: #fafafa;
+        }
+
+            .form-container input[type="file"]:hover {
+                background-color: #f0f0f0;
+            }
+</style>
+<header>
+    <h1>Xəbər əlavə et</h1>
+</header>
+<main>
+    <!-- Haber Gönderim Formu -->
+    <form id="newsForm">
+        <div class="form-container">
+            <label for="newsTitle">Haber Başlığı:</label>
+            <input type="text" id="newsTitle" name="NewsTitle" required />
+
+            <label for="newsContent">Haber İçeriği:</label>
+            <div id="toolbar">
+                <select class="ql-font"></select>
+                <select class="ql-size"></select>
+                <button class="ql-bold"></button>
+                <button class="ql-italic"></button>
+                <button class="ql-underline"></button>
+                <button class="ql-strike"></button>
+                <select class="ql-color"></select>
+                <select class="ql-background"></select>
+                <button class="ql-link"></button>
+                <button class="ql-image"></button>
+                <button class="ql-list" value="ordered"></button>
+                <button class="ql-list" value="bullet"></button>
+            </div>
+            <div id="editor"></div>
+
+            <label for="newsLangId">Dil ID:</label>
+            <select id="newsLangId" name="NewsLangId">
+                <option value="">Dil Seçin</option> <!-- Başlangıçta boş bir seçenek -->
+            </select>
+
+            <label for="newsCategoryId">Kategori ID:</label>
+            <select id="newsCategoryId" name="NewsCategoryId">
+                <option value="">Kategori Seçin</option>  <!-- Başlangıçta boş bir seçenek -->
+            </select>
+
+            <label for="newsOwnerId">Sahip ID:</label>
+            <select id="newsOwnerId" name="NewsOwnerId">
+                <option value="">Muxbir Seçin</option> <!-- Başlangıçta boş bir seçenek -->
+            </select>
+
+            <label for="newsAdminId">Admin ID:</label>
+            <select id="newsAdminId" name="NewsAdminId">
+                <option value="">Admin Seçin</option> <!-- Başlangıçta boş bir seçenek -->
+            </select>
+
+            <label for="newsRating">Admin ID:</label>
+            <select id="newsRating" name="NewsRating">
+                <option value="0">Aktualliq Seçin</option> <!-- Başlangıçta boş bir seçenek -->
+                <option value="5">Slider-e qoy</option> <!-- Başlangıçta boş bir seçenek -->
+                <option value="4">Qacan setir</option> <!-- Başlangıçta boş bir seçenek -->
+                <option value="3">Redaktorun Secimi</option> <!-- Başlangıçta boş bir seçenek -->
+                <option value="1">Hec biri</option> <!-- Başlangıçta boş bir seçenek -->
+            </select>
+
+            <label for="newsTags">Etiketler (Boşluklarla ayırın)</label>
+            <input type="text" id="newsTags" name="newsTags" placeholder="#tag1 #tag2 #tag3" />
+
+
+            <!-- Haber Yayın Tarihi -->
+            <label for="newsDate">Haber Yayın Tarihi:</label>
+            <input type="datetime-local" id="newsDate" name="NewsDate" />
+
+            <label for="newsYoutubeLink">YouTube Link:</label>
+            <input type="url" id="newsYoutubeLink" name="NewsYoutubeLink" />
+
+            <label for="newsPhotos">Haber Fotoğrafları:</label>
+            <input type="file" id="newsPhotos" name="NewsPhotos" multiple accept="image/*" />
+            <img id="photoPreview" style="display:none; max-width: 100px; max-height: 100px;" alt="Fotoğraf Önizlemesi">
+
+
+            <label for="newsVideos">Haber Videoları:</label>
+            <input type="file" id="newsVideos" name="NewsVideos" multiple accept="video/*"/>
+            <div id="videoPreviewContainer"></div>
+
+            <button type="submit">Gönder</button>
+        </div>
+    </form>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
+<!-- Popper.js -->
+<script src="https://unpkg.com/popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+
+<!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const tagContainer = document.getElementById("tag-container");
+        const tagInput = document.getElementById("tag-input");
+        const tags = [];
+
+        // Etiket ekleme
+        tagInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" && tagInput.value.trim() !== "") {
+                event.preventDefault();
+                const tagValue = tagInput.value.trim();
+                tags.push(tagValue);
+                console.log(tags);
+                const tagElement = document.createElement("div");
+                tagElement.classList.add("tag");
+                tagElement.innerHTML = `${tagValue} <span>&times;</span>`;
+
+                tagContainer.insertBefore(tagElement, tagInput);
+                tagInput.value = "";
+
+                // Etiket silme işlevi
+                tagElement.querySelector("span").addEventListener("click", () => {
+                    tagContainer.removeChild(tagElement);
+                    const index = tags.indexOf(tagValue);
+                    if (index !== -1) {
+                        tags.splice(index, 1);
+                    }
+                });
+            }
+        });
+
+        // Form submit sırasında etiketleri backend'e göndermek için
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Formun normal gönderimini engelle
+
+            const formData = new FormData(this);
+            formData.append("Tags", JSON.stringify(tags));  // Etiketleri JSON formatında gönder
+
+            fetch('https://localhost:44314/api/news', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(result => {
+                    console.log(result); // Başarı durumunda sonucu konsola yazdır
+                    alert("Başarılı: " + JSON.stringify(result));
+                })
+                .catch(error => {
+                    console.error("Hata oluştu:", error);
+                    alert("Hata: " + error.message);
+                });
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log('Sayfa yüklendi ve script çalışmaya başladı.');
+
+        const langSelect = document.getElementById('newsLangId');
+        const ownerSelect = document.getElementById('newsOwnerId');
+        const adminSelect = document.getElementById('newsAdminId');
+        const categorySelect = document.getElementById('newsCategoryId');
+
+        // Admin verilerini API'den çek
+        async function fetchAdmins() {
+            console.log('Admin verileri çekiliyor...');
+            try {
+                const response = await fetch('https://localhost:44314/api/user/users');
+                if (!response.ok) {
+                    console.error(`HTTP Hatası: ${response.status}`);
+                    return;
+                }
+
+                const admins = await response.json();
+                console.log('API Yanıtı:', admins);
+
+                if (!admins || admins.length === 0) {
+                    console.warn('Admin listesi boş veya mevcut değil!');
+                } else {
+                    adminSelect.innerHTML = '<option value="">Admin Seçin</option>';
+                    admins.forEach(admin => {
+                        const option = document.createElement('option');
+                        option.value = admin.userId;
+                        option.textContent = admin.userName;
+                        adminSelect.appendChild(option);
+                    });
+                }
+            } catch (error) {
+                console.error('Admin verileri alınamadı:', error);
+            }
+        }
+
+        // Owner verilerini API'den çek
+        async function fetchOwners() {
+            try {
+                const response = await fetch('https://localhost:44314/api/owner');
+                const owners = await response.json();
+                ownerSelect.innerHTML = '<option value="">Muhabir Seçin</option>';
+                owners.forEach(owner => {
+                    const option = document.createElement('option');
+                    option.value = owner.ownerId;
+                    option.textContent = owner.ownerName;
+                    ownerSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Owner verileri alınamadı:', error);
+            }
+        }
+
+        // Dil verilerini API'den çek
+        async function fetchLanguages() {
+            try {
+                const response = await fetch('https://localhost:44314/api/languages/all');
+                const languages = await response.json();
+                langSelect.innerHTML = '<option value="">Dil Seçin</option>';
+                languages.forEach(language => {
+                    const option = document.createElement('option');
+                    option.value = language.languageId;
+                    option.textContent = language.languageName;
+                    langSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Dil verileri alınamadı:', error);
+            }
+        }
+
+        // Kategorileri API'den çek ve dil ID'sine göre filtrele
+        async function fetchCategoriesByLanguage(langId) {
+            try {
+                const response = await fetch(`https://localhost:44314/api/category/language/${langId}`);
+                const categories = await response.json();
+                categorySelect.innerHTML = '<option value="">Kategori Seçin</option>';
+                categories.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category.categoryId;
+                    option.textContent = category.categoryName;
+                    categorySelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Kategori verileri alınamadı:', error);
+            }
+        }
+
+        // Dil seçildiğinde kategorileri getir
+        langSelect.addEventListener('change', function () {
+            const selectedLangId = langSelect.value;
+            if (!selectedLangId) {
+                categorySelect.innerHTML = '<option value="">Kategori Seçin</option>';
+                return;
+            }
+            fetchCategoriesByLanguage(selectedLangId);
+        });
+
+        // Sayfa yüklendiğinde dil ve owner verilerini çek
+        fetchLanguages();
+        fetchOwners();
+        fetchAdmins();
+    });
+
+    // Quill editor setup
+    const toolbarOptions = {
+        container: "#toolbar",
+        handlers: {
+            image: () => {
+                const input = document.createElement("input");
+                input.setAttribute("type", "file");
+                input.setAttribute("accept", "image/*");
+                input.click();
+                input.onchange = () => {
+                    const file = input.files[0];
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                        const range = quill.getSelection();
+                        quill.insertEmbed(range.index, "image", reader.result);
+                    };
+                    reader.readAsDataURL(file);
+                };
+            },
+        },
+    };
+
+    const quill = new Quill("#editor", {
+        theme: "snow",
+        modules: {
+            toolbar: toolbarOptions,
+        },
+    });
+
+    document.getElementById("newsForm").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Formun gerçek gönderimini engelle
+
+        const formData = new FormData(event.target);
+
+        // Quill editor içeriğini al
+        const quillContent = quill.root.innerHTML;
+        formData.append("NewsContetText", quillContent); // Quill içeriğini formData'ya ekle
+
+        // FormData verilerini konsola yazdır
+        console.log("FormData İçeriği:");
+        formData.forEach((value, key) => {
+            if (value instanceof File) {
+                console.log(`${key}: ${value.name}`);
+            } else {
+                console.log(`${key}: ${value}`);
+            }
+        });
+
+        try {
+            const response = await fetch("https://localhost:44314/api/news", {
+                method: "POST",
+                body: formData,
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Başarılı!',
+                    text: 'Haber başarıyla gönderildi!',
+                }).then(() => {
+                    // Yönlendirme yapılacak sayfa
+                    window.location.href = '/home/news'; // Yönlendirme
+                });
+            } else {
+                const errorText = await response.text();
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Hata!',
+                    text: 'Bir hata oluştu: ' + errorText,
+                });
+            }
+        } catch (error) {
+            console.error("İstek başarısız oldu:", error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Bağlantı Hatası!',
+                text: 'Sunucuya bağlanırken bir hata oluştu.',
+            });
+        }
+    });
+    // Fotoğraf önizlemesi
+    document.getElementById('newsPhotos').addEventListener('change', function(event) {
+        const photoPreview = document.getElementById('photoPreview');
+        const files = event.target.files;
+
+        if (files.length > 0) {
+            const file = files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                photoPreview.src = e.target.result;
+                photoPreview.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        } else {
+            photoPreview.style.display = 'none';
+        }
+    });
+
+    // Video önizlemesi
+    document.getElementById('newsVideos').addEventListener('change', function(event) {
+        const videoPreviewContainer = document.createElement('div');
+        const files = event.target.files;
+        const videoPreview = document.getElementById('videoPreviewContainer');
+
+        // Önceki önizlemeleri temizle
+        videoPreview.innerHTML = '';
+
+        Array.from(files).forEach((file, index) => {
+            const videoElement = document.createElement('video');
+            videoElement.src = URL.createObjectURL(file);
+            videoElement.controls = true;
+            videoElement.style.maxWidth = '200px';
+            videoElement.style.marginRight = '10px';
+            videoPreviewContainer.appendChild(videoElement);
+        });
+
+        videoPreview.innerHTML = '';  // Mevcut video önizlemeleri sıfırla
+        videoPreview.appendChild(videoPreviewContainer);
+    });
+
+               
+
+
+</script>

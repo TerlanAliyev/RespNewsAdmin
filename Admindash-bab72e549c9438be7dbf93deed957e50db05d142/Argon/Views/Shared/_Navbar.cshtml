@@ -1,0 +1,27 @@
+﻿<nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl">
+    <div class="container-fluid py-1 px-3" style="display:flex; align-items:center; color:white;">
+        <div class="right" style="display:flex;align-items:center;justify-content:space-around">
+            <i class="fa-solid fa-user" style="padding:10px;background-color:white;border-radius:100px;color:black;margin-right:15px;"></i>
+
+            <!-- Kullanıcı adı dinamik olarak buraya gelecek -->
+            <h3 id="userNameDisplay" style="font-size:20px">Login</h3>
+        </div>
+    </div>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var userName = getCookie('userName'); // Cookie'den kullanıcı adını al
+        if (userName) {
+            document.getElementById('userNameDisplay').innerText = userName; // Navbar'da göster
+        } else {
+            document.getElementById('userNameDisplay').innerText = 'Login'; // Giriş yapılmamışsa 'Login' yazsın
+        }
+    });
+
+    // Cookie'den kullanıcı adını almak için fonksiyon
+    function getCookie(name) {
+        var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        return match ? match[2] : null;
+    }
+</script>
