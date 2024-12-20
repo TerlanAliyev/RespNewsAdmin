@@ -1,443 +1,521 @@
-﻿<script>
-    window.onload = function() {
-        // Eğer kullanıcı login olmuşsa, token localStorage'da olmalıdır
-        if (!localStorage.getItem('jwtToken')) {
-            // Token yoksa login sayfasına yönlendir
-            window.location.href = '/login';
-        }
-    }
-</script>
+﻿
 
+@* backup olan fayl *@
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script>
+	window.onload = function () {
+		// Eğer kullanıcı login olmuşsa, token localStorage'da olmalıdır
+		if (!localStorage.getItem('jwtToken')) {
+			// Token yoksa login sayfasına yönlendir
+			window.location.href = '/login';
+		}
+	}
+</script>
+<style>
+	html,
+	body {
+		position: relative;
+		height: 100%;
+	}
+
+	body {
+		background: #eee;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+
+	.mySwiper2 {
+		width: 510px;
+		height: 325px;
+	}
+
+	.swiper {
+		width: 100%;
+	}
+
+	508 322
+
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+</style>
 
 <main class="main-content position-relative border-radius-lg ">
 
-    <div class="container-fluid py-4">
-        <div class="row">
-            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                <div class="card">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Kategoriyalar</p>
-                                    <h5 class="font-weight-bolder">
-                                        @ViewData["CategoryCount"]
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="col-4 text-end">
-                                <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                                    <i class="fa-solid fa-list"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                <div class="card">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Xəbərlər</p>
-                                    <h5 class="font-weight-bolder">
-                                        @ViewData["NewsCount"]
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="col-4 text-end">
-                                <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
-                                    <i class="fa-solid fa-newspaper"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                <div class="card">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">PDF Arxivi</p>
-                                    <h5 class="font-weight-bolder">
-                                        @ViewData["PdfCount"]
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="col-4 text-end">
-                                <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                                    <i class="fa-solid fa-file-pdf"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6">
-                <div class="card">
-                    <div class="card-body p-3">
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="numbers">
-                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Foto axrivi</p>
-                                    <h5 class="font-weight-bolder">
-                                        @ViewData["infcount"]
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="col-4 text-end">
-                                <div class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle">
-                                    <i class="fa-solid fa-photo-film"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-lg-12 mb-lg-0 mb-4">
-                <div class="card z-index-2 h-100">
-                    <div class="card-header pb-0 pt-3 bg-transparent">
-                        <h6 class="text-capitalize">Sales overview</h6>
-                        <p class="text-sm mb-0">
-                            <i class="fa fa-arrow-up text-success"></i>
-                            <span class="font-weight-bold">4% more</span> in 2021
-                        </p>
-                    </div>
-                    <div class="card-body p-3">
-                        <div class="chart">
-                            <canvas id="chart-line" class="chart-canvas" height="300" width="670"></canvas>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-lg-7 mb-lg-0 mb-4">
-                <div class="card ">
-                    <div class="card-header pb-0 p-3">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="mb-2">Sales by Country</h6>
-                        </div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table align-items-center ">
-                            <tbody>
-                                <tr>
-                                    <td class="w-30">
-                                        <div class="d-flex px-2 py-1 align-items-center">
-                                            <div>
-                                                <img src="/img/icons/flags/US.png" alt="Country flag">
-                                            </div>
-                                            <div class="ms-4">
-                                                <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                <h6 class="text-sm mb-0">United States</h6>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                            <h6 class="text-sm mb-0">2500</h6>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                            <h6 class="text-sm mb-0">$230,900</h6>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle text-sm">
-                                        <div class="col text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                            <h6 class="text-sm mb-0">29.9%</h6>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="w-30">
-                                        <div class="d-flex px-2 py-1 align-items-center">
-                                            <div>
-                                                <img src="/img/icons/flags/DE.png" alt="Country flag">
-                                            </div>
-                                            <div class="ms-4">
-                                                <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                <h6 class="text-sm mb-0">Germany</h6>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                            <h6 class="text-sm mb-0">3.900</h6>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                            <h6 class="text-sm mb-0">$440,000</h6>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle text-sm">
-                                        <div class="col text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                            <h6 class="text-sm mb-0">40.22%</h6>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="w-30">
-                                        <div class="d-flex px-2 py-1 align-items-center">
-                                            <div>
-                                                <img src="/img/icons/flags/GB.png" alt="Country flag">
-                                            </div>
-                                            <div class="ms-4">
-                                                <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                <h6 class="text-sm mb-0">Great Britain</h6>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                            <h6 class="text-sm mb-0">1.400</h6>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                            <h6 class="text-sm mb-0">$190,700</h6>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle text-sm">
-                                        <div class="col text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                            <h6 class="text-sm mb-0">23.44%</h6>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="w-30">
-                                        <div class="d-flex px-2 py-1 align-items-center">
-                                            <div>
-                                                <img src="/img/icons/flags/BR.png" alt="Country flag">
-                                            </div>
-                                            <div class="ms-4">
-                                                <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                <h6 class="text-sm mb-0">Brasil</h6>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                            <h6 class="text-sm mb-0">562</h6>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                            <h6 class="text-sm mb-0">$143,960</h6>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle text-sm">
-                                        <div class="col text-center">
-                                            <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                            <h6 class="text-sm mb-0">32.14%</h6>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="card">
-                    <div class="card-header pb-0 p-3">
-                        <h6 class="mb-0">Categories</h6>
-                    </div>
-                    <div class="card-body p-3">
-                        <ul class="list-group">
-                            <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                                <div class="d-flex align-items-center">
-                                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                        <i class="ni ni-mobile-button text-white opacity-10"></i>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <h6 class="mb-1 text-dark text-sm">Devices</h6>
-                                        <span class="text-xs">250 in stock, <span class="font-weight-bold">346+ sold</span></span>
-                                    </div>
-                                </div>
-                                <div class="d-flex">
-                                    <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                </div>
-                            </li>
-                            <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                                <div class="d-flex align-items-center">
-                                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                        <i class="ni ni-tag text-white opacity-10"></i>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <h6 class="mb-1 text-dark text-sm">Tickets</h6>
-                                        <span class="text-xs">123 closed, <span class="font-weight-bold">15 open</span></span>
-                                    </div>
-                                </div>
-                                <div class="d-flex">
-                                    <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                </div>
-                            </li>
-                            <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                                <div class="d-flex align-items-center">
-                                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                        <i class="ni ni-box-2 text-white opacity-10"></i>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <h6 class="mb-1 text-dark text-sm">Error logs</h6>
-                                        <span class="text-xs">1 is active, <span class="font-weight-bold">40 closed</span></span>
-                                    </div>
-                                </div>
-                                <div class="d-flex">
-                                    <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                </div>
-                            </li>
-                            <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
-                                <div class="d-flex align-items-center">
-                                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                        <i class="ni ni-satisfied text-white opacity-10"></i>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <h6 class="mb-1 text-dark text-sm">Happy users</h6>
-                                        <span class="text-xs font-weight-bold">+ 430</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex">
-                                    <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid py-4">
+		<div class="row">
+			<div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+				<div class="card">
+					<div class="card-body p-3">
+						<div class="row">
+							<div class="col-8">
+								<div class="numbers">
+									<p class="text-sm mb-0 text-uppercase font-weight-bold">Kategoriyalar</p>
+									<h5 class="font-weight-bolder">
+										@ViewData["CategoryCount"]
+									</h5>
+								</div>
+							</div>
+							<div class="col-4 text-end">
+								<div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+									<i class="fa-solid fa-list"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+				<div class="card">
+					<div class="card-body p-3">
+						<div class="row">
+							<div class="col-8">
+								<div class="numbers">
+									<p class="text-sm mb-0 text-uppercase font-weight-bold">Xəbərlər</p>
+									<h5 class="font-weight-bolder">
+										@ViewData["NewsCount"]
+									</h5>
+								</div>
+							</div>
+							<div class="col-4 text-end">
+								<div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
+									<i class="fa-solid fa-newspaper"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+				<div class="card">
+					<div class="card-body p-3">
+						<div class="row">
+							<div class="col-8">
+								<div class="numbers">
+									<p class="text-sm mb-0 text-uppercase font-weight-bold">PDF Arxivi</p>
+									<h5 class="font-weight-bolder">
+										@ViewData["PdfCount"]
+									</h5>
+								</div>
+							</div>
+							<div class="col-4 text-end">
+								<div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
+									<i class="fa-solid fa-file-pdf"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6">
+				<div class="card">
+					<div class="card-body p-3">
+						<div class="row">
+							<div class="col-8">
+								<div class="numbers">
+									<p class="text-sm mb-0 text-uppercase font-weight-bold">Foto axrivi</p>
+									<h5 class="font-weight-bolder">
+										@ViewData["infcount"]
+									</h5>
+								</div>
+							</div>
+							<div class="col-4 text-end">
+								<div class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle">
+									<i class="fa-solid fa-photo-film"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@* ///////////////////////// *@
+		<div class="swiper-container" style="overflow:scroll;">
+			<div class="swiper-wrapper">
+			</div>
+		</div>
+		@* ///////////////////////// *@
+		<div class="row mt-4">@*rowmt4 ///////////////////////// *@
+			<div class="col-lg-8 mb-lg-0 mb-4">
+				@*country ///////////////////////// *@
+				<div class="card ">
+					<div class="card-header pb-0 p-3">
+						<div class="d-flex justify-content-between">
+							<h6 class="mb-2">Sales by Country</h6>
+						</div>
+					</div>
+					<div class="table-responsive">
+						<table class="table align-items-center ">
+							<tbody>
+								<tr>
+									<td class="w-30">
+										<div class="d-flex px-2 py-1 align-items-center">
+											<div>
+												<img src="/img/icons/flags/US.png" alt="Country flag">
+											</div>
+											<div class="ms-4">
+												<p class="text-xs font-weight-bold mb-0">Country:</p>
+												<h6 class="text-sm mb-0">United States</h6>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="text-center">
+											<p class="text-xs font-weight-bold mb-0">Sales:</p>
+											<h6 class="text-sm mb-0">2500</h6>
+										</div>
+									</td>
+									<td>
+										<div class="text-center">
+											<p class="text-xs font-weight-bold mb-0">Value:</p>
+											<h6 class="text-sm mb-0">$230,900</h6>
+										</div>
+									</td>
+									<td class="align-middle text-sm">
+										<div class="col text-center">
+											<p class="text-xs font-weight-bold mb-0">Bounce:</p>
+											<h6 class="text-sm mb-0">29.9%</h6>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="w-30">
+										<div class="d-flex px-2 py-1 align-items-center">
+											<div>
+												<img src="/img/icons/flags/DE.png" alt="Country flag">
+											</div>
+											<div class="ms-4">
+												<p class="text-xs font-weight-bold mb-0">Country:</p>
+												<h6 class="text-sm mb-0">Germany</h6>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="text-center">
+											<p class="text-xs font-weight-bold mb-0">Sales:</p>
+											<h6 class="text-sm mb-0">3.900</h6>
+										</div>
+									</td>
+									<td>
+										<div class="text-center">
+											<p class="text-xs font-weight-bold mb-0">Value:</p>
+											<h6 class="text-sm mb-0">$440,000</h6>
+										</div>
+									</td>
+									<td class="align-middle text-sm">
+										<div class="col text-center">
+											<p class="text-xs font-weight-bold mb-0">Bounce:</p>
+											<h6 class="text-sm mb-0">40.22%</h6>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="w-30">
+										<div class="d-flex px-2 py-1 align-items-center">
+											<div>
+												<img src="/img/icons/flags/GB.png" alt="Country flag">
+											</div>
+											<div class="ms-4">
+												<p class="text-xs font-weight-bold mb-0">Country:</p>
+												<h6 class="text-sm mb-0">Great Britain</h6>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="text-center">
+											<p class="text-xs font-weight-bold mb-0">Sales:</p>
+											<h6 class="text-sm mb-0">1.400</h6>
+										</div>
+									</td>
+									<td>
+										<div class="text-center">
+											<p class="text-xs font-weight-bold mb-0">Value:</p>
+											<h6 class="text-sm mb-0">$190,700</h6>
+										</div>
+									</td>
+									<td class="align-middle text-sm">
+										<div class="col text-center">
+											<p class="text-xs font-weight-bold mb-0">Bounce:</p>
+											<h6 class="text-sm mb-0">23.44%</h6>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="w-30">
+										<div class="d-flex px-2 py-1 align-items-center">
+											<div>
+												<img src="/img/icons/flags/BR.png" alt="Country flag">
+											</div>
+											<div class="ms-4">
+												<p class="text-xs font-weight-bold mb-0">Country:</p>
+												<h6 class="text-sm mb-0">Brasil</h6>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="text-center">
+											<p class="text-xs font-weight-bold mb-0">Sales:</p>
+											<h6 class="text-sm mb-0">562</h6>
+										</div>
+									</td>
+									<td>
+										<div class="text-center">
+											<p class="text-xs font-weight-bold mb-0">Value:</p>
+											<h6 class="text-sm mb-0">$143,960</h6>
+										</div>
+									</td>
+									<td class="align-middle text-sm">
+										<div class="col text-center">
+											<p class="text-xs font-weight-bold mb-0">Bounce:</p>
+											<h6 class="text-sm mb-0">32.14%</h6>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div> @*country ///////////////////////// *@
+			<div class="col-lg-4">
+				@*stat ///////////////////////// *@
+				<!-- Swiper -->
+				<div class="swiper mySwiper2" style="border-radius:1rem;">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card">
+								@* card *@
+								<div class="card-header pb-0 p-3">
+									<h6 class="mb-0">Categories</h6>
+								</div>
+								<div class="card-body p-3">
+									<ul class="list-group">
+										<li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+											<div class="d-flex align-items-center">
+												<div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+													<i class="ni ni-mobile-button text-white opacity-10"></i>
+												</div>
+												<div class="d-flex flex-column">
+													<h6 class="mb-1 text-dark text-sm">Devices</h6>
+													<span class="text-xs">250 in stock, <span class="font-weight-bold">346+ sold</span></span>
+												</div>
+											</div>
+											<div class="d-flex">
+												<button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+											</div>
+										</li>
+										<li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+											<div class="d-flex align-items-center">
+												<div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+													<i class="ni ni-tag text-white opacity-10"></i>
+												</div>
+												<div class="d-flex flex-column">
+													<h6 class="mb-1 text-dark text-sm">Tickets</h6>
+													<span class="text-xs">123 closed, <span class="font-weight-bold">15 open</span></span>
+												</div>
+											</div>
+											<div class="d-flex">
+												<button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+											</div>
+										</li>
+										<li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+											<div class="d-flex align-items-center">
+												<div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+													<i class="ni ni-box-2 text-white opacity-10"></i>
+												</div>
+												<div class="d-flex flex-column">
+													<h6 class="mb-1 text-dark text-sm">Error logs</h6>
+													<span class="text-xs">1 is active, <span class="font-weight-bold">40 closed</span></span>
+												</div>
+											</div>
+											<div class="d-flex">
+												<button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+											</div>
+										</li>
+										<li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+											<div class="d-flex align-items-center">
+												<div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+													<i class="ni ni-satisfied text-white opacity-10"></i>
+												</div>
+												<div class="d-flex flex-column">
+													<h6 class="mb-1 text-dark text-sm">Happy users</h6>
+													<span class="text-xs font-weight-bold">+ 430</span>
+												</div>
+											</div>
+											<div class="d-flex">
+												<button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div> @* card *@
 
-    </div>
+						</div>
+						<div class="swiper-slide">
+
+							<div class="card">
+								@* card *@
+								<div class="card-header pb-0 p-3">
+									<h6 class="mb-0">Categories</h6>
+								</div>
+								<div class="card-body p-3">
+									<ul class="list-group">
+										<li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+											<div class="d-flex align-items-center">
+												<div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+													<i class="ni ni-mobile-button text-white opacity-10"></i>
+												</div>
+												<div class="d-flex flex-column">
+													<h6 class="mb-1 text-dark text-sm">Devices</h6>
+													<span class="text-xs">250 in stock, <span class="font-weight-bold">346+ sold</span></span>
+												</div>
+											</div>
+											<div class="d-flex">
+												<button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+											</div>
+										</li>
+										<li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+											<div class="d-flex align-items-center">
+												<div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+													<i class="ni ni-tag text-white opacity-10"></i>
+												</div>
+												<div class="d-flex flex-column">
+													<h6 class="mb-1 text-dark text-sm">Tickets</h6>
+													<span class="text-xs">123 closed, <span class="font-weight-bold">15 open</span></span>
+												</div>
+											</div>
+											<div class="d-flex">
+												<button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+											</div>
+										</li>
+										<li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+											<div class="d-flex align-items-center">
+												<div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+													<i class="ni ni-box-2 text-white opacity-10"></i>
+												</div>
+												<div class="d-flex flex-column">
+													<h6 class="mb-1 text-dark text-sm">Error logs</h6>
+													<span class="text-xs">1 is active, <span class="font-weight-bold">40 closed</span></span>
+												</div>
+											</div>
+											<div class="d-flex">
+												<button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+											</div>
+										</li>
+										<li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
+											<div class="d-flex align-items-center">
+												<div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+													<i class="ni ni-satisfied text-white opacity-10"></i>
+												</div>
+												<div class="d-flex flex-column">
+													<h6 class="mb-1 text-dark text-sm">Happy users</h6>
+													<span class="text-xs font-weight-bold">+ 430</span>
+												</div>
+											</div>
+											<div class="d-flex">
+												<button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div> @* card *@
+
+						</div>
+					</div>
+
+				</div>
+			</div> @*stat ///////////////////////// *@
+		</div> @*rowmt4 ///////////////////////// *@
+	</div>
 </main>
+
 <!-- Footer -->
 <footer class="footer pt-3">
-    <div class="container-fluid">
-        <div class="row align-items-center justify-content-lg-center">
-            <div class="col-lg-12 mb-lg-0 mb-4 ">
-                <div class="copyright text-center text-sm text-muted text-lg-center">
-                    &copy; @DateTime.Now.Year, developed by
-                    <a href="www.linkedin.com/in/tarlanaliyevv" class="font-weight-bold" target="_blank">Tərlan Əliyev</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="container-fluid">
+		<div class="row align-items-center justify-content-lg-center">
+			<div class="col-lg-12 mb-lg-0 mb-4 ">
+				<div class="copyright text-center text-sm text-muted text-lg-center">
+					&copy; @DateTime.Now.Year, developed by
+					<a href="https://www.linkedin.com/in/tarlanaliyevv" class="font-weight-bold" target="_blank">Tərlan Əliyev</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
 <!-- Footer -->
 <!--   Core JS Files   -->
 <script src="~/js/core/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="~/js/core/bootstrap.min.js"></script>
 <script src="~/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="~/js/plugins/smooth-scrollbar.min.js"></script>
 <script src="~/js/plugins/chartjs.min.js"></script>
+<script src="~/js/index/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    var ctx1 = document.getElementById("chart-line").getContext("2d");
+				document.addEventListener("DOMContentLoaded", function() {
+		console.log("Sayfa yüklendi, script çalışıyor...");
 
-    var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
+		const visitData = {
+			Ip: '',  // Sunucudan alınacak IP adresi
+			UserAgent: navigator.userAgent,
+			Language: navigator.language || navigator.userLanguage
+		};
 
-    gradientStroke1.addColorStop(1, 'rgba(94, 114, 228, 0.2)');
-    gradientStroke1.addColorStop(0.2, 'rgba(94, 114, 228, 0.0)');
-    gradientStroke1.addColorStop(0, 'rgba(94, 114, 228, 0)');
-    new Chart(ctx1, {
-      type: "line",
-      data: {
-        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-          label: "Mobile apps",
-          tension: 0.4,
-          borderWidth: 0,
-          pointRadius: 0,
-          borderColor: "#5e72e4",
-          backgroundColor: gradientStroke1,
-          borderWidth: 3,
-          fill: true,
-          data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
-          maxBarThickness: 6
+		console.log("UserAgent:", visitData.UserAgent);
+		console.log("Language:", visitData.Language);
 
-        }],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false,
-          }
-        },
-        interaction: {
-          intersect: false,
-          mode: 'index',
-        },
-        scales: {
-          y: {
-            grid: {
-              drawBorder: false,
-              display: true,
-              drawOnChartArea: true,
-              drawTicks: false,
-              borderDash: [5, 5]
-            },
-            ticks: {
-              display: true,
-              padding: 10,
-              color: '#fbfbfb',
-              font: {
-                size: 11,
-                family: "Open Sans",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-          x: {
-            grid: {
-              drawBorder: false,
-              display: false,
-              drawOnChartArea: false,
-              drawTicks: false,
-              borderDash: [5, 5]
-            },
-            ticks: {
-              display: true,
-              color: '#ccc',
-              padding: 20,
-              font: {
-                size: 11,
-                family: "Open Sans",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-        },
-      },
-    });
-</script>
-<script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
+		// IP adresini almak için sunucuya istek gönderiyoruz
+		fetch('https://api.ipify.org?format=json')
+			.then(response => {
+				console.log("IP adresi almak için istek gönderildi...");
+				return response.json();
+			})
+			.then(data => {
+				console.log("IP adresi alındı:", data.ip);
+				visitData.Ip = data.ip;
+
+				// Ardından TrackVisit API'sine veri gönderiyoruz
+				fetch('http://localhost:44314/api/statistic/TrackVisit', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(visitData)
+				})
+				.then(response => response.json())
+				.then(data => {
+					console.log("Veri başarıyla gönderildi:", data);
+				})
+				.catch(error => {
+					console.error("API'ye veri gönderilirken hata oluştu:", error);
+				});
+			})
+			.catch(error => {
+				console.error("IP adresi alınamadı:", error);
+				// IP alım hatası durumunda da TrackVisit çağrılabilir, ama bir IP gönderemezsiniz.
+			});
+	});
+
+
+
 </script>

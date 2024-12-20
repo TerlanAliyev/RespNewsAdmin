@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\",
+  "WorkspaceRootPath": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\13.13\\admindash\\argon\\views\\home\\ytvideos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\ytvideos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\13.13\\admindash\\argon\\views\\home\\putyt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\putyt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\13.13\\admindash\\argon\\views\\home\\postvideos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\postvideos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\13.13\\admindash\\argon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\wwwroot\\js\\index\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\wwwroot\\js\\index\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +26,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "YtVideos.cshtml",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\Argon\\Views\\Home\\YtVideos.cshtml",
-              "RelativeDocumentMoniker": "Argon\\Views\\Home\\YtVideos.cshtml",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\Argon\\Views\\Home\\YtVideos.cshtml",
-              "RelativeToolTip": "Argon\\Views\\Home\\YtVideos.cshtml",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAL0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:08:02.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PutYT.cshtml",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\Argon\\Views\\Home\\PutYT.cshtml",
-              "RelativeDocumentMoniker": "Argon\\Views\\Home\\PutYT.cshtml",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\Argon\\Views\\Home\\PutYT.cshtml",
-              "RelativeToolTip": "Argon\\Views\\Home\\PutYT.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADIAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:05:14.752Z",
-              "EditorCaption": ""
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\index\\index.js",
+              "RelativeDocumentMoniker": "Argon\\wwwroot\\js\\index\\index.js",
+              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\index\\index.js",
+              "RelativeToolTip": "Argon\\wwwroot\\js\\index\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-20T16:09:08.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PostVideos.cshtml",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\Argon\\Views\\Home\\PostVideos.cshtml",
-              "RelativeDocumentMoniker": "Argon\\Views\\Home\\PostVideos.cshtml",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\Argon\\Views\\Home\\PostVideos.cshtml",
-              "RelativeToolTip": "Argon\\Views\\Home\\PostVideos.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAALAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Argon\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Argon\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T19:15:52.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\Argon\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Argon\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\13.13\\Admindash\\Argon\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Argon\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAGwBAAAAAAAAAAAIwIwBAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T17:38:47.654Z",
+              "WhenOpened": "2024-12-20T15:58:45.137Z",
               "EditorCaption": ""
             }
           ]

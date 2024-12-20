@@ -107,6 +107,7 @@ wwwroot\js\argon-dashboard.min.js
 wwwroot\js\core\bootstrap.bundle.min.js
 wwwroot\js\core\bootstrap.min.js
 wwwroot\js\core\popper.min.js
+wwwroot\js\index\index.js
 wwwroot\js\plugins\bootstrap-notify.js
 wwwroot\js\plugins\Chart.extension.js
 wwwroot\js\plugins\chartjs.min.js
