@@ -1,273 +1,66 @@
-﻿@{
-    ViewData["ShowNavbar"] = false;
-}
+﻿
+        document.addEventListener("DOMContentLoaded", () => {
+        const tagContainer = document.getElementById("tag-container");
+        const tagInput = document.getElementById("tag-input");
+        const tags = [];
 
-<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.bubble.css" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.core.css" rel="stylesheet" />
-<style>
-    /* Editor ve Stil İyileştirmeleri */
-    #editor {
-        height: 300px;
-        border: 1px solid #ccc;
-        padding: 10px;
-    }
+        // Etiket ekleme
+        tagInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" && tagInput.value.trim() !== "") {
+                event.preventDefault();
+                const tagValue = tagInput.value.trim();
+                tags.push(tagValue);
+                console.log(tags);
+                const tagElement = document.createElement("div");
+                tagElement.classList.add("tag");
+                tagElement.innerHTML = `${tagValue} <span>&times;</span>`;
 
-    #toolbar {
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-    }
+                tagContainer.insertBefore(tagElement, tagInput);
+                tagInput.value = "";
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-
-    header {
-        background-color: #0078d7;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-    }
-
-    main {
-        padding: 20px;
-        margin: auto;
-        background-color: white;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        max-width: 800px;
-    }
-
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-
-    form label {
-        display: block;
-        margin: 10px 0 5px;
-    }
-
-    form input,
-    form textarea,
-    form select,
-    form button {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-
-    form textarea {
-        resize: vertical;
-        height: 150px;
-    }
-
-    form button {
-        background-color: #0078d7;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-        form button:hover {
-            background-color: #005bb5;
-        }
-
-    .file-input {
-        padding: 5px;
-        background-color: #fafafa;
-    }
-
-        .file-input:hover {
-            background-color: #f0f0f0;
-        }
-
-    .form-container input[type="file"] {
-        display: block;
-        margin-top: 10px;
-    }
-
-    /* Fotoğraf ve Video Önizlemeleri */
-    .preview-container img {
-        max-width: 100px;
-        margin: 5px;
-    }
-
-    .preview-container a {
-        display: inline-block;
-        color: #0078d7;
-        margin-top: 5px;
-    }
-</style>
-
-<header>
-    <h1>Haber Güncelle</h1>
-</header>
-<main class="col-lg-12">
-    <form id="newsForm" method="post" enctype="multipart/form-data">
-        <div class="form-container">
-            <!-- Hidden Input for News ID -->
-            <input type="hidden" id="newsId" name="NewsId" value="123" />
-
-            <label for="newsTitle">Haber Başlığı:</label>
-            <input type="text" id="newsTitle" name="NewsTitle" required />
-
-            <!-- Quill Editor -->
-            <label for="newsContetText">Haber İçeriği:</label>
-            <div id="toolbar">
-                <select class="ql-font"></select>
-                <select class="ql-size"></select>
-                <button class="ql-bold"></button>
-                <button class="ql-italic"></button>
-                <button class="ql-underline"></button>
-                <button class="ql-strike"></button>
-                <select class="ql-color"></select>
-                <select class="ql-background"></select>
-                <button class="ql-link"></button>
-                <button class="ql-image"></button>
-                <button class="ql-list" value="ordered"></button>
-                <button class="ql-list" value="bullet"></button>
-            </div>
-            <div id="editor"></div>
-
-            <label for="newsLangId">Dil ID:</label>
-            <select id="newsLangId" name="NewsLangId">
-                <option value="">Dil Seçin</option>
-            </select>
-
-            <label for="newsCategoryId">Kategori ID:</label>
-            <select id="newsCategoryId" name="NewsCategoryId">
-                <option value="">Kategori Seçin</option>
-            </select>
-
-            <label for="newsOwnerId">Sahip ID:</label>
-            <select id="newsOwnerId" name="NewsOwnerId">
-                <option value="">Muxbir Seçin</option>
-            </select>
-
-            <label for="newsAdminId">Admin ID:</label>
-            <select id="newsAdminId" name="NewsAdminId">
-                <option value="">Admin Seçin</option>
-            </select>
-
-            <label for="newsRating">Haber Puanı:</label>
-            <input type="number" id="newsRating" name="NewsRating" min="0" max="5" />
-
-            <label for="newsDate">Haber Yayın Tarihi:</label>
-            <input type="datetime-local" id="newsDate" name="NewsDate" />
-
-            <label for="newsYoutubeLink">YouTube Link:</label>
-            <input type="url" id="newsYoutubeLink" name="NewsYoutubeLink" />
-
-            <label for="newsPhotos">Haber Fotoğrafları:</label>
-            <input type="file" id="newsPhotos" name="NewsPhotos" multiple accept="image/*" />
-            <img id="photoPreview" style="display:none; max-width: 100px; max-height: 100px;" alt="Fotoğraf Önizlemesi">
-
-            <label for="newsVideos">Haber Videoları:</label>
-            <input type="file" id="newsVideos" name="NewsVideos" multiple accept="video/*" />
-            <div id="videoPreviewContainer"></div>
-
-            <button type="submit">Güncelle</button>
-        </div>
-    </form>
-
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const pathParts = window.location.pathname.split('/');
-        const newsId = pathParts[pathParts.length - 1]; // URL'deki ID'yi al
-        document.getElementById('newsId').value = newsId; // Hidden input'a yaz
-
-        // Quill editor initialization
-        const quill = new Quill("#editor", {
-            theme: "snow",
-            modules: {
-                toolbar: "#toolbar",
-            },
+                // Etiket silme işlevi
+                tagElement.querySelector("span").addEventListener("click", () => {
+                    tagContainer.removeChild(tagElement);
+                    const index = tags.indexOf(tagValue);
+                    if (index !== -1) {
+                        tags.splice(index, 1);
+                    }
+                });
+            }
         });
 
-        // Debugging Quill editor
-        console.log("Quill initialized. Editor content:", quill.root.innerHTML);
-
+        // Form submit sırasında etiketleri backend'e göndermek için
         document.querySelector("form").addEventListener("submit", function (e) {
-            e.preventDefault();
+        e.preventDefault();
 
-            const form = document.getElementById('newsForm');
-            const formData = new FormData(form);
-            const newsId = formData.get('NewsId'); // Hidden input'tan alınır
+        const form = document.getElementById('newsForm');
+        const formData = new FormData(form);
+        const newsId = document.getElementById('newsId').value;
 
-            // Retrieve Quill content
-            const quillContent = quill.root.innerHTML.trim();
-            const plainText = quill.getText().trim(); // Only plain text (for additional checks)
-
-            console.log("Quill HTML Content:", quillContent);
-            console.log("Quill Plain Text Content:", plainText);
-
-            // Check if the content is empty
-            if (!plainText || plainText === "") {
-                Swal.fire({
-                    icon: 'warning',
-                    title: 'Boş İçerik',
-                    text: 'Lütfen haber içeriğini doldurun.',
-                    confirmButtonText: 'Tamam'
+        fetch(`https://localhost:44314/api/news/id/${newsId}`, {
+            method: 'PUT',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => {
+                    throw new Error(JSON.stringify(err));
                 });
-                return;
             }
-
-            // Add Quill content to FormData
-            formData.set('NewsContetText', quillContent);
-
-            fetch(`https://localhost:44314/api/news/id/${newsId}`, {
-                method: 'PUT',
-                body: formData,
-            })
-            .then(response => {
-                if (!response.ok) {
-                    return response.json().then(err => {
-                        throw new Error(JSON.stringify(err));
-                    });
-                }
-                return response.json();
-            })
-            .then(data => {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Başarılı',
-                    text: data.message,
-                    confirmButtonText: 'Tamam'
-                });
-            })
-            .catch(error => {
-                console.error('Hata:', error.message);
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Hata',
-                    text: `Güncelleme sırasında bir hata oluştu: ${error.message}`,
-                    confirmButtonText: 'Tamam'
-                });
-            });
+            return response.json();
+        })
+        .then(data => {
+            console.log("Başarılı:", data);
+            alert(data.Message);
+        })
+        .catch(error => {
+            console.error('Hata:', error.message);
+            alert(`Güncelleme sırasında bir hata oluştu: ${error.message}`);
         });
     });
-</script>
 
 
 
-
-
-
-<script>
     document.addEventListener("DOMContentLoaded", function () {
         const langSelect = document.getElementById('newsLangId');
         const ownerSelect = document.getElementById('newsOwnerId');
@@ -357,8 +150,6 @@
         fetchOwners();
         fetchAdmins();
     });
-</script>
-<script>
         document.addEventListener('DOMContentLoaded', () => {
         const pathParts = window.location.pathname.split('/');
         const newsId = pathParts[pathParts.length - 1];  // Sayfa URL'sinden haber ID'sini al
@@ -466,8 +257,6 @@
         });
     });
 
-</script>
-<script>
     // Fotoğraf önizlemesi
     document.getElementById('newsPhotos').addEventListener('change', function(event) {
         const photoPreview = document.getElementById('photoPreview');
@@ -494,4 +283,3 @@
             videoPreview.appendChild(videoLink);
         }
     });
-</script>

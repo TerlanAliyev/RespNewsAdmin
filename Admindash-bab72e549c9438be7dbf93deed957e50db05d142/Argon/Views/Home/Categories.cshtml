@@ -187,6 +187,8 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
+			
+
 	const apiUrl = "https://localhost:44314/api/category/all/"; // API URL'i
 	const tableBody = document.querySelector("#categoryTableBody"); // Tabloyu dolduracağımız alan
 			const apiUrlAzerbaijan = "https://localhost:44314/api/category/language/1"; // Azerbaycan dilindeki kategoriler
@@ -217,16 +219,20 @@
 				return response.json();
 			})
 			.then((categories) => {
+					
 				categories.forEach((category, index) => {
+						const baseUrl = "https://localhost:44314"; // Sunucu adresi
+				const imageUrl = `${baseUrl}${category.categoryCoverUrl}`;
 					const row = document.createElement("tr");
 					row.innerHTML = `
 						<td>${index + 1}</td>
 						<td>${category.categoryName}</td>
-						<td>
-							${category.categoryCoverUrl?.length > 0 ? `
-							<img src="${category.categoryCoverUrl}" alt="Kateqoriya Fotoğrafı" style="width: 50px; height: 50px; object-fit: cover;">
-							` : "Şəkil yoxdur"}
-						</td>
+								<td>
+			${category.categoryCoverUrl?.length > 0 ? `
+			<img src="${baseUrl}${category.categoryCoverUrl}" alt="Kateqoriya Fotoğrafı" style="width: 50px; height: 50px; object-fit: cover;">
+			` : "Şəkil yoxdur"}
+		</td>
+
 						<td>
 							<span class="btn btn-lg status ${category.categoryStatus ? "active" : "inactive"}">
 								${category.categoryStatus ? "Aktiv" : "Passiv"}

@@ -1332,6 +1332,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k549nfjlog"},{"Name":"integrity","Value":"sha256-uP\u002BqQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T\u002Bmznv8="},{"Name":"label","Value":"_content/Argon/js/index/index.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3668"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uP\u002BqQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T\u002Bmznv8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 16:25:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Argon/js/news/PutNews.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\news\PutNews.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12638"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 17:36:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Argon/js/news/PutNews.n0hd0upab3.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\news\PutNews.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n0hd0upab3"},{"Name":"integrity","Value":"sha256-Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY="},{"Name":"label","Value":"_content/Argon/js/news/PutNews.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12638"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 17:36:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Argon/js/plugins/bootstrap-notify.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\plugins\bootstrap-notify.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

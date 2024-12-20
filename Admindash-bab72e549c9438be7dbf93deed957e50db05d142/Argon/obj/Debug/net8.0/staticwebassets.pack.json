@@ -445,6 +445,10 @@
       "PackagePath": "staticwebassets\\js\\index\\index.js"
     },
     {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\news\\PutNews.js",
+      "PackagePath": "staticwebassets\\js\\news\\PutNews.js"
+    },
+    {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\plugins\\Chart.extension.js",
       "PackagePath": "staticwebassets\\js\\plugins\\Chart.extension.js"
     },

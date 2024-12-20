@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0AKhnw69f+G9Cy0XXvnue8Ayn0wFXNUB+tiO+ynrvG8=",
+  "Hash": "KlmSwBiRVFbTgWeghvKW65huPevkaFfV35tgZNLCUa0=",
   "Source": "Argon",
   "BasePath": "_content/Argon",
   "Mode": "Default",
@@ -2367,6 +2367,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\index\\index.js"
+    },
+    {
+      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\news\\PutNews.js",
+      "SourceId": "Argon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
+      "BasePath": "_content/Argon",
+      "RelativePath": "js/news/PutNews#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n0hd0upab3",
+      "Integrity": "Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\news\\PutNews.js"
     },
     {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\plugins\\bootstrap-notify.js",
@@ -16654,6 +16675,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-uP+qQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T+mznv8="
+        }
+      ]
+    },
+    {
+      "Route": "js/news/PutNews.js",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\news\\PutNews.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 17:36:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY="
+        }
+      ]
+    },
+    {
+      "Route": "js/news/PutNews.n0hd0upab3.js",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\news\\PutNews.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 17:36:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n0hd0upab3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/news/PutNews.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY="
         }
       ]
     },

@@ -76,48 +76,43 @@
             });
 
         // Formu gönderme işlemi
-        document.getElementById("updateForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Sayfa yenilenmesinin engellenmesi
+       document.getElementById("categoryForm").addEventListener("submit", async function (event) {
+        event.preventDefault();
 
-            const updatedNews = {
-                newspaperTitle: document.getElementById("NewspaperTitle").value,
-                newspaperLinkFlip: document.getElementById("NewspaperLinkFlip").value,
-                newspaperDate: document.getElementById("NewspaperDate").value,
-                newspaperPrice: document.getElementById("NewspaperPrice").value,
-                newspaperStatus: document.getElementById("NewspaperStatus").checked, // Checkbox ise true/false
-                newspaperCoverUrl: document.getElementById("NewspaperCoverUrl").value, // Resim URL'si
-                newspaperPdfUrl: document.getElementById("NewspaperPdfFile").value // PDF URL'si
-            };
+        const formData = new FormData(event.target); // Form verilerini al
 
-            console.log("Gönderilen Veri: ", updatedNews); // Gönderilen veriyi kontrol et
+        try {
+            const response = await fetch(`https://localhost:44314/api/Infographics/edit/${id}`, {
+                method: "PUT",
+                body: formData // Content-Type başlığı otomatik ayarlanır
+            });
 
-            // PUT isteği göndermek için
-            fetch(`https://localhost:44314/api/newspaper/edit/${id}`, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(updatedNews)
-            })
-            .then(response => response.json())
-            .then(result => {
-                console.log("API Yanıtı:", result); // Yanıtın tamamını logla
+            if (response.ok) {
+                const result = await response.json();
                 Swal.fire({
                     icon: 'success',
-                    title: 'Başarılı!',
+                    title: 'Uğurlu!',
                     text: result.Message || 'Haber başarıyla güncellendi.'
+                }).then(() => {
+                    window.location.replace("/home/infographics"); // Başarıyla yönlendirme
                 });
-            })
-            .catch(error => {
-                // SweetAlert2 ile hata mesajı göster
+            } else {
+                const errorText = await response.text();
                 Swal.fire({
                     icon: 'error',
-                    title: 'Bir hata oluştu',
-                    text: error.message || 'API çağrısı başarısız oldu.'
+                    title: 'Xəta!',
+                    text: errorText
                 });
-                // Hata mesajını konsola yazdır
-                console.error("API çağrısı başarısız:", error);
+            }
+        } catch (error) {
+            console.error("İstək uğursuz oldu:", error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Bağlantı Xətası',
+                text: error.message
             });
-        });
+        }
+    });
+
     });
 </script>

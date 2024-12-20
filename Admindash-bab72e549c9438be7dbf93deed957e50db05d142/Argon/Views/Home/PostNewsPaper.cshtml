@@ -56,7 +56,7 @@
 <script src="https://cdn.jsdelivr.net/npm/argon-dashboard-free@1.2.0/assets/js/argon-dashboard.min.js"></script>
 
 <script>
-    document.getElementById("newspaperForm").addEventListener("submit", async (event) => {
+       document.getElementById("newspaperForm").addEventListener("submit", async (event) => {
         event.preventDefault(); // Formun yenilənməsini qarşısını alır
 
         const formData = new FormData(event.target); // Form məlumatlarını alır
@@ -73,6 +73,11 @@
                     icon: 'success',
                     title: 'Uğurlu!',
                     text: 'Qəzet uğurla əlavə edildi.',
+                    timer: 1500, // Bildirişi göstərmə müddəti
+                    showConfirmButton: false
+                }).then(() => {
+                    // Başarıdan sonra yönlendirme
+                    window.location.replace("/home/newspaper");
                 });
             } else {
                 const errorText = await response.text();
@@ -91,4 +96,5 @@
             });
         }
     });
+
 </script>

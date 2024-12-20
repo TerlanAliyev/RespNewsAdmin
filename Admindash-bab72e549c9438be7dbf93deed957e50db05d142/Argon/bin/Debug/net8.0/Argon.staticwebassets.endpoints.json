@@ -9105,6 +9105,88 @@
       ]
     },
     {
+      "Route": "js/news/PutNews.js",
+      "AssetFile": "js/news/PutNews.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 17:36:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY="
+        }
+      ]
+    },
+    {
+      "Route": "js/news/PutNews.n0hd0upab3.js",
+      "AssetFile": "js/news/PutNews.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 17:36:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n0hd0upab3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z9/2hRXkSDAgc/UVLUstIXUBr8YwzbWjrj/DxHdcsZY="
+        },
+        {
+          "Name": "label",
+          "Value": "js/news/PutNews.js"
+        }
+      ]
+    },
+    {
       "Route": "js/plugins/Chart.extension.fj3wwdfpyy.js",
       "AssetFile": "js/plugins/Chart.extension.js",
       "Selectors": [],

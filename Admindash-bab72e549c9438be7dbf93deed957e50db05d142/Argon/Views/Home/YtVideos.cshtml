@@ -112,7 +112,8 @@
 
     <script>
 
-                    function convertToEmbedUrl(url) {
+
+                function convertToEmbedUrl(url) {
             if (!url) {
                 console.error("URL değeri undefined veya null");
                 return null;
@@ -125,7 +126,7 @@
 
             // YouTube video URL'lerini işler
             if (url.includes('youtube.com') || url.includes('youtu.be')) {
-                const regex = /(?:youtu\.be\/|youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/?)([a-zA-Z0-9_-]{11}))/;
+                const regex = /(?:youtu\.be\/|youtube\.com\/(?:[^\/]+\/[^\/]+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=))([a-zA-Z0-9_-]{11})/;
                 const match = url.match(regex);
                 if (match && match[1]) {
                     videoId = match[1];
@@ -137,13 +138,9 @@
                 return null;
             }
 
+            // Embed URL'yi döndür
             return `https://www.youtube.com/embed/${videoId}`;
         }
-
-
-
-
-
 
         const apiUrl = "https://localhost:44314/api/Youtube/videos/";
         const tableBody = document.querySelector("tbody");
@@ -175,30 +172,26 @@
                         return;
                     }
 
-                   newsItems.forEach((newsItem, index) => {
-            console.log("Video URL'si:", newsItem.videoUrl);  // Debug için yazdırma
-
-            const row = document.createElement("tr");
-            row.innerHTML = `
-                <td>${index + 1 + page * 10}</td>
-                <td>
-                    <iframe src="${convertToEmbedUrl(newsItem.videoUrl)}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </td>
-                <td>${newsItem.videoTitle}</td>
-                <td>${new Date(newsItem.videoDate).toLocaleDateString()}</td>
-                <td>
-                    <a href="/Home/PutYT/${newsItem.videoId}" class="text-primary me-2 btn">
-                        <i class="fa-solid fa-pen"></i>
-                    </a>
-                    <a class="text-danger deleteNews btn" data-id="${newsItem.videoId}">
-                        <i class="fa-solid fa-trash"></i>
-                    </a>
-                </td>
-            `;
-            tableBody.appendChild(row);
-        });
-
-
+                    newsItems.forEach((newsItem, index) => {
+                        const row = document.createElement("tr");
+                        row.innerHTML = `
+                            <td>${index + 1 + page * 10}</td>
+                            <td>
+                                <iframe src="${convertToEmbedUrl(newsItem.videoUrl)}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </td>
+                            <td>${newsItem.videoTitle}</td>
+                            <td>${new Date(newsItem.videoDate).toLocaleDateString()}</td>
+                            <td>
+                                <a href="/Home/PutYT/${newsItem.videoId}" class="text-primary me-2 btn">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                                <a class="text-danger deleteNews btn" data-id="${newsItem.videoId}">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
 
                     nextPageButton.disabled = newsItems.length < 10; // Eğer veri 10'dan azsa, son sayfa
                 })
@@ -211,7 +204,7 @@
         fetchNews(currentPage);
 
         // Önceki ve Sonraki düğmelere tıklama olayları
-                prevPageButton.addEventListener("click", () => {
+        prevPageButton.addEventListener("click", () => {
             if (currentPage > 0) {
                 currentPage--;
                 fetchNews(currentPage);
@@ -229,8 +222,7 @@
             nextPageButton.disabled = false;
         });
 
-
-                        tableBody.addEventListener("click", (e) => {
+        tableBody.addEventListener("click", (e) => {
             const statusButton = e.target.closest(".status");
             if (statusButton) {
                 const row = statusButton.closest("tr");
@@ -240,9 +232,7 @@
             }
         });
 
-
-            // DELETE isteği atan fonksiyon
-               function deleteNews(id) {
+        function deleteNews(id) {
             Swal.fire({
                 title: "Emin misiniz?",
                 text: "Bu haberi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz!",
@@ -260,40 +250,35 @@
                             "Content-Type": "application/json"
                         }
                     })
-                    .then(response => {
-                        if (response.ok) {
-                            Swal.fire(
-                                "Silindi!",
-                                "Haber başarıyla silindi.",
-                                "success"
-                            ).then(() => {
-                                const rowToRemove = document.querySelector(`tr[data-id='${id}']`);
-                                if (rowToRemove) rowToRemove.remove();
-                            });
-                        } else if (response.status === 404) {
-                            Swal.fire("Bulunamadı!", "Haber bulunamadı.", "error");
-                        } else {
-                            Swal.fire("Hata!", `Haber silinemedi. Hata kodu: ${response.status}`, "error");
-                        }
-                    })
-                    .catch(error => {
-                        console.error("Bir hata oluştu:", error);
-                        Swal.fire("Sunucu Hatası!", "Sunucuya ulaşılamadı. Lütfen tekrar deneyin.", "error");
-                    });
+                        .then(response => {
+                            if (response.ok) {
+                                Swal.fire(
+                                    "Silindi!",
+                                    "Haber başarıyla silindi.",
+                                    "success"
+                                ).then(() => {
+                                    fetchNews(currentPage); // Sayfayı yenile
+                                });
+                            } else if (response.status === 404) {
+                                Swal.fire("Bulunamadı!", "Haber bulunamadı.", "error");
+                            } else {
+                                Swal.fire("Hata!", `Haber silinemedi. Hata kodu: ${response.status}`, "error");
+                            }
+                        })
+                        .catch(error => {
+                            console.error("Bir hata oluştu:", error);
+                            Swal.fire("Sunucu Hatası!", "Sunucuya ulaşılamadı. Lütfen tekrar deneyin.", "error");
+                        });
                 }
             });
         }
 
-
-        // Örnek: Bir buton tıklanma olayına bağlama
         document.addEventListener("click", function (e) {
             if (e.target.classList.contains("deleteNews")) {
                 const newsId = e.target.getAttribute("data-id");
                 deleteNews(newsId);
             }
         });
-
-
 
 
 

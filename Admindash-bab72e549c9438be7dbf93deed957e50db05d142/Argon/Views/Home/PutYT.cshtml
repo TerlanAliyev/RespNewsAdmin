@@ -1,11 +1,10 @@
-﻿
-<div class="container mt-5">
+﻿<div class="container mt-5">
     <div class="card shadow border-0">
         <div class="card-header bg-gradient-primary text-white">
             <h3 class="mb-0">Inf əlavə et</h3>
         </div>
         <div class="card-body">
-            <form id="categoryForm" method="post" action="" enctype="multipart/form-data">
+            <form id="updateForm" method="post" action="" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="videoTitle" class="form-label">Video Başlığı</label>
                     <input type="text" class="form-control" id="videoTitle" name="videoTitle" required placeholder="Video Başlığı">
@@ -22,8 +21,8 @@
                 <div class="mb-3">
                     <label for="videoStatus" class="form-label">Video Durumu</label>
                     <select id="videoStatus" name="videoStatus">
-                        <option value="1">Aktiv</option>
-                        <option value="0">DeAktiv</option>
+                        <option value="true">Aktiv</option>
+                        <option value="false">DeAktiv</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Ekle</button>
@@ -42,37 +41,31 @@
 
         // API'den veri almak için
         fetch(`https://localhost:44314/api/Youtube/video/${id}`)
-            .then(response => response.json())
-            .then(data => {
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Video bilgisi alınamadı.");
+                }
+                return response.text(); // Metin olarak alıyoruz
+            })
+            .then(text => {
+                const data = text ? JSON.parse(text) : {}; // Eğer boş bir yanıt varsa JSON.parse hatasını önler
                 console.log("Veri alındı: ", data); // API'den gelen veriyi kontrol et
                 // API'den gelen verileri form elemanlarına yerleştirme
                 if (data) {
-                    document.getElementById("videoTitle").value = data.videoTitle;
-                    document.getElementById("videoUrl").value = data.videoUrl;
-                    document.getElementById("videoDate").value = data.videoDate.split('T')[0]; // Tarih formatı: YYYY-MM-DD
-                    // Üzqapağı (Cover Image) için div oluşturma
-                    const newDiv = document.createElement("div");
-                    newDiv.id = "coverPreview"; // id'yi ayarla
-                    newDiv.style.marginTop = "10px"; // Stil ekle
-
-                    // Yeni div öğesinin içine bir img öğesi ekle
-                    const img = document.createElement("img");
-                    img.src = `https://localhost:44314/${data.infPhoto}`; // data.newspaperCoverUrl ile img src'yi ayarlıyoruz
-                    img.style.maxWidth = "200px"; // Resmin boyutunu ayarla
-                    img.style.maxHeight = "200px";
-                    img.style.objectFit = "cover"; // Resmin boyutlarını orantılı hale getir
-
-                    // img öğesini div içine ekle
-                    newDiv.appendChild(img);
-
-                    // Yeni div öğesini sayfadaki belirli bir elemana ekle
-                    document.getElementById("add").appendChild(newDiv);
-
+                    document.getElementById("videoTitle").value = data.videoTitle || "";
+                    document.getElementById("videoUrl").value = data.videoUrl || "";
+                    if (data.videoDate) {
+                        const date = new Date(data.videoDate);
+                        const formattedDate = date.toISOString().slice(0, 16); // YYYY-MM-DDTHH:mm formatı
+                        document.getElementById("videoDate").value = formattedDate;
+                    } else {
+                        document.getElementById("videoDate").value = "";
+                    }
+                    document.getElementById("videoStatus").value = data.videoStatus ? "true" : "false";
                 }
             })
             .catch(error => {
                 console.error("API çağrısı başarısız:", error);
-                // Hata durumunda SweetAlert ile kullanıcıyı bilgilendir
                 Swal.fire({
                     icon: 'error',
                     title: 'Bir hata oluştu',
@@ -84,43 +77,46 @@
         document.getElementById("updateForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Sayfa yenilenmesinin engellenmesi
 
-            const updatedNews = {
-                newspaperTitle: document.getElementById("NewspaperTitle").value,
-                newspaperLinkFlip: document.getElementById("NewspaperLinkFlip").value,
-                newspaperDate: document.getElementById("NewspaperDate").value,
-                newspaperPrice: document.getElementById("NewspaperPrice").value,
-                newspaperStatus: document.getElementById("NewspaperStatus").checked, // Checkbox ise true/false
-                newspaperCoverUrl: document.getElementById("NewspaperCoverUrl").value, // Resim URL'si
-                newspaperPdfUrl: document.getElementById("NewspaperPdfFile").value // PDF URL'si
+            const updatedVideo = {
+                videoTitle: document.getElementById("videoTitle").value,
+                videoUrl: document.getElementById("videoUrl").value,
+                videoDate: document.getElementById("videoDate").value,
+                videoStatus: document.getElementById("videoStatus").value === "true"
             };
 
-            console.log("Gönderilen Veri: ", updatedNews); // Gönderilen veriyi kontrol et
+            console.log("Gönderilen Veri: ", updatedVideo); // Gönderilen veriyi kontrol et
 
             // PUT isteği göndermek için
-            fetch(`https://localhost:44314/api/newspaper/edit/${id}`, {
+            fetch(`https://localhost:44314/api/Youtube/edit/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(updatedNews)
+                body: JSON.stringify(updatedVideo)
             })
-            .then(response => response.json())
-            .then(result => {
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Video güncellenemedi.");
+                }
+                return response.text(); // Metin olarak yanıt al
+            })
+            .then(text => {
+                const result = text ? JSON.parse(text) : {}; // Yanıtı JSON olarak ayrıştır
                 console.log("API Yanıtı:", result); // Yanıtın tamamını logla
                 Swal.fire({
                     icon: 'success',
                     title: 'Başarılı!',
-                    text: result.Message || 'Haber başarıyla güncellendi.'
+                    text: 'Video başarıyla güncellendi.'
+                }).then(() => {
+                    window.location.replace("/Home/Ytvideos"); // Başarıdan sonra yönlendirme
                 });
             })
             .catch(error => {
-                // SweetAlert2 ile hata mesajı göster
                 Swal.fire({
                     icon: 'error',
                     title: 'Bir hata oluştu',
                     text: error.message || 'API çağrısı başarısız oldu.'
                 });
-                // Hata mesajını konsola yazdır
                 console.error("API çağrısı başarısız:", error);
             });
         });
