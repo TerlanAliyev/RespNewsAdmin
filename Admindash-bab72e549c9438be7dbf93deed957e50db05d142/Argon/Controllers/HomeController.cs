@@ -391,6 +391,11 @@ namespace Argon.Controllers
 
         // Diðer aksiyonlar
         public IActionResult tables() => View();
+        public IActionResult Links() => View();
+        public IActionResult PostLinks() => View();
+
+        public IActionResult PutLinks() => View();
+
         public IActionResult PostNews() => View();
         public IActionResult PutNews() => View();
         public IActionResult PutInf() => View();

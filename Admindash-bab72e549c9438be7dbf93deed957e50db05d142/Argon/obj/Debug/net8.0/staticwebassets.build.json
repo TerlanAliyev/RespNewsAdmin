@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KlmSwBiRVFbTgWeghvKW65huPevkaFfV35tgZNLCUa0=",
+  "Hash": "GIvvJCfpgkSgjaWDg6eYRB0Lo0He5KCmsU56uICxLq0=",
   "Source": "Argon",
   "BasePath": "_content/Argon",
   "Mode": "Default",
@@ -351,6 +351,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\nucleo-icons.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\9572886.png",
+      "SourceId": "Argon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
+      "BasePath": "_content/Argon",
+      "RelativePath": "img/9572886#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zux9ahmk0x",
+      "Integrity": "VV6H5q7LCTCndAB1c+wExTrOoWmDHBuB9wktR0Vm2To=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\9572886.png"
     },
     {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\apple-icon.png",
@@ -8803,6 +8824,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-cI56tXCkmBqo3hUu9JDKVnpLncp5e0SjKAEOtAdJo/k="
+        }
+      ]
+    },
+    {
+      "Route": "img/9572886.png",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\9572886.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VV6H5q7LCTCndAB1c+wExTrOoWmDHBuB9wktR0Vm2To=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 16:51:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VV6H5q7LCTCndAB1c+wExTrOoWmDHBuB9wktR0Vm2To="
+        }
+      ]
+    },
+    {
+      "Route": "img/9572886.zux9ahmk0x.png",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\9572886.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VV6H5q7LCTCndAB1c+wExTrOoWmDHBuB9wktR0Vm2To=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 16:51:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zux9ahmk0x"
+        },
+        {
+          "Name": "label",
+          "Value": "img/9572886.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VV6H5q7LCTCndAB1c+wExTrOoWmDHBuB9wktR0Vm2To="
         }
       ]
     },

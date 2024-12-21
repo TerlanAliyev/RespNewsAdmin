@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["ShowNavbar"] = false;  // Navbar'ı engelle
+}
+
+
+<div class="container mt-5">
+    <div class="card shadow border-0">
+        <div class="card-header bg-gradient-primary text-white">
+            <h3 class="mb-0">Inf əlavə et</h3>
+        </div>
+        <div class="card-body">
+            <form id="categoryForm" method="post" action="" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="CategoryName" class="form-label">Link Adı</label>
+                    <input type="text" class="form-control" id="CategoryName" name="LinkName" required placeholder="adı" required>
+                </div>
+                <div class="mb-3">
+                    <label for="CategoryUrl" class="form-label">Link URL</label>
+                    <input type="text" class="form-control" id="CategoryUrl" name="LinkUrl" required placeholder="LINK" required>
+                </div>
+                <div class="mb-3">
+                    <label for="CategoryCoverFile" class="form-label">Link şəkli</label>
+                    <input type="file" class="form-control" id="CategoryCoverFile" name="LinkCoverFile" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Əlavə et</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+              document.getElementById("categoryForm").addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+
+        try {
+            const response = await fetch("https://localhost:44314/api/Links/upload", {
+                method: "POST",
+                body: formData,
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Uğurlu əməliyyat',
+                    text: "Link uğurla əlavə edildi",
+                }).then(() => {
+                            // Sayfayı Home/Links'e yönlendir
+                            window.location.replace("/Home/Links");
+                        });
+            } else {
+                const errorText = await response.text();
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Xəta',
+                    text: errorText,
+                });
+            }
+        } catch (error) {
+            console.error("İstek başarısız oldu:", error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Xəta',
+                text: 'Link əlavə edilə bilmədi',
+            });
+        }
+    });
+
+
+
+</script>

@@ -64,6 +64,15 @@
                     <span class="nav-link-text ms-1">Youtube Videolari</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/Home/Links">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-link" style="color:black;"></i>
+
+                    </div>
+                    <span class="nav-link-text ms-1">Əlavə keçidlər</span>
+                </a>
+            </li>
             <li class="nav-item mt-3">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
             </li>
@@ -91,8 +100,48 @@
                     <span class="nav-link-text ms-1">Cixis</span>
                 </a>
             </li>
-           
+            <li class="nav-item mt-3">
+                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Elaveler</h6>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " id="clearPhotosCacheButton">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-trash" style="color:black;"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Kesi temizle</span>
+                </a>
+            </li>
         </ul>
     </div>
- 
+    <script>
+        document.getElementById("clearPhotosCacheButton").addEventListener("click", async () => {
+            try {
+                // Backend'deki API endpoint adresini doğru yazın
+                const apiUrl = "https://localhost:44314/api/news/ClearPhotosCache";
+
+                // API çağrısı yap
+                const response = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    alert(result.message); // Backend'den gelen mesaj
+                } else {
+                    // HTTP Hata Durumu
+                    const errorDetails = await response.json();
+                    alert(`Bir hata oluştu: ${errorDetails.message || "Fotoğraf belleği temizlenemedi."}`);
+                }
+            } catch (error) {
+                // Sunucuya bağlantı hatası
+                console.error("Error:", error);
+                alert("Sunucuyla bağlantı kurulamadı.");
+            }
+        });
+    </script>
+
 </aside>
+

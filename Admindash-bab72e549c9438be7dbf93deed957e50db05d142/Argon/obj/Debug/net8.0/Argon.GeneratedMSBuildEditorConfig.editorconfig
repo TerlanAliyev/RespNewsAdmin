@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmZvZ3JhcGhpY3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Links.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaW5rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostInf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0SW5mLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostLinks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0TGlua3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostNews.cshtml]
@@ -82,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PutInf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdXRJbmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PutLinks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdXRMaW5rcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PutNews.cshtml]

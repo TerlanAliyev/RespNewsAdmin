@@ -12,6 +12,7 @@ wwwroot\fonts\nucleo-icons.svg
 wwwroot\fonts\nucleo-icons.ttf
 wwwroot\fonts\nucleo-icons.woff
 wwwroot\fonts\nucleo-icons.woff2
+wwwroot\img\9572886.png
 wwwroot\img\apple-icon.png
 wwwroot\img\bg1.jpg
 wwwroot\img\bg-profile.jpg
