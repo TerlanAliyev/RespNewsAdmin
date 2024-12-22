@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["ShowNavbar"] = false;  // Navbar'ı engelle
+}
+
+
+<div class="container mt-5">
+    <div class="card shadow border-0">
+        <div class="card-header bg-gradient-primary text-white">
+            <h3 class="mb-0">User əlavə et</h3>
+        </div>
+        <div class="card-body">
+            <form id="UserForm" method="post" action="" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="userName" class="form-label">User Name</label>
+                    <input type="text" class="form-control" id="userName" name="userName" required placeholder="User Name">
+                </div>
+                <div class="mb-3">
+                    <label for="userNickName" class="form-label">User Nick Name</label>
+                    <input type="text" class="form-control" id="userNickName" name="userNickName" required placeholder="User Nick Name">
+                </div>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">User Email</label>
+                    <input type="email" class="form-control" id="userEmail" name="userEmail" required placeholder="User Email">
+                </div>
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">User Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword" required placeholder="User Password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Əlavə et</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+                  document.getElementById("UserForm").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Formun varsayılan submit davranışını engelle
+
+        const formData = new FormData(event.target); // Form verilerini al
+
+        try {
+            const response = await fetch("https://localhost:44314/api/user", {
+                method: "POST",
+                body: formData,
+            });
+
+            if (response.ok) {
+                // Başarılı yanıt
+                const result = await response.json();
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Uğurlu əməliyyat',
+                    text: result.message || "Kullanıcı başarıyla eklendi.",
+                });
+
+                // Formu temizleyin
+                event.target.reset();
+            } else {
+                // API'den dönen hata
+                const errorText = await response.json();
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Xəta',
+                    text: errorText.message || "Kullanıcı eklenemedi.",
+                });
+            }
+        } catch (error) {
+            // JavaScript hatası
+            console.error("İstek başarısız oldu:", error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Xəta',
+                text: 'Kullanıcı eklenemedi. Lütfen tekrar deneyin.',
+            });
+        }
+    });
+
+
+
+
+</script>

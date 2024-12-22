@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\putlinks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\putlinks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\putnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\putnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\postnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\postnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PutLinks.cshtml",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PutLinks.cshtml",
-              "RelativeDocumentMoniker": "Argon\\Views\\Home\\PutLinks.cshtml",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PutLinks.cshtml*",
-              "RelativeToolTip": "Argon\\Views\\Home\\PutLinks.cshtml*",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
+              "Title": "PutNews.cshtml",
+              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PutNews.cshtml",
+              "RelativeDocumentMoniker": "Argon\\Views\\Home\\PutNews.cshtml",
+              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PutNews.cshtml*",
+              "RelativeToolTip": "Argon\\Views\\Home\\PutNews.cshtml*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAlwBgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T12:55:36.668Z",
+              "WhenOpened": "2024-12-22T18:13:24.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PostNews.cshtml",
+              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PostNews.cshtml",
+              "RelativeDocumentMoniker": "Argon\\Views\\Home\\PostNews.cshtml",
+              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PostNews.cshtml",
+              "RelativeToolTip": "Argon\\Views\\Home\\PostNews.cshtml",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAlwLIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T17:38:43.785Z",
               "EditorCaption": ""
             }
           ]

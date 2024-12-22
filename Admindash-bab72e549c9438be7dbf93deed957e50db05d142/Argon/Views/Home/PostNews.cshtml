@@ -11,7 +11,28 @@
       rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.core.css"
       rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
+    #editor {
+        transition: all 0.2s ease-in-out; /* Tüm özellikler için geçiş */
+    }
+
+       #editor.fullscreen {
+            width: 100%;
+            height: 100%;
+            position: absolute; /* 'absolute' yerine 'fixed' kullanarak tam ekran sabitleyin */
+            top: 20;
+            left: 10;
+            background-color: red;
+            border-radius: 0; /* Köşeleri düz yap */
+        }
+
+
+
+
+
+
+
     #tooltip {
         background-color: #333;
         color: white;
@@ -135,6 +156,8 @@
             <input type="text" id="newsTitle" name="NewsTitle" required />
 
             <label for="newsContent">Haber İçeriği:</label>
+            <div class="screen">
+                <i class="fa-solid fa-x"></i>
             <div id="toolbar">
                 <select class="ql-font"></select>
                 <select class="ql-size"></select>
@@ -148,8 +171,12 @@
                 <button class="ql-image"></button>
                 <button class="ql-list" value="ordered"></button>
                 <button class="ql-list" value="bullet"></button>
+                <p class="btn" id="fullscreen"><i class="fa-solid fa-expand" style="color:red;"></i></p>
+
             </div>
+
             <div id="editor"></div>
+            </div>
 
             <label for="newsLangId">Dil ID:</label>
             <select id="newsLangId" name="NewsLangId">
@@ -205,6 +232,12 @@
     </form>
 </main>
 
+
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
 <!-- Popper.js -->
 <script src="https://unpkg.com/popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -213,7 +246,18 @@
 <!-- SweetAlert2 CDN -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<script>
+      document.getElementById("fullscreen").addEventListener("click", function () {
+        const screenElement = document.querySelector("#editor");
+        screenElement.classList.add("fullscreen");
+    });
 
+    document.querySelector(".fa-x").addEventListener("click", function () {
+        const screenElement = document.querySelector("#editor");
+        screenElement.classList.remove("fullscreen");
+    });
+
+</script>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {

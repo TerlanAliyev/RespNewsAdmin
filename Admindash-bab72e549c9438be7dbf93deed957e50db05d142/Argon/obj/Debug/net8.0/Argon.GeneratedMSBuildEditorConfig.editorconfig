@@ -76,6 +76,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0TmV3c1BhcGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostSubscribers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0U3Vic2NyaWJlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostVideos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0VmlkZW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -112,8 +120,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Subscribers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWJzY3JpYmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/tables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0YWJsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/YtVideos.cshtml]

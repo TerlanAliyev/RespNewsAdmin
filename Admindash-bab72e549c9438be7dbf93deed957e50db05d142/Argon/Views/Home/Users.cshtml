@@ -1,0 +1,203 @@
+﻿
+<style>
+	body {
+		background-color: #f8f9fe;
+	}
+
+	table {
+		max-height: 100px!important;
+		overflow: scroll;
+	}
+	.table-container {
+		padding: 20px;
+	}
+
+	.status.active {
+		color: #28a745;
+		font-weight: bold;
+	}
+
+	.status.inactive {
+		color: #dc3545;
+		font-weight: bold;
+	}
+
+	hr {
+		background-color: black;
+	}
+
+	pagination {
+		ul
+
+	{
+		li
+
+	{
+		padding: 10px;
+	}
+
+	}
+	}
+
+</style>
+<hr />
+<div class="row d-flex justify-content-center mt-5">
+	<div class="d-flex justify-content-center align-items-center">
+		<a href="/Home/PostUser" class="btn btn-primary btn-lg">
+			İstifadəçi əlavə et
+		</a>
+	</div>
+	<hr />
+<div class="container-fluid py-2 ">
+	<div class="container mt-4">
+			<h1 class="text-center mb-4">İstifadəçi Yönetimi</h1>
+		<div class="card shadow">
+			<div class="card-header bg-primary text-white">
+					<h4 class="mb-0">İstifadəçi Tablosu</h4>
+			</div>
+			<div class="card-body">
+				<div class="table-responsive">
+					<div class="container mt-4">
+						<table class="table table-hover align-middle">
+							<thead class="table-light">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Ad-Soyad</th>
+									<th scope="col">İstifadəçi adı</th>
+									<th scope="col">Email</th>
+									<th scope="col">Rolu</th>
+									<th scope="col">Əməliyyatlar</th>
+								</tr>
+							</thead>
+							<tbody id="categoryTableBody"></tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			const apiUrl = "https://localhost:44314/api/user/users"; // API URL'si
+			const tableBody = document.getElementById("categoryTableBody");
+
+			// API'den kullanıcıları al
+			fetch(apiUrl)
+				.then(response => {
+					if (!response.ok) {
+						throw new Error("Kullanıcı verileri alınamadı.");
+					}
+					return response.json(); // JSON formatında veriyi al
+				})
+				.then(users => {
+					tableBody.innerHTML = ""; // Mevcut tabloyu temizle
+
+					// Kullanıcıları tabloya ekle
+					users.forEach((user, index) => {
+						const row = document.createElement("tr");
+
+						row.innerHTML = `
+							<th scope="row">${index + 1}</th>
+							<td>${user.userName}</td>
+							<td>${user.userNickName}</td>
+							<td>${user.userEmail}</td>
+							<td>${user.userRole}</td>
+							<td>
+								<a class="text-danger deleteNews btn" data-id="${user.userId}" >
+									<i class="fa-solid fa-trash"></i>
+								</a>
+							</td>
+						`;
+
+						tableBody.appendChild(row);
+					});
+				})
+				.catch(error => {
+					console.error("Hata:", error);
+					alert("Kullanıcı verileri yüklenirken bir hata oluştu.");
+				});
+		});
+
+	
+
+</script>
+
+
+
+<script>
+
+			// DELETE isteği atan fonksiyon
+		function deleteNews(id) {
+			Swal.fire({
+				title: 'Emin misiniz?',
+				text: "Bu haberi silmek istediğinizden emin misiniz?",
+				icon: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Evet, sil!',
+				cancelButtonText: 'Hayır, iptal et!'
+			}).then((result) => {
+				if (result.isConfirmed) {
+					fetch(`https://localhost:44314/api/user/${id}`, {
+						method: "DELETE", // HTTP DELETE metodu
+						headers: {
+							"Content-Type": "application/json" // Gerekli ise content-type ekleyebilirsiniz
+						}
+					})
+						.then(response => {
+							if (response.ok) {
+								Swal.fire(
+									'Silindi!',
+									'Haber başarıyla silindi.',
+									'success'
+								).then(() => {
+									// Silme işlemi başarılıysa kullanıcıyı yönlendir
+									window.location.replace("/home/users");
+								});
+							} else if (response.status === 404) {
+								Swal.fire(
+									'Hata!',
+									'Haber bulunamadı.',
+									'error'
+								);
+							} else {
+								Swal.fire(
+									'Hata!',
+									'Haber silinemedi. Hata kodu: ' + response.status,
+									'error'
+								);
+							}
+						})
+						.catch(error => {
+							console.error("Bir hata oluştu:", error);
+							Swal.fire(
+								'Sunucu Hatası!',
+								'Sunucuya ulaşılamadı. Lütfen tekrar deneyin.',
+								'error'
+							);
+						});
+				}
+			});
+		}
+
+		// Tıklama olayına bağlama
+		document.addEventListener("click", function (e) {
+			if (e.target.classList.contains("deleteNews")) {
+				const newsId = e.target.getAttribute("data-id");
+				deleteNews(newsId);
+			}
+		});
+
+		
+
+
+</script>
+
+
