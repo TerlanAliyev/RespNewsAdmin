@@ -35,7 +35,7 @@
                                 <div class="card-body">
                                     <form id="loginForm" method="post">
                                         <div class="mb-3">
-                                            <input type="text" id="UserName" class="form-control form-control-lg" placeholder="Username" aria-label="Username" required />
+                                            <input type="text" id="UserNickName" class="form-control form-control-lg" placeholder="Username" aria-label="Username" required />
                                         </div>
                                         <div class="mb-3">
                                             <input type="password" id="UserPassword" class="form-control form-control-lg" placeholder="Password" aria-label="Password" required />
@@ -72,15 +72,15 @@
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script src="../assets/js/argon-dashboard.min.js?v=2.1.0"></script>
     <script>
-                       document.getElementById('loginForm').addEventListener('submit', async function (event) {
+             document.getElementById('loginForm').addEventListener('submit', async function (event) {
             event.preventDefault();
 
-            var username = document.getElementById('UserName').value;
+            var nickname = document.getElementById('UserNickName').value;
             var password = document.getElementById('UserPassword').value;
 
             // LoginDto'yu oluşturuyoruz
             const loginData = {
-                UserName: username,
+                UserNickName: nickname,
                 UserPassword: password
             };
 
