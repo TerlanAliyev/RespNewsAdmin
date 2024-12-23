@@ -393,6 +393,13 @@ namespace Argon.Controllers
         public IActionResult tables() => View();
         public IActionResult Subscribers() => View();
         public IActionResult Users() => View();
+        public IActionResult Adverts() => View();
+        public IActionResult PostAdvert() => View();
+
+        public IActionResult Logos() => View();
+        public IActionResult PostLogo() => View();
+
+
         public IActionResult Links() => View();
         public IActionResult PostLinks() => View();
 

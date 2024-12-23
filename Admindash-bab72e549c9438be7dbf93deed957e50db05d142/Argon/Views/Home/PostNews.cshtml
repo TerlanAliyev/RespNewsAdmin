@@ -23,15 +23,9 @@
             position: absolute; /* 'absolute' yerine 'fixed' kullanarak tam ekran sabitleyin */
             top: 20;
             left: 10;
-            background-color: red;
+            background-color: white;
             border-radius: 0; /* Köşeleri düz yap */
         }
-
-
-
-
-
-
 
     #tooltip {
         background-color: #333;
@@ -152,12 +146,11 @@
     <!-- Haber Gönderim Formu -->
     <form id="newsForm">
         <div class="form-container">
-            <label for="newsTitle">Haber Başlığı:</label>
+            <label for="newsTitle">Xəbər başlığı:</label>
             <input type="text" id="newsTitle" name="NewsTitle" required />
 
-            <label for="newsContent">Haber İçeriği:</label>
+            <label for="newsContent">Ətraflı məlumat :</label>
             <div class="screen">
-                <i class="fa-solid fa-x"></i>
             <div id="toolbar">
                 <select class="ql-font"></select>
                 <select class="ql-size"></select>
@@ -171,34 +164,35 @@
                 <button class="ql-image"></button>
                 <button class="ql-list" value="ordered"></button>
                 <button class="ql-list" value="bullet"></button>
-                <p class="btn" id="fullscreen"><i class="fa-solid fa-expand" style="color:red;"></i></p>
+                <p class="btn" id="fullscreen"><i class="fa-solid fa-expand" style=""></i></p>
+                    <i class="fa-solid fa-x"></i>
 
             </div>
 
             <div id="editor"></div>
             </div>
 
-            <label for="newsLangId">Dil ID:</label>
+            <label for="newsLangId">Dil:</label>
             <select id="newsLangId" name="NewsLangId">
-                <option value="">Dil Seçin</option> <!-- Başlangıçta boş bir seçenek -->
+                <option value="">Dil seçin</option> <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsCategoryId">Kategori ID:</label>
+            <label for="newsCategoryId">Kateqoriya:</label>
             <select id="newsCategoryId" name="NewsCategoryId">
-                <option value="">Kategori Seçin</option>  <!-- Başlangıçta boş bir seçenek -->
+                <option value="">Kateqoriya seçin</option>  <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsOwnerId">Sahip ID:</label>
+            <label for="newsOwnerId">Xəbər sahibi:</label>
             <select id="newsOwnerId" name="NewsOwnerId">
-                <option value="">Muxbir Seçin</option> <!-- Başlangıçta boş bir seçenek -->
+                <option value="">Muxbir seçin</option> <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsAdminId">Admin ID:</label>
+            <label for="newsAdminId">Admin:</label>
             <select id="newsAdminId" name="NewsAdminId">
-                <option value="">Admin Seçin</option> <!-- Başlangıçta boş bir seçenek -->
+                <option value="">Admin seçin</option> <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsRating">Admin ID:</label>
+            <label for="newsRating">Aktuallıq</label>
             <select id="newsRating" name="NewsRating">
                 <option value="0">Aktualliq Seçin</option> <!-- Başlangıçta boş bir seçenek -->
                 <option value="5">Slider-e qoy</option> <!-- Başlangıçta boş bir seçenek -->
@@ -207,27 +201,27 @@
                 <option value="1">Hec biri</option> <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsTags">Etiketler (Boşluklarla ayırın)</label>
+            <label for="newsTags">Tag-lər (Boşluqlarla ayırın)</label>
             <input type="text" id="newsTags" name="newsTags" placeholder="#tag1 #tag2 #tag3" />
 
 
             <!-- Haber Yayın Tarihi -->
-            <label for="newsDate">Haber Yayın Tarihi:</label>
+            <label for="newsDate">Xəbər tarixi:</label>
             <input type="datetime-local" id="newsDate" name="NewsDate" />
 
             <label for="newsYoutubeLink">YouTube Link:</label>
-            <input type="url" id="newsYoutubeLink" name="NewsYoutubeLink" />
+            <input type="url" id="newsYoutubeLink" name="NewsYoutubeLink" placeholder="https://www.youtube.com/watch?v=lpeClO2689M" />
 
-            <label for="newsPhotos">Haber Fotoğrafları:</label>
+            <label for="newsPhotos">Xəbər şəkilləri:</label>
             <input type="file" id="newsPhotos" name="NewsPhotos" multiple accept="image/*" />
             <img id="photoPreview" style="display:none; max-width: 100px; max-height: 100px;" alt="Fotoğraf Önizlemesi">
 
 
-            <label for="newsVideos">Haber Videoları:</label>
+            <label for="newsVideos">Xəbər videoları:</label>
             <input type="file" id="newsVideos" name="NewsVideos" multiple accept="video/*"/>
             <div id="videoPreviewContainer"></div>
 
-            <button type="submit">Gönder</button>
+            <button type="submit">Əlavə et</button>
         </div>
     </form>
 </main>
@@ -355,7 +349,7 @@
             try {
                 const response = await fetch('https://localhost:44314/api/owner');
                 const owners = await response.json();
-                ownerSelect.innerHTML = '<option value="">Muhabir Seçin</option>';
+                ownerSelect.innerHTML = '<option value="">Müxbir seçin</option>';
                 owners.forEach(owner => {
                     const option = document.createElement('option');
                     option.value = owner.ownerId;
@@ -372,7 +366,7 @@
             try {
                 const response = await fetch('https://localhost:44314/api/languages/all');
                 const languages = await response.json();
-                langSelect.innerHTML = '<option value="">Dil Seçin</option>';
+                langSelect.innerHTML = '<option value="">Dil seçin</option>';
                 languages.forEach(language => {
                     const option = document.createElement('option');
                     option.value = language.languageId;
@@ -389,7 +383,7 @@
             try {
                 const response = await fetch(`https://localhost:44314/api/category/language/${langId}`);
                 const categories = await response.json();
-                categorySelect.innerHTML = '<option value="">Kategori Seçin</option>';
+                categorySelect.innerHTML = '<option value="">Dil seçin</option>';
                 categories.forEach(category => {
                     const option = document.createElement('option');
                     option.value = category.categoryId;
@@ -405,7 +399,7 @@
         langSelect.addEventListener('change', function () {
             const selectedLangId = langSelect.value;
             if (!selectedLangId) {
-                categorySelect.innerHTML = '<option value="">Kategori Seçin</option>';
+                categorySelect.innerHTML = '<option value="">Kateqoriya seçin</option>';
                 return;
             }
             fetchCategoriesByLanguage(selectedLangId);

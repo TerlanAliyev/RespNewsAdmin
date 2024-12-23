@@ -1,6 +1,10 @@
 ﻿<style>
     body {
         background-color: #f8f9fe;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
     }
 
     .table-container {
@@ -20,26 +24,81 @@
     hr {
         background-color: black;
     }
+
+    .add-news-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007bff;
+        color: white;
+        font-size: 24px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        text-decoration: none;
+    }
+
+    .card {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #searchInput {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #searchButton {
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .pagination .page-item .page-link {
+        color: #007bff;
+        border: 1px solid #ddd;
+        margin: 0 5px;
+        border-radius: 50%;
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #007bff;
+        color: white;
+    }
 </style>
 
 <main class="main-content position-relative border-radius-lg">
-    
-    <hr />
     <div class="row d-flex justify-content-center mt-5">
-        <div class="d-flex justify-content-center align-items-center">
-            <a href="/Home/PostLinks" class="btn btn-primary btn-lg">
-                Link Əlavə et
-            </a>
-        </div>
+        <a href="/Home/PostLinks" class="add-news-btn">
+            <i class="fa fa-plus"></i>
+        </a>
     </div>
 </main>
 
 <div class="container-fluid py-2">
     <div class="container mt-4">
-        <h1 class="text-center mb-4">Linklər Yönetimi</h1>
+        <h1 class="text-center mb-4">Linklər</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Link axtar..." class="form-control" />
+            <button id="searchButton" class="btn btn-primary" style="margin:0px 10px;">Axtar</button>
+        </div>
         <div class="card shadow">
             <div class="card-header bg-primary text-white">
-                <h4 class="mb-0">Linklər Tablosu</h4>
+                <h4 class="mb-0">Linklər Cədvəli</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -62,8 +121,92 @@
         </div>
     </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+
+
+<script>
+    let page = 0; // Sayfa numarası
+
+    document.getElementById("searchButton").addEventListener("click", () => {
+        const query = document.getElementById("searchInput").value.trim();
+
+        if (!query) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Xəbər Araşdırması',
+                text: 'Axtarış sorğusu boş ola bilməz!',
+                confirmButtonText: 'Bağla'
+            });
+            return;
+        }
+
+        // API'ye GET isteği gönder
+        fetch(`https://localhost:44314/api/search/link/${encodeURIComponent(query)}/${page}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    return response.text().then((text) => {
+                        throw new Error(text);
+                    });
+                }
+                return response.json();
+            })
+            .then((data) => {
+                const tableBody = document.querySelector("tbody");
+                tableBody.innerHTML = ""; // Mevcut sonuçları temizle
+
+                if (data.length === 0) {
+                    tableBody.innerHTML = "<tr><td colspan='8'>Sonuç bulunamadı.</td></tr>";
+                    return;
+                }
+
+                data.forEach((newsItem, index) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                         <td>${index + 1}</td>
+                        <td>${newsItem.linkName}</td>
+                        <td>
+                            <img src="${newsItem.linkCoverUrl ? 'https://localhost:44314' + newsItem.linkCoverUrl : ''}" alt="Link Fotoğrafı" style="width: 50px; height: 50px; object-fit: cover;">
+                        </td>
+                        <td>
+                            <span class="btn btn-lg status ${newsItem.linkVisibility === true ? 'active' : 'inactive'}">
+                                ${newsItem.linkVisibility === true ? 'Aktiv' : 'Passiv'}
+                            </span>
+                        </td>
+                        <td>
+                         <a href="${newsItem.linkUrl}" class="text-primary me-2 btn" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                            <a href="/Home/PutLinks/${newsItem.linkId}" class="text-primary me-2 btn">
+                                <i class="fa-solid fa-pen"></i>
+                            </a>
+                            <a class="text-danger deleteLink btn" data-id="${newsItem.linkId}">
+                                <i class="fa-solid fa-trash"></i>
+                            </a>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch((error) => {
+                console.error("Xəta:", error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Axtarış xətası',
+                    text: `Sorğu işlənərkən xəta baş verdi: ${error.message}`,
+                    confirmButtonText: 'Bağla'
+                });
+            });
+    });
+
+</script>
 <script>
     const apiUrl = "https://localhost:44314/api/Links";
     const tableBody = document.querySelector("tbody");
@@ -93,7 +236,7 @@
                             </span>
                         </td>
                         <td>
-                         <a href="${link.linkCoverUrl}" class="text-primary me-2 btn">
+                         <a href="${link.linkUrl}" class="text-primary me-2 btn" target="_blank">
                                 <i class="fa-solid fa-link"></i>
                             </a>
                             <a href="/Home/PutLinks/${link.linkId}" class="text-primary me-2 btn">

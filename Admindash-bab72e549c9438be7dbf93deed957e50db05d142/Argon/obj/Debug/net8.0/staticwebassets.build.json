@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GIvvJCfpgkSgjaWDg6eYRB0Lo0He5KCmsU56uICxLq0=",
+  "Hash": "Cv7ppSaTAA6sy6SJasrGMSBNQp4ch7g+y3XBhwQIcnM=",
   "Source": "Argon",
   "BasePath": "_content/Argon",
   "Mode": "Default",
@@ -7784,7 +7784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
+          "Value": "Mon, 23 Dec 2024 15:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7829,7 +7829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
+          "Value": "Mon, 23 Dec 2024 15:35:08 GMT"
         },
         {
           "Name": "Cache-Control",

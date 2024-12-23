@@ -1,83 +1,196 @@
-﻿
-<style>
-	body {
-		background-color: #f8f9fe;
-	}
+﻿<style>
+    body {
+        background-color: #f8f9fe;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
 
-	table {
-		max-height: 100px!important;
-		overflow: scroll;
-	}
-	.table-container {
-		padding: 20px;
-	}
+    .table-container {
+        padding: 20px;
+    }
 
-	.status.active {
-		color: #28a745;
-		font-weight: bold;
-	}
+    .status.active {
+        color: #28a745;
+        font-weight: bold;
+    }
 
-	.status.inactive {
-		color: #dc3545;
-		font-weight: bold;
-	}
+    .status.inactive {
+        color: #dc3545;
+        font-weight: bold;
+    }
 
-	hr {
-		background-color: black;
-	}
+    hr {
+        background-color: black;
+    }
 
-	pagination {
-		ul
+    .add-news-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007bff;
+        color: white;
+        font-size: 24px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        text-decoration: none;
+    }
 
-	{
-		li
+    .card {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-	{
-		padding: 10px;
-	}
+    #searchInput {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 400px;
+    }
 
-	}
-	}
+    #searchButton {
+        border-radius: 20px;
+        margin-left: 10px;
+    }
 
+    .search-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .pagination .page-item .page-link {
+        color: #007bff;
+        border: 1px solid #ddd;
+        margin: 0 5px;
+        border-radius: 50%;
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #007bff;
+        color: white;
+    }
 </style>
-<hr />
-<div class="row d-flex justify-content-center mt-5">
-	<div class="d-flex justify-content-center align-items-center">
-		<a href="/Home/PostSubscribers" class="btn btn-primary btn-lg">
-			Abonent əlavə et
-		</a>
-	</div>
-	<hr />
-<div class="container-fluid py-2 ">
-	<div class="container mt-4">
-			<h1 class="text-center mb-4">AbonentYönetimi</h1>
-		<div class="card shadow">
-			<div class="card-header bg-primary text-white">
-					<h4 class="mb-0">Abonent Tablosu</h4>
-			</div>
-			<div class="card-body">
-				<div class="table-responsive">
-					<div class="container mt-4">
-						<table class="table table-hover align-middle">
-							<thead class="table-light">
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">Email</th>
-									<th scope="col">Tarix</th>
-									<th scope="col">Əməliyyatlar</th>
-								</tr>
-							</thead>
-							<tbody id="categoryTableBody"></tbody>
-						</table>
-					</div>
 
-				</div>
-			</div>
-		</div>
-	</div>
+<main class="main-content position-relative border-radius-lg">
+    <div class="row d-flex justify-content-center mt-5">
+        <a href="/Home/PostSubscribers" class="add-news-btn">
+            <i class="fa fa-plus"></i>
+        </a>
+    </div>
+</main>
+
+<div class="container-fluid py-2">
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Abonentlər</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Abonent axtar..." class="form-control" />
+            <button id="searchButton" class="btn btn-primary" style="margin:0px 10px;">Axtar</button>
+        </div>
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Abonent cədvəli</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div class="container mt-4">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Tarix</th>
+                                    <th scope="col">Əməliyyatlar</th>
+                                </tr>
+                            </thead>
+                            <tbody id="categoryTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+     let page = 0; // Sayfa numarası
+
+    document.getElementById("searchButton").addEventListener("click", () => {
+        const query = document.getElementById("searchInput").value.trim();
+
+        if (!query) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Xəbər Araşdırması',
+                text: 'Axtarış sorğusu boş ola bilməz!',
+                confirmButtonText: 'Bağla'
+            });
+            return;
+        }
+
+        // API'ye GET isteği gönder
+        fetch(`https://localhost:44314/api/search/sub/${encodeURIComponent(query)}/${page}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    return response.text().then((text) => {
+                        throw new Error(text);
+                    });
+                }
+                return response.json();
+            })
+            .then((data) => {
+                const tableBody = document.querySelector("tbody");
+                tableBody.innerHTML = ""; // Mevcut sonuçları temizle
+
+                if (data.length === 0) {
+                    tableBody.innerHTML = "<tr><td colspan='8'>Sonuç bulunamadı.</td></tr>";
+                    return;
+                }
+
+                data.forEach((newsItem, index) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <th scope="row">${index + 1}</th>
+                            <td>${newsItem.subEmail}</td>
+                            <td>${newsItem.subDate}</td>
+                            <td>
+                                <a class="text-danger deleteNews btn" data-id="${newsItem.subId}" >
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch((error) => {
+                console.error("Xəta:", error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Axtarış xətası',
+                    text: `Sorğu işlənərkən xəta baş verdi: ${error.message}`,
+                    confirmButtonText: 'Bağla'
+                });
+            });
+    });
+</script>
 
 
 <script>

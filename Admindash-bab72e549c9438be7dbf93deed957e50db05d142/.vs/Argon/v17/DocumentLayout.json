@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\newspaper.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\newspaper.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\adverts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\adverts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\putnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\putnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\postnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\postnews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|c:\\users\\terlan aliyev\\desktop\\16 last\\respnewsadmin\\admindash-bab72e549c9438be7dbf93deed957e50db05d142\\argon\\views\\home\\postadvert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D56B5387-6C3E-4B60-86E4-427116DD494F}|Argon\\Argon.csproj|solutionrelative:argon\\views\\home\\postadvert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Adverts.cshtml",
+              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\Adverts.cshtml",
+              "RelativeDocumentMoniker": "Argon\\Views\\Home\\Adverts.cshtml",
+              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\Adverts.cshtml",
+              "RelativeToolTip": "Argon\\Views\\Home\\Adverts.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T20:05:17.816Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NewsPaper.cshtml",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\NewsPaper.cshtml",
-              "RelativeDocumentMoniker": "Argon\\Views\\Home\\NewsPaper.cshtml",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\NewsPaper.cshtml",
-              "RelativeToolTip": "Argon\\Views\\Home\\NewsPaper.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T18:18:19.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Argon\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Argon\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T18:18:11.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PutNews.cshtml",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PutNews.cshtml",
-              "RelativeDocumentMoniker": "Argon\\Views\\Home\\PutNews.cshtml",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PutNews.cshtml",
-              "RelativeToolTip": "Argon\\Views\\Home\\PutNews.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAlwBgAAAAiAAAAAAAAAA==",
+              "Title": "PostAdvert.cshtml",
+              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PostAdvert.cshtml",
+              "RelativeDocumentMoniker": "Argon\\Views\\Home\\PostAdvert.cshtml",
+              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PostAdvert.cshtml",
+              "RelativeToolTip": "Argon\\Views\\Home\\PostAdvert.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T18:13:24.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PostNews.cshtml",
-              "DocumentMoniker": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PostNews.cshtml",
-              "RelativeDocumentMoniker": "Argon\\Views\\Home\\PostNews.cshtml",
-              "ToolTip": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\PostNews.cshtml",
-              "RelativeToolTip": "Argon\\Views\\Home\\PostNews.cshtml",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAlwLIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T17:38:43.785Z",
+              "WhenOpened": "2024-12-23T19:59:57.504Z",
               "EditorCaption": ""
             }
           ]

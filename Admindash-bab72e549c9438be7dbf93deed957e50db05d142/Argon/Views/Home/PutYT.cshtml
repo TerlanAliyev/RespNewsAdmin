@@ -1,13 +1,13 @@
 ﻿<div class="container mt-5">
     <div class="card shadow border-0">
         <div class="card-header bg-gradient-primary text-white">
-            <h3 class="mb-0">Inf əlavə et</h3>
+            <h3 class="mb-0">Video redaktə et</h3>
         </div>
         <div class="card-body">
             <form id="updateForm" method="post" action="" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label for="videoTitle" class="form-label">Video Başlığı</label>
-                    <input type="text" class="form-control" id="videoTitle" name="videoTitle" required placeholder="Video Başlığı">
+                    <label for="videoTitle" class="form-label">Video başlığı</label>
+                    <input type="text" class="form-control" id="videoTitle" name="videoTitle" required placeholder="Video başlığı">
                 </div>
 
                 <div class="mb-3">
@@ -15,17 +15,17 @@
                     <input type="text" class="form-control" id="videoUrl" name="videoUrl" required placeholder="Video URL">
                 </div>
                 <div class="mb-3">
-                    <label for="videoDate" class="form-label">Video Yayın Tarihi</label>
+                    <label for="videoDate" class="form-label">Video tarixi</label>
                     <input type="datetime-local" class="form-control" id="videoDate" name="videoDate">
                 </div>
                 <div class="mb-3">
-                    <label for="videoStatus" class="form-label">Video Durumu</label>
+                    <label for="videoStatus" class="form-label">Video statusu</label>
                     <select id="videoStatus" name="videoStatus">
                         <option value="true">Aktiv</option>
                         <option value="false">DeAktiv</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Ekle</button>
+                <button type="submit" class="btn btn-primary w-100">Göndər</button>
             </form>
         </div>
     </div>

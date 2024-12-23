@@ -28,13 +28,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\argon-dashboard.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6rshqyny6f"},{"Name":"integrity","Value":"sha256-LkK\u002BKdpgOQefEhZJAZtX2HtAG6LcViw4rxRPZ574j44="},{"Name":"label","Value":"_content/Argon/css/argon-dashboard.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"587632"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LkK\u002BKdpgOQefEhZJAZtX2HtAG6LcViw4rxRPZ574j44=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:55:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"587632"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LkK\u002BKdpgOQefEhZJAZtX2HtAG6LcViw4rxRPZ574j44=\u0022"},{"Name":"Last-Modified","Value":"Mon, 23 Dec 2024 15:35:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Argon/css/argon-dashboard.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\argon-dashboard.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LkK\u002BKdpgOQefEhZJAZtX2HtAG6LcViw4rxRPZ574j44="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"587632"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LkK\u002BKdpgOQefEhZJAZtX2HtAG6LcViw4rxRPZ574j44=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:55:22 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"587632"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LkK\u002BKdpgOQefEhZJAZtX2HtAG6LcViw4rxRPZ574j44=\u0022"},{"Name":"Last-Modified","Value":"Mon, 23 Dec 2024 15:35:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Argon/css/nucleo-icons.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\nucleo-icons.css'))</AssetFile>
