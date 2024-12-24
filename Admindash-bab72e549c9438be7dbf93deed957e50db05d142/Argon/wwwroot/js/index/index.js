@@ -1,16 +1,4 @@
-﻿
-
-
-
-
-
-
-
-
-
-
-
-var swiper2 = new Swiper(".mySwiper2", {
+﻿var swiper2 = new Swiper(".mySwiper2", {
 	direction: "vertical",
 	pagination: {
 		el: ".swiper-pagination",

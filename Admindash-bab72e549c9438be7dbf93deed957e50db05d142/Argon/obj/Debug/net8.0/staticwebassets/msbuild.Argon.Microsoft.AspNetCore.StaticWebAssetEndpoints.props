@@ -1332,17 +1332,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t0cez7igzl"},{"Name":"integrity","Value":"sha256-XdN/58WFXT1iv\u002BDnHhQ7ly\u002BMenH4nAzaaJ\u002B6n3e4kLs="},{"Name":"label","Value":"_content/Argon/js/core/popper.min.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"20086"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022XdN/58WFXT1iv\u002BDnHhQ7ly\u002BMenH4nAzaaJ\u002B6n3e4kLs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:55:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Argon/js/index/index.26fofzbmnu.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index\index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"26fofzbmnu"},{"Name":"integrity","Value":"sha256-ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A="},{"Name":"label","Value":"_content/Argon/js/index/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3644"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A=\u0022"},{"Name":"Last-Modified","Value":"Tue, 24 Dec 2024 17:37:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Argon/js/index/index.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index\index.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uP\u002BqQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T\u002Bmznv8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3668"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uP\u002BqQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T\u002Bmznv8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 16:25:47 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Argon/js/index/index.k549nfjlog.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index\index.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k549nfjlog"},{"Name":"integrity","Value":"sha256-uP\u002BqQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T\u002Bmznv8="},{"Name":"label","Value":"_content/Argon/js/index/index.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3668"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022uP\u002BqQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T\u002Bmznv8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 16:25:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3644"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A=\u0022"},{"Name":"Last-Modified","Value":"Tue, 24 Dec 2024 17:37:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Argon/js/news/PutNews.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\news\PutNews.js'))</AssetFile>

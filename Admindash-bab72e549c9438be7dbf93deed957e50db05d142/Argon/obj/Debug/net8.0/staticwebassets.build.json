@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cv7ppSaTAA6sy6SJasrGMSBNQp4ch7g+y3XBhwQIcnM=",
+  "Hash": "/6Qhc68l2RJSm1ddS+s/TGFBHJ2014dNIV51so48x+E=",
   "Source": "Argon",
   "BasePath": "_content/Argon",
   "Mode": "Default",
@@ -2383,8 +2383,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "k549nfjlog",
-      "Integrity": "uP+qQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T+mznv8=",
+      "Fingerprint": "26fofzbmnu",
+      "Integrity": "ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\index\\index.js"
@@ -16700,6 +16700,51 @@
       ]
     },
     {
+      "Route": "js/index/index.26fofzbmnu.js",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\index\\index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:37:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26fofzbmnu"
+        },
+        {
+          "Name": "label",
+          "Value": "js/index/index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A="
+        }
+      ]
+    },
+    {
       "Route": "js/index/index.js",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\index\\index.js",
       "Selectors": [],
@@ -16710,7 +16755,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3668"
+          "Value": "3644"
         },
         {
           "Name": "Content-Type",
@@ -16718,11 +16763,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uP+qQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T+mznv8=\""
+          "Value": "\"ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 16:25:47 GMT"
+          "Value": "Tue, 24 Dec 2024 17:37:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16732,52 +16777,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uP+qQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T+mznv8="
-        }
-      ]
-    },
-    {
-      "Route": "js/index/index.k549nfjlog.js",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\index\\index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3668"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uP+qQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T+mznv8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 16:25:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "k549nfjlog"
-        },
-        {
-          "Name": "label",
-          "Value": "js/index/index.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-uP+qQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T+mznv8="
+          "Value": "sha256-ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A="
         }
       ]
     },

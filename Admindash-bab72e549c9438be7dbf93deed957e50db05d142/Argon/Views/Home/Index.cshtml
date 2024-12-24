@@ -5,6 +5,7 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 <script>
 	window.onload = function () {
@@ -93,7 +94,7 @@
 								<div class="numbers">
 									<p class="text-sm mb-0 text-uppercase font-weight-bold">Xəbərlər</p>
 									<h5 class="font-weight-bolder">
-										@ViewData["NewsCount"]
+										 @ViewData["NewsCount"] 
 									</h5>
 								</div>
 							</div>
@@ -181,3 +182,22 @@
 <script src="~/js/plugins/chartjs.min.js"></script>
 <script src="~/js/index/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+
+
+		window.onload = function () {
+		const userRole = localStorage.getItem('userRole');
+		console.log('Kullanıcı Rolü (Index):', userRole);
+
+		const superAdminMenu = document.getElementById('superAdminMenu');
+		if (userRole !== 'SuperAdmin' && superAdminMenu) {
+			console.log('SuperAdmin değil, menü gizleniyor.');
+			superAdminMenu.style.display = 'none';
+		} else {
+			console.log('SuperAdmin, menü gösteriliyor.');
+		}
+	};
+
+
+</script>
+

@@ -320,7 +320,7 @@
 
 <script>
 
-    const apiUrl = "https://localhost:44314/api/news/admin/";
+      const apiUrl = "https://localhost:44314/api/news/admin/";
     const tableBody = document.querySelector("tbody");
     const prevPageButton = document.getElementById("prevPage");
     const nextPageButton = document.getElementById("nextPage");
@@ -330,79 +330,88 @@
     const startDate = "2024-12-01";
     const endDate = "2024-12-31";
 
-    function fetchNews(page) {
-        tableBody.innerHTML = ""; // Önceki verileri temizle
-        const url = new URL(apiUrl + page);
-        if (startDate) url.searchParams.append("startDate", startDate);
-        if (endDate) url.searchParams.append("endDate", endDate);
+    async function fetchNews(page) {
+        try {
+            tableBody.innerHTML = ""; // Önceki verileri temizle
+            const url = new URL(apiUrl + page);
+            if (startDate) url.searchParams.append("startDate", startDate);
+            if (endDate) url.searchParams.append("endDate", endDate);
 
-        fetch(url)
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error("Xəbərlər gətirilə bilmədi");
+            // Fetch isteği
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('jwtToken')}`, // Token ekleniyor
+                    'Content-Type': 'application/json'
                 }
-                return response.json();
-            })
-            .then((newsItems) => {
-                console.log(newsItems)
-
-                if (newsItems.length === 0) {
-                    nextPageButton.disabled = true; // Son sayfa
-                    if (page > 0) currentPage--; // Geri al
-                    return;
-                }
-
-                newsItems.forEach((newsItem, index) => {
-                    const row = document.createElement("tr");
-                    row.innerHTML = `
-                        <td>${index + 1 + page * 10}</td>
-                        <td>${newsItem.newsTitle}</td>
-                        <td>
-                            ${newsItem.newsPhotos?.length > 0 ? `
-                            <img src="${newsItem.newsPhotos[0]?.photoUrl ? 'https://localhost:44314/' + newsItem.newsPhotos[0].photoUrl : ''}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">
-
-                            ` : "Şəkil yoxdur"}
-                        </td>
-                        <td>${new Date(newsItem.newsDate).toLocaleDateString()}</td>
-                        <td>${newsItem.newsAdmin?.userName || "Bilinmir"}</td>
-                        <td>${newsItem.newsOwner?.ownerName || "Bilinmir"}</td>
-                                <td>
-        <span class="btn btn-lg status ${newsItem.newsVisibility ? "active" : "inactive"}">
-            ${newsItem.newsVisibility ? "Aktiv" : "Passiv"}
-        </span>
-    </td>
-
-                        <td>
-                            <a href="#" class="text-dark me-2 btn">
-                                <i class="fa-solid fa-eye"></i>
-                            </a>
-                            <a href="/Home/PutNews/${newsItem.newsId}" class="text-primary me-2 btn">
-                                <i class="fa-solid fa-pen"></i>
-                            </a>
-                            <a class="text-danger deleteNews btn" data-id="${newsItem.newsId}">
-                                <i class="fa-solid fa-trash"></i>
-                            </a>
-                        </td>
-                    `;
-                    tableBody.appendChild(row);
-                });
-
-                nextPageButton.disabled = newsItems.length < 10; // Eğer veri 10'dan azsa, son sayfa
-            })
-            .catch((error) => {
-                console.error("Xəta:", error);
             });
+
+            // Yetkilendirme kontrolü
+            if (response.status === 401) {
+                throw new Error("Yetkilendirme hatası: Lütfen giriş yapın veya erişim izniniz olduğundan emin olun.");
+            } else if (response.status === 403) {
+                throw new Error("Erişim izniniz bulunmuyor: FullAdmin rolüne sahip değilsiniz.");
+            } else if (!response.ok) {
+                throw new Error("Xəbərlər gətirilə bilmədi");
+            }
+
+            const newsItems = await response.json();
+            console.log(newsItems);
+
+            // Gelen verilerle tabloyu güncelle
+            if (newsItems.length === 0) {
+                nextPageButton.disabled = true; // Son sayfa
+                if (page > 0) currentPage--; // Geri al
+                return;
+            }
+
+            newsItems.forEach((newsItem, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${index + 1 + page * 10}</td>
+                    <td>${newsItem.newsTitle}</td>
+                    <td>
+                        ${newsItem.newsPhotos?.length > 0 ? `
+                        <img src="${newsItem.newsPhotos[0]?.photoUrl ? 'https://localhost:44314/' + newsItem.newsPhotos[0].photoUrl : ''}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">
+                        ` : "Şəkil yoxdur"}
+                    </td>
+                    <td>${new Date(newsItem.newsDate).toLocaleDateString()}</td>
+                    <td>${newsItem.newsAdmin?.userName || "Bilinmir"}</td>
+                    <td>${newsItem.newsOwner?.ownerName || "Bilinmir"}</td>
+                    <td>
+                        <span class="btn btn-lg status ${newsItem.newsVisibility ? "active" : "inactive"}">
+                            ${newsItem.newsVisibility ? "Aktiv" : "Passiv"}
+                        </span>
+                    </td>
+                    <td>
+                        <a href="#" class="text-dark me-2 btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </a>
+                        <a href="/Home/PutNews/${newsItem.newsId}" class="text-primary me-2 btn">
+                            <i class="fa-solid fa-pen"></i>
+                        </a>
+                        <a class="text-danger deleteNews btn" data-id="${newsItem.newsId}">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+
+            nextPageButton.disabled = newsItems.length < 10; // Eğer veri 10'dan azsa, son sayfa
+        } catch (error) {
+            console.error("Xəta:", error.message);
+            alert(error.message); // Kullanıcıya hata mesajını göster
+        }
     }
 
     // İlk sayfayı yükle
     fetchNews(currentPage);
 
-    // Önceki ve Sonraki düğmelere tıklama olayları
+    // Önceki ve sonraki düğmelere tıklama olayları
     prevPageButton.addEventListener("click", () => {
-        alert()
         if (currentPage > 0) {
             currentPage--;
-            console.log(currentPage)
             fetchNews(currentPage);
             currentPageDisplay.textContent = currentPage + 1;
             nextPageButton.disabled = false;
@@ -413,15 +422,12 @@
     });
 
     nextPageButton.addEventListener("click", () => {
-        alert()
-
         currentPage++;
-            console.log(currentPage)
-
         fetchNews(currentPage);
         currentPageDisplay.textContent = currentPage + 1;
         prevPageButton.disabled = false;
     });
+
 
                     tableBody.addEventListener("click", (e) => {
         const statusButton = e.target.closest(".status");

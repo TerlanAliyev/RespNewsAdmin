@@ -188,9 +188,7 @@
             </select>
 
             <label for="newsAdminId">Admin:</label>
-            <select id="newsAdminId" name="NewsAdminId">
-                <option value="">Admin seçin</option> <!-- Başlangıçta boş bir seçenek -->
-            </select>
+            <input type="text" id="newsAdminId" name="NewsAdminId" value="" disabled />
 
             <label for="newsRating">Aktuallıq</label>
             <select id="newsRating" name="NewsRating">
@@ -254,6 +252,38 @@
 </script>
 
 <script>
+      // JWT Token Çözümleme Fonksiyonu
+    function parseJwt(token) {
+        try {
+            const base64Url = token.split('.')[1]; // Token'in payload kısmı
+            const base64 = atob(base64Url.replace(/-/g, '+').replace(/_/g, '/'));
+            return JSON.parse(decodeURIComponent(escape(base64)));
+        } catch (error) {
+            console.error('Token çözümleme hatası:', error);
+            return null;
+        }
+    }
+
+    // Sayfa yüklendiğinde token'i çöz ve newsAdminId'yi ata
+    window.onload = function () {
+        const token = localStorage.getItem('jwtToken'); // Token'i localStorage'dan al
+        if (token) {
+            const decodedToken = parseJwt(token); // Token'i çöz
+            const adminId = decodedToken?.userName; // Token'den admin ID'yi al
+
+            if (adminId) {
+                const newsAdminIdSelect = document.getElementById('newsAdminId');
+                newsAdminIdSelect.value = adminId; // Admin ID'yi value olarak ayarla
+                newsAdminIdSelect.textContent = `Admin #${adminId}`; // Görünen metni ayarla
+            }
+        } else {
+            console.warn('Token bulunamadı veya geçersiz.');
+        }
+    };
+
+
+
+
     document.addEventListener("DOMContentLoaded", () => {
         const tagContainer = document.getElementById("tag-container");
         const tagInput = document.getElementById("tag-input");
@@ -316,33 +346,33 @@
         const categorySelect = document.getElementById('newsCategoryId');
 
         // Admin verilerini API'den çek
-        async function fetchAdmins() {
-            console.log('Admin verileri çekiliyor...');
-            try {
-                const response = await fetch('https://localhost:44314/api/user/users');
-                if (!response.ok) {
-                    console.error(`HTTP Hatası: ${response.status}`);
-                    return;
-                }
+        // async function fetchAdmins() {
+        //     console.log('Admin verileri çekiliyor...');
+        //     try {
+        //         const response = await fetch('https://localhost:44314/api/user/users');
+        //         if (!response.ok) {
+        //             console.error(`HTTP Hatası: ${response.status}`);
+        //             return;
+        //         }
 
-                const admins = await response.json();
-                console.log('API Yanıtı:', admins);
+        //         const admins = await response.json();
+        //         console.log('API Yanıtı:', admins);
 
-                if (!admins || admins.length === 0) {
-                    console.warn('Admin listesi boş veya mevcut değil!');
-                } else {
-                    adminSelect.innerHTML = '<option value="">Admin Seçin</option>';
-                    admins.forEach(admin => {
-                        const option = document.createElement('option');
-                        option.value = admin.userId;
-                        option.textContent = admin.userName;
-                        adminSelect.appendChild(option);
-                    });
-                }
-            } catch (error) {
-                console.error('Admin verileri alınamadı:', error);
-            }
-        }
+        //         if (!admins || admins.length === 0) {
+        //             console.warn('Admin listesi boş veya mevcut değil!');
+        //         } else {
+        //             adminSelect.innerHTML = '<option value="">Admin Seçin</option>';
+        //             admins.forEach(admin => {
+        //                 const option = document.createElement('option');
+        //                 option.value = admin.userId;
+        //                 option.textContent = admin.userName;
+        //                 adminSelect.appendChild(option);
+        //             });
+        //         }
+        //     } catch (error) {
+        //         console.error('Admin verileri alınamadı:', error);
+        //     }
+        // }
 
         // Owner verilerini API'den çek
         async function fetchOwners() {
@@ -408,7 +438,7 @@
         // Sayfa yüklendiğinde dil ve owner verilerini çek
         fetchLanguages();
         fetchOwners();
-        fetchAdmins();
+        // fetchAdmins();
     });
 
     // Quill editor setup

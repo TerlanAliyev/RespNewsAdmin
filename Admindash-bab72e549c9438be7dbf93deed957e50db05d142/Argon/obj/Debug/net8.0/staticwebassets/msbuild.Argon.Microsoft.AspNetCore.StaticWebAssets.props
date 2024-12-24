@@ -2010,8 +2010,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k549nfjlog</Fingerprint>
-      <Integrity>uP+qQlCWEPvYxMQsoUJibIR//inFCAm3Pvg9T+mznv8=</Integrity>
+      <Fingerprint>26fofzbmnu</Fingerprint>
+      <Integrity>ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index\index.js'))</OriginalItemSpec>

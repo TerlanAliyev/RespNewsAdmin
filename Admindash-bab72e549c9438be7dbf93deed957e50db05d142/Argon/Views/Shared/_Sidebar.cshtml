@@ -64,15 +64,7 @@
                     <span class="nav-link-text ms-1">Youtube Videolari</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/Home/Links">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-link" style="color:black;"></i>
-
-                    </div>
-                    <span class="nav-link-text ms-1">Əlavə keçidlər</span>
-                </a>
-            </li>
+            
             <li class="nav-item">
                 <a class="nav-link " href="/Home/Users">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
@@ -97,6 +89,15 @@
 
             <li class="nav-item mt-3">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Sazlamalar</h6>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/Home/Links">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-link" style="color:black;"></i>
+
+                    </div>
+                    <span class="nav-link-text ms-1">Əlavə keçidlər</span>
+                </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="/Home/Logos">
@@ -128,7 +129,17 @@
             <li class="nav-item mt-3">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Digər</h6>
             </li>
-            <li class="nav-item">
+            <li class="nav-item logoutButton" id="superAdminMenu">
+                <a class="nav-link" href="/Home/SignUp" id="restrictedLink">
+                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-right-from-bracket" style="color:black;"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Qeydiyyat</span>
+                </a>
+            </li>
+
+
+            <li class="nav-item logoutButton">
                 <a class="nav-link " href="/Home/logout">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="fa-solid fa-right-from-bracket" style="color:black;"></i>
@@ -139,6 +150,56 @@
            
         </ul>
     </div>
+
+
+
+
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+
+                document.addEventListener("DOMContentLoaded", function () {
+            const restrictedLink = document.getElementById('restrictedLink'); // Link elementini al
+            const userRole = localStorage.getItem('userRole'); // Kullanıcı rolünü al
+
+            // Linke tıklama olayını dinle
+            restrictedLink.addEventListener('click', function (event) {
+                if (userRole !== 'SuperAdmin') {
+                    event.preventDefault(); // Varsayılan bağlantı davranışını engelle
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Yetkiniz Yoxdur!',
+                        text: 'Bu əməliyyatı yalnız SuperAdmin istifadəçiləri edə bilər.',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                } else {
+                    // Eğer SuperAdmin ise, bağlantıyı izlemeye izin ver
+                    console.log('SuperAdmin, bağlantıya erişebilir.');
+                }
+            });
+        });
+
+
+
+    </script>
+    <script>
+        // Bütün linkləri seç
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            // Hər linkə klik olayını əlavə et
+            link.addEventListener('click', function () {
+                // Aktiv olan sinfi sil
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                // İndiki kliklənən linkə "active" sinfini əlavə et
+                this.classList.add('active');
+            });
+        });
+    </script>
     <script>
         document.getElementById("clearPhotosCacheButton").addEventListener("click", async () => {
             try {
