@@ -32,13 +32,19 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-     document.addEventListener("DOMContentLoaded", function () {
+
+        // Production ortamına hazırlanan script
+
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+
+    document.addEventListener("DOMContentLoaded", function () {
         const path = window.location.pathname;
         const id = path.split("/").pop();
         console.log("ID: ", id);
 
         // API'den veri almak
-        fetch(`https://localhost:44314/api/Links/id/${id}`)
+        fetch(`${baseUrl}/api/Links/id/${id}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Veri alınamadı.");
@@ -56,7 +62,7 @@
 
                     if (data.linkCoverUrl) {
                         const img = document.createElement("img");
-                        img.src = `https://localhost:44314/${data.linkCoverUrl}`;
+                        img.src = `${baseUrl}/${data.linkCoverUrl}`;
                         img.style.maxWidth = "200px";
                         img.style.maxHeight = "200px";
                         img.style.objectFit = "cover";
@@ -92,49 +98,49 @@
         });
 
         // Form gönderimi
-            document.getElementById("categoryForm").addEventListener("submit", async function (event) {
-        event.preventDefault();
+        document.getElementById("categoryForm").addEventListener("submit", async function (event) {
+            event.preventDefault();
 
-        const formData = new FormData(event.target);
+            const formData = new FormData(event.target);
 
-        // Fotoğraf seçilmişse, FormData'ya ekle
-        const fileInput = document.getElementById("LinkCoverFile");
-        if (fileInput.files.length > 0) {
-            formData.append("LinkCoverUrl", fileInput.files[0]); // İsim "LinkCoverUrl" olmalı
-        }
+            // Fotoğraf seçilmişse, FormData'ya ekle
+            const fileInput = document.getElementById("LinkCoverFile");
+            if (fileInput.files.length > 0) {
+                formData.append("LinkCoverUrl", fileInput.files[0]); // İsim "LinkCoverUrl" olmalı
+            }
 
-        try {
-            const response = await fetch(`https://localhost:44314/api/Links/edit/${id}`, {
-                method: "PUT",
-                body: formData,
-            });
-
-            if (response.ok) {
-                const result = await response.json();
-                Swal.fire({
-                    icon: "success",
-                    title: "Başarılı!",
-                    text: result.Message || "Link başarıyla güncellendi.",
-                }).then(() => {
-                    window.location.replace("/Home/Links");
+            try {
+                const response = await fetch(`${baseUrl}/api/Links/edit/${id}`, {
+                    method: "PUT",
+                    body: formData,
                 });
-            } else {
-                const errorText = await response.text();
+
+                if (response.ok) {
+                    const result = await response.json();
+                    Swal.fire({
+                        icon: "success",
+                        title: "Başarılı!",
+                        text: result.Message || "Link başarıyla güncellendi.",
+                    }).then(() => {
+                        window.location.replace("/Home/Links");
+                    });
+                } else {
+                    const errorText = await response.text();
+                    Swal.fire({
+                        icon: "error",
+                        title: "Hata!",
+                        text: errorText,
+                    });
+                }
+            } catch (error) {
+                console.error("İstek başarısız oldu:", error);
                 Swal.fire({
                     icon: "error",
-                    title: "Hata!",
-                    text: errorText,
+                    title: "Bağlantı Hatası",
+                    text: error.message,
                 });
             }
-        } catch (error) {
-            console.error("İstek başarısız oldu:", error);
-            Swal.fire({
-                icon: "error",
-                title: "Bağlantı Hatası",
-                text: error.message,
-            });
-        }
+        });
     });
 
-    });
 </script>

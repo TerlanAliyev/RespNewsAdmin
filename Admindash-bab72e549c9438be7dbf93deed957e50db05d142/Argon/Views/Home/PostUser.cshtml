@@ -35,39 +35,44 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-                  document.getElementById("UserForm").addEventListener("submit", async (event) => {
+
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+
+    document.getElementById("UserForm").addEventListener("submit", async (event) => {
         event.preventDefault(); // Formun varsayılan submit davranışını engelle
 
         const formData = new FormData(event.target); // Form verilerini al
-
         try {
-            const response = await fetch("https://localhost:44314/api/user", {
+            const response = await fetch(`${baseUrl}/api/user`, {
                 method: "POST",
                 body: formData,
             });
 
             if (response.ok) {
-                // Başarılı yanıt
-                const result = await response.json();
+                const result = response.headers.get("Content-Type")?.includes("application/json")
+                    ? await response.json()
+                    : { message: "İşlem başarılı ancak yanıt JSON değil." };
+
                 Swal.fire({
                     icon: 'success',
                     title: 'Uğurlu əməliyyat',
-                    text: result.message || "Kullanıcı başarıyla eklendi.",
+                    text: result.message,
                 });
 
-                // Formu temizleyin
                 event.target.reset();
             } else {
-                // API'den dönen hata
-                const errorText = await response.json();
+                const errorText = response.headers.get("Content-Type")?.includes("application/json")
+                    ? await response.json()
+                    : { message: "Bir hata oluştu ancak detay verilmedi." };
+
                 Swal.fire({
                     icon: 'error',
                     title: 'Xəta',
-                    text: errorText.message || "Kullanıcı eklenemedi.",
+                    text: errorText.message,
                 });
             }
         } catch (error) {
-            // JavaScript hatası
             console.error("İstek başarısız oldu:", error);
             Swal.fire({
                 icon: 'error',
@@ -76,8 +81,5 @@
             });
         }
     });
-
-
-
 
 </script>

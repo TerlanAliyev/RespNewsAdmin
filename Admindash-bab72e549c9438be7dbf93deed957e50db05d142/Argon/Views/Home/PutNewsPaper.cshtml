@@ -49,12 +49,17 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-          document.addEventListener("DOMContentLoaded", function () {
+             // Production ortamına hazırlanan script
+
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+
+    document.addEventListener("DOMContentLoaded", function () {
         const path = window.location.pathname;
         const id = path.split('/').pop();
         console.log("ID: ", id);
 
-        fetch(`https://localhost:44314/api/newspaper/${id}`)
+        fetch(`${baseUrl}/api/newspaper/${id}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Veri alınırken bir hata oluştu.");
@@ -75,16 +80,16 @@
                     }
 
                     const coverPreview = document.getElementById("coverPreview");
-                      if (data.newspaperCoverUrl) {
-        const coverUrl = `https://localhost:44314/${data.newspaperCoverUrl}`;
-        coverPreview.innerHTML = `<img src="${coverUrl}" style="max-width: 200px; max-height: 200px; object-fit: cover;" alt="Qəzet Üzqapağı">`;
-    } else {
-        console.warn("Resim URL'si boş veya null.");
-        coverPreview.innerHTML = `<p>Resim yüklenemedi.</p>`;
-    }
+                    if (data.newspaperCoverUrl) {
+                        const coverUrl = `${baseUrl}/${data.newspaperCoverUrl}`;
+                        coverPreview.innerHTML = `<img src="${coverUrl}" style="max-width: 200px; max-height: 200px; object-fit: cover;" alt="Qəzet Üzqapağı">`;
+                    } else {
+                        console.warn("Resim URL'si boş veya null.");
+                        coverPreview.innerHTML = `<p>Resim yüklenemedi.</p>`;
+                    }
 
                     const pdfPreview = document.getElementById("pdfPreview");
-                    pdfPreview.innerHTML = `<a href="https://localhost:44314/${data.newspaperPdfUrl}" target="_blank">PDF'yi İndir</a>`;
+                    pdfPreview.innerHTML = `<a href="${baseUrl}/${data.newspaperPdfUrl}" target="_blank">PDF'yi İndir</a>`;
                 }
             })
             .catch(error => {
@@ -96,53 +101,52 @@
                 });
             });
 
-                document.getElementById("updateForm").addEventListener("submit", function (event) {
-        event.preventDefault();
+        document.getElementById("updateForm").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-        const formData = new FormData();
-        formData.append("NewspaperTitle", document.getElementById("NewspaperTitle").value);
-        formData.append("NewspaperLinkFlip", document.getElementById("NewspaperLinkFlip").value);
-        formData.append("NewspaperDate", document.getElementById("NewspaperDate").value);
-        formData.append("NewspaperPrice", document.getElementById("NewspaperPrice").value);
-        formData.append("NewspaperStatus", document.getElementById("NewspaperStatus").checked);
+            const formData = new FormData();
+            formData.append("NewspaperTitle", document.getElementById("NewspaperTitle").value);
+            formData.append("NewspaperLinkFlip", document.getElementById("NewspaperLinkFlip").value);
+            formData.append("NewspaperDate", document.getElementById("NewspaperDate").value);
+            formData.append("NewspaperPrice", document.getElementById("NewspaperPrice").value);
+            formData.append("NewspaperStatus", document.getElementById("NewspaperStatus").checked);
 
-        const coverFile = document.getElementById("NewspaperCoverUrl").files[0];
-        if (coverFile) {
-            formData.append("NewspaperCoverUrl", coverFile);
-        }
+            const coverFile = document.getElementById("NewspaperCoverUrl").files[0];
+            if (coverFile) {
+                formData.append("NewspaperCoverUrl", coverFile);
+            }
 
-        const pdfFile = document.getElementById("NewspaperPdfFile").files[0];
-        if (pdfFile) {
-            formData.append("NewspaperPdfFile", pdfFile);
-        }
+            const pdfFile = document.getElementById("NewspaperPdfFile").files[0];
+            if (pdfFile) {
+                formData.append("NewspaperPdfFile", pdfFile);
+            }
 
-        fetch(`https://localhost:44314/api/newspaper/edit/${id}`, {
-            method: 'PUT',
-            body: formData
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Veri güncellenirken bir hata oluştu.");
-                }
-                return response.json();
+            fetch(`${baseUrl}/api/newspaper/edit/${id}`, {
+                method: 'PUT',
+                body: formData
             })
-            .then(result => {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Başarılı!',
-                    text: result.Message || 'Haber başarıyla güncellendi.'
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Veri güncellenirken bir hata oluştu.");
+                    }
+                    return response.json();
+                })
+                .then(result => {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Başarılı!',
+                        text: result.Message || 'Haber başarıyla güncellendi.'
+                    });
+                })
+                .catch(error => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Bir hata oluştu',
+                        text: error.message || 'API çağrısı başarısız oldu.'
+                    });
+                    console.error("API çağrısı başarısız:", error);
                 });
-            })
-            .catch(error => {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Bir hata oluştu',
-                    text: error.message || 'API çağrısı başarısız oldu.'
-                });
-                console.error("API çağrısı başarısız:", error);
-            });
-    });
-
+        });
     });
 
 

@@ -142,7 +142,18 @@
 
 
 <script>
-        document.getElementById("searchButton").addEventListener("click", () => {
+
+        // Production ortamına hazırlanan script
+
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+    const apiUrl = `${baseUrl}/api/newspaper/all/`;
+    const tableBody = document.querySelector("tbody");
+    const prevPageButton = document.getElementById("prevPage");
+    const nextPageButton = document.getElementById("nextPage");
+    const currentPageDisplay = document.getElementById("currentPage");
+
+    document.getElementById("searchButton").addEventListener("click", () => {
         const query = document.getElementById("searchInput").value.trim();
         const pageNumber = 0; // İlk sayfa
 
@@ -158,7 +169,7 @@
         }
 
         // API'ye GET isteği gönder
-        const apiUrl = `https://localhost:44314/api/search/newspaper/${encodeURIComponent(query)}/${pageNumber}`;
+        const apiUrl = `${baseUrl}/api/search/newspaper/${encodeURIComponent(query)}/${pageNumber}`;
         fetch(apiUrl, {
             method: "GET",
             headers: {
@@ -194,7 +205,7 @@
                         <td>
                             ${
                                 newsItem.newspaperCoverUrl
-                                    ? `<img src="https://localhost:44314/${newsItem.newspaperCoverUrl}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">`
+                                    ? `<img src="${baseUrl}/${newsItem.newspaperCoverUrl}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">`
                                     : "Şəkil yoxdur"
                             }
                         </td>
@@ -227,16 +238,10 @@
             });
     });
 
-</script>
+
+        // Production ortamına hazırlanan script
 
 
-
-<script>
-    const apiUrl = "https://localhost:44314/api/newspaper/all/";
-    const tableBody = document.querySelector("tbody");
-    const prevPageButton = document.getElementById("prevPage");
-    const nextPageButton = document.getElementById("nextPage");
-    const currentPageDisplay = document.getElementById("currentPage");
 
     let currentPage = 0;
     const startDate = "2024-12-01";
@@ -268,7 +273,7 @@
                         <td>${index + 1 + page * 5}</td>
                         <td>${newsItem.newspaperTitle}</td>
                         <td>
-                         <img src="${newsItem.newspaperCoverUrl ? 'https://localhost:44314/' + newsItem.newspaperCoverUrl : ''}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">
+                         <img src="${newsItem.newspaperCoverUrl ? `${baseUrl}/${newsItem.newspaperCoverUrl}` : ''}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">
                         </td>
                         <td>${new Date(newsItem.newspaperDate).toLocaleDateString()}</td>
                         <td>
@@ -277,7 +282,6 @@
                             </span>
                         </td>
                         <td>
-                                
                                 <a href="/Home/PutNewsPaper/${newsItem.newspaperId}" class="text-primary me-2 btn">
                                     <i class="fa-solid fa-pen"></i>
                                 </a>
@@ -319,7 +323,8 @@
         prevPageButton.disabled = false;
     });
 
-                   tableBody.addEventListener("click", (e) => {
+    // Durum güncelleme (Aktiv/Passiv)
+    tableBody.addEventListener("click", (e) => {
         const statusButton = e.target.closest(".status");
         if (statusButton) {
             const row = statusButton.closest("tr");
@@ -327,8 +332,7 @@
             const currentStatus = statusButton.textContent.trim() === "Aktiv";
             const newStatus = !currentStatus;
 
-            // PUT isteği ile yeni durumu gönder
-            fetch(`https://localhost:44314/api/newspaper/${newsId}/visibility`, {
+            fetch(`${baseUrl}/api/newspaper/${newsId}/visibility`, {
                 method: "PUT",  // PUT metodu kullanıyoruz
                 headers: {
                     "Content-Type": "application/json",
@@ -341,7 +345,6 @@
                     statusButton.classList.toggle("active", newStatus);
                     statusButton.classList.toggle("inactive", !newStatus);
 
-                    // SweetAlert ile başarılı mesajı
                     Swal.fire({
                         title: 'Uğurlu!',
                         text: 'Xəbər statusu uğurla yenilendi!',
@@ -355,7 +358,6 @@
             .catch((error) => {
                 console.error("Hata:", error);
 
-                // SweetAlert ile hata mesajı
                 Swal.fire({
                     title: 'Xəta!',
                     text: 'Status yenilənərkən bir xəta baş verdi.',
@@ -366,8 +368,7 @@
         }
     });
 
-
-        // DELETE isteği atan fonksiyon
+    // DELETE isteği atan fonksiyon
     function deleteNews(id) {
         Swal.fire({
             title: 'Emin misiniz?',
@@ -380,8 +381,7 @@
             cancelButtonText: 'Hayır, iptal et'
         }).then((result) => {
             if (result.isConfirmed) {
-                // DELETE isteği gönder
-                fetch(`https://localhost:44314/api/newspaper/id/${id}`, {
+                fetch(`${baseUrl}/api/newspaper/id/${id}`, {
                     method: "DELETE",
                     headers: {
                         "Content-Type": "application/json"
@@ -396,7 +396,6 @@
                             showConfirmButton: false,
                             timer: 1500
                         }).then(() => {
-                            // Sayfayı yenile
                             window.location.reload();
                         });
                     } else if (response.status === 404) {
@@ -425,8 +424,6 @@
         });
     }
 
-
-
     // Örnek: Bir buton tıklanma olayına bağlama
     document.addEventListener("click", function (e) {
         if (e.target.classList.contains("deleteNews")) {
@@ -435,8 +432,206 @@
         }
     });
 
+</script>
 
 
+
+<script>
+      // Production ortamına hazırlanan script
+
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+
+    co
+
+    let currentPage = 0;
+    const startDate = "2024-12-01";
+    const endDate = "2024-12-31";
+
+    function fetchNews(page) {
+        tableBody.innerHTML = ""; // Önceki verileri temizle
+        const url = new URL(apiUrl + page);
+        if (startDate) url.searchParams.append("startDate", startDate);
+        if (endDate) url.searchParams.append("endDate", endDate);
+
+        fetch(url)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Qazetler getirilemedi");
+                }
+                return response.json();
+            })
+            .then((newsItems) => {
+                if (newsItems.length === 0) {
+                    nextPageButton.disabled = true; // Son sayfa
+                    if (page > 0) currentPage--; // Geri al
+                    return;
+                }
+
+                newsItems.forEach((newsItem, index) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${index + 1 + page * 5}</td>
+                        <td>${newsItem.newspaperTitle}</td>
+                        <td>
+                         <img src="${newsItem.newspaperCoverUrl ? `${baseUrl}/${newsItem.newspaperCoverUrl}` : ''}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">
+                        </td>
+                        <td>${new Date(newsItem.newspaperDate).toLocaleDateString()}</td>
+                        <td>
+                            <span class="btn btn-lg status ${newsItem.newspaperStatus ? "active" : "inactive"}">
+                                ${newsItem.newspaperStatus ? "Aktiv" : "Passiv"}
+                            </span>
+                        </td>
+                        <td>
+                                <a href="/Home/PutNewsPaper/${newsItem.newspaperId}" class="text-primary me-2 btn">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                                <a class="text-danger deleteNews btn" data-id="${newsItem.newspaperId}">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+
+                nextPageButton.disabled = newsItems.length < 10; // Eğer veri 10'dan azsa, son sayfa
+            })
+            .catch((error) => {
+                console.error("Hata:", error);
+            });
+    }
+
+    // İlk sayfayı yükle
+    fetchNews(currentPage);
+
+    // Önceki ve Sonraki düğmelere tıklama olayları
+    prevPageButton.addEventListener("click", () => {
+        if (currentPage > 0) {
+            currentPage--;
+            fetchNews(currentPage);
+            currentPageDisplay.textContent = currentPage + 1;
+            nextPageButton.disabled = false;
+        }
+        if (currentPage === 0) {
+            prevPageButton.disabled = true;
+        }
+    });
+
+    nextPageButton.addEventListener("click", () => {
+        currentPage++;
+        fetchNews(currentPage);
+        currentPageDisplay.textContent = currentPage + 1;
+        prevPageButton.disabled = false;
+    });
+
+    // Durum güncelleme (Aktiv/Passiv)
+    tableBody.addEventListener("click", (e) => {
+        const statusButton = e.target.closest(".status");
+        if (statusButton) {
+            const row = statusButton.closest("tr");
+            const newsId = row.querySelector(".deleteNews").getAttribute("data-id");
+            const currentStatus = statusButton.textContent.trim() === "Aktiv";
+            const newStatus = !currentStatus;
+
+            fetch(`${baseUrl}/api/newspaper/${newsId}/visibility`, {
+                method: "PUT",  // PUT metodu kullanıyoruz
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ IsVisible: newStatus }), // `IsVisible` alanını gönderiyoruz
+            })
+            .then((response) => {
+                if (response.ok) {
+                    statusButton.textContent = newStatus ? "Aktiv" : "Passiv";
+                    statusButton.classList.toggle("active", newStatus);
+                    statusButton.classList.toggle("inactive", !newStatus);
+
+                    Swal.fire({
+                        title: 'Uğurlu!',
+                        text: 'Xəbər statusu uğurla yenilendi!',
+                        icon: 'success',
+                        confirmButtonText: 'Bağla'
+                    });
+                } else {
+                    throw new Error("Durum güncellenemedi.");
+                }
+            })
+            .catch((error) => {
+                console.error("Hata:", error);
+
+                Swal.fire({
+                    title: 'Xəta!',
+                    text: 'Status yenilənərkən bir xəta baş verdi.',
+                    icon: 'error',
+                    confirmButtonText: 'Bağla'
+                });
+            });
+        }
+    });
+
+    // DELETE isteği atan fonksiyon
+    function deleteNews(id) {
+        Swal.fire({
+            title: 'Emin misiniz?',
+            text: "Bu haberi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Evet, sil!',
+            cancelButtonText: 'Hayır, iptal et'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`${baseUrl}/api/newspaper/id/${id}`, {
+                    method: "DELETE",
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Silindi!',
+                            text: 'Haber başarıyla silindi.',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(() => {
+                            window.location.reload();
+                        });
+                    } else if (response.status === 404) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Hata!',
+                            text: 'Haber bulunamadı.'
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Hata!',
+                            text: `Haber silinemedi. Hata kodu: ${response.status}`
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error("Bir hata oluştu:", error);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Hata!',
+                        text: 'Sunucuya ulaşılamadı. Lütfen tekrar deneyin.'
+                    });
+                });
+            }
+        });
+    }
+
+    // Örnek: Bir buton tıklanma olayına bağlama
+    document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("deleteNews")) {
+            const newsId = e.target.getAttribute("data-id");
+            deleteNews(newsId);
+        }
+    });
 
 
 </script>

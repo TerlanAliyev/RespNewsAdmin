@@ -38,13 +38,19 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-              document.getElementById("categoryForm").addEventListener("submit", async (event) => {
+
+        // Production ortamına hazırlanan script
+
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+
+    document.getElementById("categoryForm").addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const formData = new FormData(event.target);
 
         try {
-            const response = await fetch("https://localhost:44314/api/category", {
+            const response = await fetch(`${baseUrl}/api/category`, {
                 method: "POST",
                 body: formData,
             });
@@ -73,7 +79,6 @@
             });
         }
     });
-
 
 
 </script>

@@ -31,13 +31,18 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-              document.getElementById("categoryForm").addEventListener("submit", async (event) => {
+         // Production ortamına hazırlanan script
+
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+
+    document.getElementById("categoryForm").addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const formData = new FormData(event.target);
 
         try {
-            const response = await fetch("https://localhost:44314/api/Links/upload", {
+            const response = await fetch(`${baseUrl}/api/Links/upload`, {
                 method: "POST",
                 body: formData,
             });
@@ -47,11 +52,8 @@
                 Swal.fire({
                     icon: 'success',
                     title: 'Uğurlu əməliyyat',
-                    text: "Link uğurla əlavə edildi",
-                }).then(() => {
-                            // Sayfayı Home/Links'e yönlendir
-                            window.location.replace("/Home/Links");
-                        });
+                    text: "Kateqoriya uğurla əlavə edildi",
+                });
             } else {
                 const errorText = await response.text();
                 Swal.fire({
@@ -65,10 +67,11 @@
             Swal.fire({
                 icon: 'error',
                 title: 'Xəta',
-                text: 'Link əlavə edilə bilmədi',
+                text: 'Kateqoriya əlavə edilə bilmədi',
             });
         }
     });
+
 
 
 

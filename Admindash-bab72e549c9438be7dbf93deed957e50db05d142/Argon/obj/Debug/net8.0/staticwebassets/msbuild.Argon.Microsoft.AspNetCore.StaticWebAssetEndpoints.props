@@ -60,6 +60,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NRlhxNn/5E3Ff45Vi2ToWHnOIicsBtQ8Llvcu1Ws\u002BjE="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2616"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022NRlhxNn/5E3Ff45Vi2ToWHnOIicsBtQ8Llvcu1Ws\u002BjE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:55:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Argon/css/responsiv.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\responsiv.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rdr3xUE89qjkwcYtfbKk5eunkcyDmIO4KhlNx2Y5iFo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"603"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rdr3xUE89qjkwcYtfbKk5eunkcyDmIO4KhlNx2Y5iFo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Dec 2024 10:38:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Argon/css/responsiv.j47tkehv0x.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\responsiv.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j47tkehv0x"},{"Name":"integrity","Value":"sha256-rdr3xUE89qjkwcYtfbKk5eunkcyDmIO4KhlNx2Y5iFo="},{"Name":"label","Value":"_content/Argon/css/responsiv.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"603"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rdr3xUE89qjkwcYtfbKk5eunkcyDmIO4KhlNx2Y5iFo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Dec 2024 10:38:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Argon/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1332,17 +1344,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t0cez7igzl"},{"Name":"integrity","Value":"sha256-XdN/58WFXT1iv\u002BDnHhQ7ly\u002BMenH4nAzaaJ\u002B6n3e4kLs="},{"Name":"label","Value":"_content/Argon/js/core/popper.min.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"20086"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022XdN/58WFXT1iv\u002BDnHhQ7ly\u002BMenH4nAzaaJ\u002B6n3e4kLs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:55:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Argon/js/index/index.26fofzbmnu.js">
+    <StaticWebAssetEndpoint Include="_content/Argon/js/index/index.b1g4l5d5rg.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index\index.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"26fofzbmnu"},{"Name":"integrity","Value":"sha256-ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A="},{"Name":"label","Value":"_content/Argon/js/index/index.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3644"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A=\u0022"},{"Name":"Last-Modified","Value":"Tue, 24 Dec 2024 17:37:48 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b1g4l5d5rg"},{"Name":"integrity","Value":"sha256-L6M4H1OV8Xka8GdDzrGXOnQmCl/\u002BWMcxzt/y8\u002BBamx8="},{"Name":"label","Value":"_content/Argon/js/index/index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3959"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022L6M4H1OV8Xka8GdDzrGXOnQmCl/\u002BWMcxzt/y8\u002BBamx8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Dec 2024 19:28:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Argon/js/index/index.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index\index.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3644"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ym0kGJxFZDVjoOIHaby8COzIFAuGbqy8agfcf7GlZ4A=\u0022"},{"Name":"Last-Modified","Value":"Tue, 24 Dec 2024 17:37:48 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-L6M4H1OV8Xka8GdDzrGXOnQmCl/\u002BWMcxzt/y8\u002BBamx8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3959"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022L6M4H1OV8Xka8GdDzrGXOnQmCl/\u002BWMcxzt/y8\u002BBamx8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Dec 2024 19:28:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Argon/js/news/PutNews.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\news\PutNews.js'))</AssetFile>

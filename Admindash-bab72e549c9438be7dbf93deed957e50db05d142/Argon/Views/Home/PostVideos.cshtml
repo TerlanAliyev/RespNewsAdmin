@@ -43,7 +43,13 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 Kütüphanesini ekliyoruz -->
 
 <script>
-        document.getElementById("categoryForm").addEventListener("submit", function (e) {
+
+        // Production ortamına hazırlanan script
+
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+
+    document.getElementById("categoryForm").addEventListener("submit", function (e) {
         e.preventDefault(); // Sayfanın yenilenmesini engeller
 
         // Form verilerini alıyoruz
@@ -59,7 +65,7 @@
         };
 
         // POST isteğini fetch ile API'ye gönderiyoruz
-        fetch("https://localhost:44314/api/Youtube", {
+        fetch(`${baseUrl}/api/Youtube`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

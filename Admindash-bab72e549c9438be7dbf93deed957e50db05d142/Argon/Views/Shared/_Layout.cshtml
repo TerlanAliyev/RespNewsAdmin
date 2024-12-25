@@ -22,12 +22,18 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/img/9572886.png" sizes="32x32">
+   <link href="/css/responsiv.css" rel="stylesheet" />
+   <style>
+       .fa-bars{
+           display:none;
+       }
+   </style>
 </head>
 
 
 
 <body class="g-sidenav-show bg-gray-100">
-
+    <i class="fa-solid fa-bars" style="display:none;"></i>
     <!-- Sidebar -->
     @await Html.PartialAsync("_Sidebar")
 
@@ -47,6 +53,27 @@
     </main>
 
     <script src="~/js/argon-dashboard.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Sidebar açmaq üçün fa-bars klik
+            $(".fa-bars").click(function (e) {
+                e.stopPropagation(); // Bu, klik hadisəsinin body-yə keçməsinin qarşısını alır
+                $(" .sidenav").addClass("open");
+            });
+
+            // Sidebar xaricində hər hansı yerə klik
+            $(document).click(function () {
+                $(" .sidenav").removeClass("open");
+            });
+
+            // Sidebar-a kliklə gizlənməməsinin qarşısını al
+            $(" .sidenav").click(function (e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+
 
 
     

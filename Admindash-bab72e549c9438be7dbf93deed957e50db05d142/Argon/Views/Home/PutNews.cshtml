@@ -144,10 +144,10 @@
     <!-- Haber Gönderim Formu -->
     <form id="newsForm">
         <div class="form-container">
-            <label for="newsTitle">Haber Başlığı:</label>
+            <label for="newsTitle">Xəbər Başlığı:</label>
             <input type="text" id="newsTitle" name="NewsTitle" required />
 
-            <label for="newsContent">Haber İçeriği:</label>
+            <label for="newsContent">Ətraflı məlumat:</label>
             <div class="screen">
                 <i class="fa-solid fa-x"></i>
                 <div id="toolbar">
@@ -170,27 +170,24 @@
                 <div id="editor"></div>
             </div>
 
-            <label for="newsLangId">Dil ID:</label>
+            <label for="newsLangId">Dil : (əgər dili dəyişsəz MÜTLƏQ kateqoriyanı da yenidən dilə uyğun seçin.Əks halda ikisinə də toxunmağa ehtiyac yoxdur)</label>
             <select id="newsLangId" name="NewsLangId">
                 <option value="">Dil Seçin</option> <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsCategoryId">Kategori ID:</label>
+            <label for="newsCategoryId">Kateqoriya:</label>
             <select id="newsCategoryId" name="NewsCategoryId">
                 <option value="">Kategori Seçin</option>  <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsOwnerId">Sahip ID:</label>
+            <label for="newsOwnerId">Müəllif:</label>
             <select id="newsOwnerId" name="NewsOwnerId">
                 <option value="">Muxbir Seçin</option> <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsAdminId">Admin ID:</label>
-            <select id="newsAdminId" name="NewsAdminId">
-                <option value="">Admin Seçin</option> <!-- Başlangıçta boş bir seçenek -->
-            </select>
+            <input type="hidden" name="NewsAdminId" id="newsAdminId" value="" readonly/>
 
-            <label for="newsRating">Admin ID:</label>
+            <label for="newsRating">Aktuallıq :</label>
             <select id="newsRating" name="NewsRating">
                 <option value="0">Aktualliq Seçin</option> <!-- Başlangıçta boş bir seçenek -->
                 <option value="5">Slider-e qoy</option> <!-- Başlangıçta boş bir seçenek -->
@@ -199,23 +196,23 @@
                 <option value="1">Hec biri</option> <!-- Başlangıçta boş bir seçenek -->
             </select>
 
-            <label for="newsTags">Etiketler (Boşluklarla ayırın)</label>
+            <label for="newsTags">Etiketlər (Boşluqlarla ayırın)</label>
             <input type="text" id="newsTags" name="newsTags" placeholder="#tag1 #tag2 #tag3" />
 
 
             <!-- Haber Yayın Tarihi -->
-            <label for="newsDate">Haber Yayın Tarihi:</label>
+            <label for="newsDate">Xəbər Yayın Tarixi :</label>
             <input type="datetime-local" id="newsDate" name="NewsDate" />
 
-            <label for="newsYoutubeLink">YouTube Link:</label>
+            <label for="newsYoutubeLink">YouTube Link :</label>
             <input type="url" id="newsYoutubeLink" name="NewsYoutubeLink" />
 
-            <label for="newsPhotos">Haber Fotoğrafları:</label>
+            <label for="newsPhotos">Xəbər Şəkillər :</label>
             <input type="file" id="newsPhotos" name="NewsPhotos" multiple accept="image/*" />
             <img id="photosPreview" style="display:none; max-width: 100px; max-height: 100px;" alt="Fotoğraf Önizlemesi">
 
 
-            <label for="newsVideos">Haber Videoları:</label>
+            <label for="newsVideos">Xəbər Videolar :</label>
             <input type="file" id="newsVideos" name="NewsVideos" multiple accept="video/*" />
             <div id="videoPreviewContainer"></div>
             <input type="hidden" id="newsId" name="name" value="" />
@@ -452,10 +449,10 @@
                 document.getElementById("newsCategoryId").value = data.newsCategoryId || "";
 
                 // Sahip ID
-                document.getElementById("newsOwnerId").value = data.newsOwnerId || "";
+                document.getElementById("newsOwnerId").value = data.newsOwner.ownerId || "";
 
                 // Admin ID
-                document.getElementById("newsAdminId").value = data.newsAdminId || "";
+                document.getElementById("newsAdminId").value = data.newsAdmin.userId || "";
 
                 // Haber puanı (Rating)
                 document.getElementById("newsRating").value = data.newsRating || "0";

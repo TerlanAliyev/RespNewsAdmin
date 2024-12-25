@@ -136,195 +136,177 @@
 
 <script>
 
-		const apiUrl = "https://localhost:44314/api/advert/adverts";
-	const baseUrl = "https://localhost:44314"; // API'nin temel URL'si
-	const tableBody = document.querySelector("tbody");
-					console.log(apiUrl)
-					console.log(baseUrl)
+
+                // Ortama uyğun olaraq əsas URL-i təyin et
+    const isProduction = window.location.hostname !== "localhost";
+    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+    const apiUrl = `${baseUrl}/api/advert/adverts`;
+
+    // Cədvəl gövdəsini seç
+    const tableBody = document.querySelector("tbody");
+
+    // Xəbərləri gətir və cədvəli doldur
+    function fetchNews() {
+        const url = new URL(apiUrl);
+
+        fetch(url)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Videolar gətirilə bilmədi");
+                }
+                return response.json();
+            })
+            .then((newsItems) => {
+                if (newsItems.length === 0) {
+                    tableBody.innerHTML = "<tr><td colspan='5'>Nəticə tapılmadı.</td></tr>";
+                    return;
+                }
+
+                newsItems.forEach((newsItem, index) => {
+                    const row = document.createElement("tr");
+                    row.id = `news-${newsItem.advertId}`; // Silmə əməliyyatı üçün unikal ID
+                    row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td>${newsItem.advertName}</td>
+                        <td>${newsItem.advertContext}</td>
+                        <td>
+                            ${newsItem.advertCoverUrl?.length > 0 ? `
+                            <img src="${baseUrl}${newsItem.advertCoverUrl}" alt="Reklam şəkli" style="width: 50px; height: 50px; object-fit: cover;">
+                            ` : "Şəkil yoxdur"}
+                        </td>
+                        <td>
+                            ${newsItem.advertVideoUrl?.length > 0 ? `
+                            <img src="${baseUrl}${newsItem.advertVideoUrl}" alt="Reklam videosu" style="width: 50px; height: 50px; object-fit: cover;">
+                            ` : "Video yoxdur"}
+                        </td>
+                        <td>
+                            <span class="btn btn-lg status ${newsItem.advertVisibility ? "active" : "inactive"}" data-id="${newsItem.advertId}">
+                                ${newsItem.advertVisibility ? "Aktiv" : "Passiv"}
+                            </span>
+                        </td>
+                        <td>
+                            <a class="text-danger deleteNews btn" data-id="${newsItem.advertId}">
+                                <i class="fa-solid fa-trash"></i>
+                            </a>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch((error) => {
+                alert("Bir xəta baş verdi: " + error.message);
+            });
+    }
+    fetchNews();
+
+    // Xəbər görünürlüğünü yenilə
+    tableBody.addEventListener("click", (e) => {
+        const statusButton = e.target.closest(".status");
+        if (statusButton) {
+            const newsId = statusButton.getAttribute("data-id");
+            const currentStatus = statusButton.textContent.trim() === "Aktiv";
+            const newStatus = !currentStatus;
+
+            // PUT sorğusu göndər
+            fetch(`${baseUrl}/api/advert/${newsId}/visibility`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ IsVisible: newStatus }),
+            })
+                .then((response) => {
+                    if (!response.ok) {
+                        return response.json().then((data) => {
+                            throw new Error(data.message || "Durum yenilənə bilmədi.");
+                        });
+                    }
+                    // Uğurlu cavab
+                    statusButton.textContent = newStatus ? "Aktiv" : "Passiv";
+                    statusButton.classList.toggle("active", newStatus);
+                    statusButton.classList.toggle("inactive", !newStatus);
+                    Swal.fire({
+                        title: 'Uğurlu!',
+                        text: 'Xəbər statusu uğurla yeniləndi!',
+                        icon: 'success',
+                        confirmButtonText: 'Bağla',
+                    });
+                })
+                .catch((error) => {
+                    console.error("Xəta:", error);
+                    Swal.fire({
+                        title: 'Xəta!',
+                        text: 'Status yenilənərkən bir xəta baş verdi.',
+                        icon: 'error',
+                        confirmButtonText: 'Bağla',
+                    });
+                });
+        }
+    });
+
+    // Xəbəri silmə funksiyası
+        function deleteNews(id) {
+        Swal.fire({
+            title: 'Əminsiniz?',
+            text: "Bu xəbəri silmək istədiyinizə əminsiniz?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Bəli, sil!',
+            cancelButtonText: 'Xeyr, ləğv et!',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`${baseUrl}/api/advert/delete/${id}`, { // Burada endpointi dəyişdirdik
+                    method: "DELETE",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                    .then((response) => {
+                        if (response.ok) {
+                            Swal.fire(
+                                'Xəbər silindi!',
+                                'Xəbər uğurla silindi.',
+                                'success'
+                            ).then(() => {
+                                location.reload();
+                            });
+                            document.querySelector(`#news-${id}`)?.remove();
+                        } else if (response.status === 404) {
+                            Swal.fire(
+                                'Xəta!',
+                                'Xəbər tapılmadı.',
+                                'error'
+                            );
+                        } else {
+                            Swal.fire(
+                                'Xəta',
+                                'Xəbər silinə bilmədi. Xəta kodu: ' + response.status,
+                                'error'
+                            );
+                        }
+                    })
+                    .catch((error) => {
+                        console.error("Xəta baş verdi:", error);
+                        Swal.fire(
+                            'Server Xətası',
+                            'Serverə müraciət oluna bilmədi. Bir daha cəhd edin.',
+                            'error'
+                        );
+                    });
+            }
+        });
+    }
 
 
-	function fetchNews() {
-		const url = new URL(apiUrl); // Sayfa parametresi kaldırıldı
-							console.log(url)
-
-		fetch(url)
-			.then((response) => {
-				if (!response.ok) {
-					throw new Error("Videolar getirilemedi");
-				}
-				return response.json();
-			})
-			.then((newsItems) => {
-				if (newsItems.length === 0) {
-					tableBody.innerHTML = "<tr><td colspan='5'>Sonuç bulunamadı.</td></tr>";
-					return;
-				}
-
-				newsItems.forEach((newsItem, index) => {
-					console.log(newsItem)
-					const row = document.createElement("tr");
-					row.innerHTML = `
-						<td>${index + 1}</td>
-						<td>${newsItem.advertName}</td>
-						<td>${newsItem.advertContext}</td>
-						<td>
-							${newsItem.advertCoverUrl?.length > 0 ? `
-							<img src="${baseUrl}${newsItem.advertCoverUrl}" alt="Reklam photo" style="width: 50px; height: 50px; object-fit: cover;">
-							` : "Şəkil yoxdur"}
-						</td>
-						<td>
-							${newsItem.advertVideoUrl?.length > 0 ? `
-							<img src="${baseUrl}${newsItem.advertVideoUrl}" alt="Reklam videosu" style="width: 50px; height: 50px; object-fit: cover;">
-							` : "Şəkil yoxdur"}
-						</td>
-							<td>
-		<span class="btn btn-lg status ${newsItem.advertVisibility ? "active" : "inactive"}" data-id="${newsItem.advertId}">
-			${newsItem.advertVisibility ? "Aktiv" : "Passiv"}
-		</span>
-	</td>
-
-						<td>
-							<a class="text-danger deleteNews btn" data-id="${newsItem.advertId}">
-								<i class="fa-solid fa-trash"></i>
-							</a>
-						</td>
-					`;
-					tableBody.appendChild(row);
-				});
-			})
-			.catch((error) => {
-				console.error("Hata:", error);
-				alert("Bir hata oluştu: " + error.message);
-			});
-	}
-	fetchNews()
-
-
-	tableBody.addEventListener("click", (e) => {
-		const statusButton = e.target.closest(".status");
-		if (statusButton) {
-			const row = statusButton.closest("tr");
-			const newsId = row.querySelector(".deleteNews").getAttribute("data-id");
-			const currentStatus = statusButton.textContent.trim() === "Aktiv";
-			const newStatus = !currentStatus;
-		}
-	});
-
-
-		tableBody.addEventListener("click", (e) => {
-		const statusButton = e.target.closest(".status");
-		if (statusButton) {
-			const logoId = statusButton.getAttribute("data-id");
-			const currentStatus = statusButton.textContent.trim() === "Aktiv";
-			const logoVisibility = !currentStatus;
-
-			// PUT isteği ile yeni durumu gönder
-			fetch(`https://localhost:44314/api/advert/${advertId}/visibility`, {
-				method: "PUT",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({ IsVisible: logoVisibility }),
-			})
-			.then((response) => {
-				if (!response.ok) {
-					return response.json().then((data) => {
-						throw new Error(data.message || "Durum güncellenemedi.");
-					});
-				}
-				// Başarılı yanıt
-				statusButton.textContent = logoVisibility ? "Aktiv" : "Passiv";
-				if (logoVisibility) {
-					statusButton.classList.add("active");
-					statusButton.classList.remove("inactive");
-				} else {
-					statusButton.classList.add("inactive");
-					statusButton.classList.remove("active");
-				}
-				Swal.fire({
-					title: 'Uğurlu!',
-					text: 'Xəbər statusu uğurla yeniləndi!',
-					icon: 'success',
-					confirmButtonText: 'Bağla'
-				});
-			})
-			.catch((error) => {
-				console.error("Hata:", error);
-				Swal.fire({
-					title: 'Xəta!',
-					text: 'Status yenilənərkən bir xəta baş verdi.',
-					icon: 'error',
-					confirmButtonText: 'Bağla'
-				});
-			});
-		}
-	});
-
-	// DELETE isteği atan fonksiyon
-	function deleteNews(id) {
-		Swal.fire({
-			title: 'Əminsiz?',
-			text: "Bu kateqoriyanı silmək istədiyinizə əminsiz?",
-			icon: 'warning',
-			showCancelButton: true,
-			confirmButtonColor: '#3085d6',
-			cancelButtonColor: '#d33',
-			confirmButtonText: 'Bəli, sil!',
-			cancelButtonText: 'Xeyr,ləğv et!'
-		}).then((result) => {
-			if (result.isConfirmed) {
-				fetch(`https://localhost:44314/api/logo/delete/${id}`, {
-					method: "DELETE", // HTTP DELETE metodu
-					headers: {
-						"Content-Type": "application/json" // Gerekli ise content-type ekleyebilirsiniz
-					}
-				})
-				.then(response => {
-					if (response.ok) {
-						Swal.fire(
-								'Kateqoriya  Silindi!',
-								'Kateqoriya  müvəffəqiyyətlə silindi.',
-							'success'
-						).then(() => {
-							// Sayfayı yenile
-							location.reload();
-						});
-						// Sayfada UI güncellemesi (örneğin, tablodan satırı kaldırabilirsiniz)
-						document.querySelector(`#news-${id}`)?.remove();
-					} else if (response.status === 404) {
-						Swal.fire(
-							'Xəta!',
-							'Kateqoriya  tapılmadı.',
-							'error'
-						);
-					} else {
-						Swal.fire(
-							'Xəta',
-							'Kateqoriya silinə bilmədi. Xəta kodu: ' + response.status,
-							'error'
-						);
-					}
-				})
-				.catch(error => {
-					console.error("Xəta baş verdi:", error);
-					Swal.fire(
-						'Server Xətası',
-						'Serverə müraciət oluna bilmədi.Bir daha sınayın.',
-						'error'
-					);
-				});
-			}
-		});
-	}
-
-
-	// Örnek: Bir buton tıklanma olayına bağlama
-	document.addEventListener("click", function (e) {
-		if (e.target.classList.contains("deleteNews")) {
-			const newsId = e.target.getAttribute("data-id");
-			deleteNews(newsId);
-		}
-	});
+    // Silmə düyməsini dinləyən funksiya
+    document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("deleteNews")) {
+            const newsId = e.target.getAttribute("data-id");
+            deleteNews(newsId);
+        }
+    });
 
 
 

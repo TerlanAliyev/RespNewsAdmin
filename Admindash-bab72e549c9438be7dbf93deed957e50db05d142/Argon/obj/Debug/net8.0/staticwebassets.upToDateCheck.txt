@@ -2,6 +2,7 @@ wwwroot\css\argon-dashboard.css
 wwwroot\css\argon-dashboard.min.css
 wwwroot\css\nucleo-icons.css
 wwwroot\css\nucleo-svg.css
+wwwroot\css\responsiv.css
 wwwroot\favicon.ico
 wwwroot\fonts\nucleo.eot
 wwwroot\fonts\nucleo.ttf
