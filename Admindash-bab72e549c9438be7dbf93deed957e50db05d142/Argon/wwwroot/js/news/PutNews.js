@@ -4,7 +4,6 @@
         const tagInput = document.getElementById("tag-input");
         const tags = [];
 
-        // Etiket ekleme
         tagInput.addEventListener("keydown", (event) => {
             if (event.key === "Enter" && tagInput.value.trim() !== "") {
                 event.preventDefault();
@@ -18,7 +17,6 @@
                 tagContainer.insertBefore(tagElement, tagInput);
                 tagInput.value = "";
 
-                // Etiket silme işlevi
                 tagElement.querySelector("span").addEventListener("click", () => {
                     tagContainer.removeChild(tagElement);
                     const index = tags.indexOf(tagValue);
@@ -29,7 +27,6 @@
             }
         });
 
-        // Form submit sırasında etiketleri backend'e göndermek için
         document.querySelector("form").addEventListener("submit", function (e) {
         e.preventDefault();
 
@@ -67,7 +64,6 @@
         const adminSelect = document.getElementById('newsAdminId');
         const categorySelect = document.getElementById('newsCategoryId');
 
-        // Admin verilerini API'den çek
         async function fetchAdmins() {
             try {
                 const response = await fetch('https://localhost:44314/api/user/users');
@@ -84,7 +80,6 @@
             }
         }
 
-        // Owner verilerini API'den çek
         async function fetchOwners() {
             try {
                 const response = await fetch('https://localhost:44314/api/owner');
@@ -100,8 +95,6 @@
                 console.error('Owner verileri alınamadı:', error);
             }
         }
-
-        // Dil verilerini API'den çek
         async function fetchLanguages() {
             try {
                 const response = await fetch('https://localhost:44314/api/languages/all');
@@ -118,7 +111,6 @@
             }
         }
 
-        // Kategorileri API'den çek ve dil ID'sine göre filtrele
         async function fetchCategoriesByLanguage(langId) {
             try {
                 const response = await fetch(`https://localhost:44314/api/category/language/${langId}`);
@@ -135,7 +127,6 @@
             }
         }
 
-        // Dil seçildiğinde kategorileri getir
         langSelect.addEventListener('click', function () {
             const selectedLangId = langSelect.value;
             if (selectedLangId) {
@@ -145,15 +136,14 @@
             }
         });
 
-        // Sayfa yüklendiğinde dil ve owner verilerini çek
         fetchLanguages();
         fetchOwners();
         fetchAdmins();
     });
         document.addEventListener('DOMContentLoaded', () => {
         const pathParts = window.location.pathname.split('/');
-        const newsId = pathParts[pathParts.length - 1];  // Sayfa URL'sinden haber ID'sini al
-        const apiUrl = `https://localhost:44314/api/news/id/${newsId}`;  // API URL'sini oluştur
+        const newsId = pathParts[pathParts.length - 1];  
+        const apiUrl = `https://localhost:44314/api/news/id/${newsId}`; 
 
         const quill = new Quill("#editor", {
             theme: "snow",
@@ -162,17 +152,14 @@
             },
         });
 
-        // API'den veri çekme
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
-                // Title ve Content alanları zaten doğru şekilde yüklendi.
                 document.getElementById("newsTitle").value = data.newsTitle || '';
                 document.getElementById("newsRating").value = data.newsRating || '';
                 document.getElementById("newsYoutubeLink").value = data.newsYoutubeLink || '';
                 quill.root.innerHTML = data.newsContetText || '';
 
-                // Select element'lerine veri aktarımı
                 if (data.newsLangId) {
                     document.getElementById("newsLangId").value = data.newsLangId;
                 }
@@ -180,7 +167,6 @@
                     document.getElementById("newsCategoryId").value = data.newsCategoryId;
                 }
 
-                // Fotoğraf ve video önizlemeleri için
                 const photosContainer = document.getElementById("photosPreview");
                 if (data.newsPhotos) {
                     data.newsPhotos.forEach(photo => {
@@ -210,46 +196,40 @@
             const quillContent = quill.root.innerHTML;
             formData.append("newsContetText", quillContent);
 
-            // FormData'dan updateNewsDto'yu oluştur
             const updateNewsDto = {
                 NewsTitle: formData.get('newsTitle'),
                 NewsContetText: quillContent,
                 NewsDate: formData.get('newsDate'),
                 NewsCategoryId: formData.get('newsCategoryId'),
                 NewsLangId: formData.get('newsLangId'),
-                NewsVisibility: formData.get('newsVisibility') === 'on',  // Eğer checkbox kullanıyorsanız
+                NewsVisibility: formData.get('newsVisibility') === 'on', 
                 NewsTags: formData.get('newsTags'),
                 NewsRating: parseFloat(formData.get('newsRating')),
                 NewsYoutubeLink: formData.get('newsYoutubeLink'),
                 NewsOwnerId: formData.get('newsOwnerId'),
                 NewsAdminId: formData.get('newsAdminId'),
-                NewsPhotos: [],  // Fotoğraf verilerini ekleyebilirsiniz
-                NewsVideos: []  // Video verilerini ekleyebilirsiniz
+                NewsPhotos: [], 
+                NewsVideos: []  
             };
 
-            // Fotoğrafları ekleme (isteğe bağlı)
-            const photoFiles = formData.getAll('newsPhotos');  // Form verilerinden fotoğrafları alın
-            updateNewsDto.NewsPhotos = photoFiles.map(file => ({ PhotoUrl: file.name }));  // Fotoğraf URL'lerini ekle
+            const photoFiles = formData.getAll('newsPhotos'); 
+            updateNewsDto.NewsPhotos = photoFiles.map(file => ({ PhotoUrl: file.name })); 
 
-            // Videoları ekleme (isteğe bağlı)
-            const videoLinks = formData.getAll('newsVideos');  // Form verilerinden video URL'lerini alın
-            updateNewsDto.NewsVideos = videoLinks.map(link => ({ VideoUrl: link }));  // Video URL'lerini ekle
+            const videoLinks = formData.getAll('newsVideos');  
+            updateNewsDto.NewsVideos = videoLinks.map(link => ({ VideoUrl: link }));  
 
-            // PUT isteği ile veri gönderme
             fetch(`https://localhost:44314/api/news/id/${newsId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(updateNewsDto),  // JSON formatında gönder
+                body: JSON.stringify(updateNewsDto),  
             })
             .then(response => {
-                return response.text();  // Yanıtı metin olarak al
+                return response.text();  
             })
             .then(data => {
-                console.log("Sunucu yanıtı:", data);  // Yanıtı yazdır
-                // Eğer burada JSON dönüyorsa response.json() ile de işlenebilir
-                // console.log('Haber başarıyla güncellendi', data);
+                console.log("Sunucu yanıtı:", data);  
             })
             .catch(error => {
                 console.error('Hata:', error);
@@ -257,7 +237,6 @@
         });
     });
 
-    // Fotoğraf önizlemesi
     document.getElementById('newsPhotos').addEventListener('change', function(event) {
         const photoPreview = document.getElementById('photoPreview');
         const files = event.target.files;
@@ -270,7 +249,6 @@
         }
     });
 
-    // Video önizlemesi
     document.getElementById('newsVideos').addEventListener('change', function(event) {
         const videoPreview = document.getElementById('videoPreview');
         const files = event.target.files;

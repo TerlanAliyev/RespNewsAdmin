@@ -317,6 +317,10 @@
       "PackagePath": "staticwebassets\\img\\shapes\\waves-white.svg"
     },
     {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\signin-ill.jpg",
+      "PackagePath": "staticwebassets\\img\\signin-ill.jpg"
+    },
+    {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\small-logos\\icon-sun-cloud.png",
       "PackagePath": "staticwebassets\\img\\small-logos\\icon-sun-cloud.png"
     },
@@ -425,6 +429,14 @@
       "PackagePath": "staticwebassets\\img\\vr-bg.jpg"
     },
     {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\advert\\advert.js",
+      "PackagePath": "staticwebassets\\js\\advert\\advert.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\advert\\postadvert.js",
+      "PackagePath": "staticwebassets\\js\\advert\\postadvert.js"
+    },
+    {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\argon-dashboard.js",
       "PackagePath": "staticwebassets\\js\\argon-dashboard.js"
     },
@@ -435,6 +447,14 @@
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\argon-dashboard.min.js",
       "PackagePath": "staticwebassets\\js\\argon-dashboard.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\category\\category.js",
+      "PackagePath": "staticwebassets\\js\\category\\category.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\category\\postcategory.js",
+      "PackagePath": "staticwebassets\\js\\category\\postcategory.js"
     },
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\core\\bootstrap.bundle.min.js",
@@ -453,8 +473,52 @@
       "PackagePath": "staticwebassets\\js\\index\\index.js"
     },
     {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\infographics\\infographics.js",
+      "PackagePath": "staticwebassets\\js\\infographics\\infographics.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\infographics\\postinfographics.js",
+      "PackagePath": "staticwebassets\\js\\infographics\\postinfographics.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\links\\links.js",
+      "PackagePath": "staticwebassets\\js\\links\\links.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\links\\postlinks.js",
+      "PackagePath": "staticwebassets\\js\\links\\postlinks.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\links\\putlinks.js",
+      "PackagePath": "staticwebassets\\js\\links\\putlinks.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\login\\login.js",
+      "PackagePath": "staticwebassets\\js\\login\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\logos\\logos.js",
+      "PackagePath": "staticwebassets\\js\\logos\\logos.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\logos\\postlogo.js",
+      "PackagePath": "staticwebassets\\js\\logos\\postlogo.js"
+    },
+    {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\news\\PutNews.js",
       "PackagePath": "staticwebassets\\js\\news\\PutNews.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\news\\news.js",
+      "PackagePath": "staticwebassets\\js\\news\\news.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\news\\postnews.js",
+      "PackagePath": "staticwebassets\\js\\news\\postnews.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\newspaper\\putnewspaper.js",
+      "PackagePath": "staticwebassets\\js\\newspaper\\putnewspaper.js"
     },
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\plugins\\Chart.extension.js",
@@ -475,6 +539,34 @@
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\plugins\\smooth-scrollbar.min.js",
       "PackagePath": "staticwebassets\\js\\plugins\\smooth-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\subscribers\\postsubscribers.js",
+      "PackagePath": "staticwebassets\\js\\subscribers\\postsubscribers.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\subscribers\\subscribers.js",
+      "PackagePath": "staticwebassets\\js\\subscribers\\subscribers.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\user\\postuser.js",
+      "PackagePath": "staticwebassets\\js\\user\\postuser.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\user\\user.js",
+      "PackagePath": "staticwebassets\\js\\user\\user.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\videos\\postvideo.js",
+      "PackagePath": "staticwebassets\\js\\videos\\postvideo.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\videos\\putvideo.js",
+      "PackagePath": "staticwebassets\\js\\videos\\putvideo.js"
+    },
+    {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\videos\\video.js",
+      "PackagePath": "staticwebassets\\js\\videos\\video.js"
     },
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\lib\\bootstrap\\LICENSE",

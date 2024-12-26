@@ -183,21 +183,13 @@
 <script src="~/js/index/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-
-
 		window.onload = function () {
 		const userRole = localStorage.getItem('userRole');
-		console.log('Kullanıcı Rolü (Index):', userRole);
 
 		const superAdminMenu = document.getElementById('superAdminMenu');
 		if (userRole !== 'SuperAdmin' && superAdminMenu) {
-			console.log('SuperAdmin değil, menü gizleniyor.');
 			superAdminMenu.style.display = 'none';
-		} else {
-			console.log('SuperAdmin, menü gösteriliyor.');
 		}
 	};
-
-
 </script>
 

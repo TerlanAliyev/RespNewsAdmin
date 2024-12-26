@@ -1,9 +1,7 @@
-﻿// Production ortamına hazırlanan script
-
+﻿
 const isProduction = window.location.hostname !== "localhost";
 const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
 
-// Swiper için tanımlar
 var swiper2 = new Swiper(".mySwiper2", {
     direction: "vertical",
     pagination: {
@@ -29,13 +27,13 @@ var swiper1 = new Swiper(".mySwiper", {
     },
 });
 
-fetch(`${baseUrl}/api/statistic/OwnerMonthlyStatistics`)
+fetch(`${baseUrl}/api/statistic/AdminMonthlyStatistics`)
     .then(response => response.json())
     .then(data => {
 
-        data.forEach(ownerStats => {
-            const ownerName = ownerStats.ownerName;
-            const yearlyStats = ownerStats.yearlyStats;
+        data.forEach(adminStats => {
+            const adminName = adminStats.adminName;
+            const yearlyStats = adminStats.yearlyStats;
 
             const chartContainer = document.createElement('div');
             chartContainer.className = 'swiper-slide';
@@ -45,12 +43,12 @@ fetch(`${baseUrl}/api/statistic/OwnerMonthlyStatistics`)
               <div class="col-lg-12 mb-lg-0 mb-4">
                 <div class="card z-index-2 h-100">
                   <div class="card-header pb-0 pt-3 bg-transparent">
-                    <h6 class="text-capitalize">${ownerName} - statistikası</h6>
+                    <h6 class="text-capitalize">${adminName} - statistikası</h6>
                     <p class="text-sm mb-0">2024</p>
                   </div>
                   <div class="card-body p-3">
                     <div class="chart">
-                      <canvas id="chart-${ownerName}" class="chart-canvas" height="300" width="670"></canvas>
+                      <canvas id="chart-${adminName}" class="chart-canvas" height="300" width="670"></canvas>
                     </div>
                   </div>
                 </div>
@@ -60,7 +58,7 @@ fetch(`${baseUrl}/api/statistic/OwnerMonthlyStatistics`)
 
             document.querySelector('.swiper-wrapper').appendChild(chartContainer);
 
-            createChart(ownerName, yearlyStats);
+            createChart(adminName, yearlyStats);
         });
 
         initializeSwiper();
@@ -69,18 +67,18 @@ fetch(`${baseUrl}/api/statistic/OwnerMonthlyStatistics`)
         console.error("Veri alınırken hata oluştu:", error);
     });
 
-function createChart(ownerName, yearlyStats) {
-    const labels = Object.keys(yearlyStats[2024]);
-    const data = Object.values(yearlyStats[2024]);
+function createChart(adminName, yearlyStats) {
+    const labels = Object.keys(yearlyStats['2024']);
+    const data = Object.values(yearlyStats['2024']);
 
-    const ctx = document.getElementById(`chart-${ownerName}`).getContext('2d');
+    const ctx = document.getElementById(`chart-${adminName}`).getContext('2d');
 
     new Chart(ctx, {
         type: 'line',
         data: {
             labels: labels,
             datasets: [{
-                label: `${ownerName} - 2024`,
+                label: `${adminName} - 2024`,
                 data: data,
                 borderColor: '#5e72e4',
                 backgroundColor: 'rgba(94, 114, 228, 0.2)',

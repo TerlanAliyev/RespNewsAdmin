@@ -109,14 +109,7 @@
                     <span class="nav-link-text ms-1">Reklamlar</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link " id="clearPhotosCacheButton">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-trash" style="color:black;"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Keşi təmizlə</span>
-                </a>
-            </li>
+         
             <li class="nav-item mt-3">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Digər</h6>
             </li>
@@ -147,6 +140,31 @@
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
     <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+                // Mevcut URL yolunu al
+        const currentPath = window.location.pathname;
+
+        // Tüm nav-link öğelerini seç
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Tüm bağlantıları kontrol et ve eşleşeni aktif yap
+        navLinks.forEach(link => {
+            // href değerini karşılaştır
+            if (link.getAttribute('href') === currentPath) {
+                // Aktif sınıfını ekle
+                link.classList.add('active');
+            } else {
+                // Diğerlerinden aktif sınıfını kaldır
+                link.classList.remove('active');
+            }
+        });
+
+    </script>
+
+
+
+
 
     <script>
 
