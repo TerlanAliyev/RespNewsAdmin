@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uDD46gas4Rw=",
+  "dgSpecHash": "L0+zBsbYRTA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Argon.csproj",
+  "projectFilePath": "C:\\Users\\Terlan Aliyev\\Desktop\\forserver\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Argon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Terlan Aliyev\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Terlan Aliyev\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
