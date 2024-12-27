@@ -62,7 +62,7 @@
         const formData = new FormData(event.target); // Form məlumatlarını alır
 
         try {
-            const response = await fetch("https://localhost:44314/api/newspaper", { // API URL-nizi burada qeyd edin
+            const response = await fetch("https://news.ishop.az/api/newspaper", { // API URL-nizi burada qeyd edin
                 method: "POST",
                 body: formData
             });

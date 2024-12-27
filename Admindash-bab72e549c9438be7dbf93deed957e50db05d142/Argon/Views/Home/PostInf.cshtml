@@ -28,10 +28,8 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-                  // Production ortamına hazırlanan script
-
-    const isProduction = window.location.hostname !== "localhost";
-    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+    const isProduction = true; // Bu real mühit üçündür
+    const baseUrl = "https://news.ishop.az";
 
     document.getElementById("categoryForm").addEventListener("submit", async (event) => {
         event.preventDefault();

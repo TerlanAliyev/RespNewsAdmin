@@ -145,8 +145,7 @@
 
         // Production ortamına hazırlanan script
 
-    const isProduction = window.location.hostname !== "localhost";
-    const baseUrl = isProduction ? "https://api.yourdomain.com" : "https://localhost:44314";
+    const baseUrl = "https://news.ishop.az"; // Doğru API URL'si
     const apiUrl = `${baseUrl}/api/newspaper/all/`;
     const tableBody = document.querySelector("tbody");
     const prevPageButton = document.getElementById("prevPage");

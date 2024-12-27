@@ -1,0 +1,27 @@
+﻿
+
+@media (max-width:1199.98px) {
+    .shadow{
+        width:100% !important;
+    }
+    .responsiv {
+        width: 100% !important;
+    }
+    .fa-bars{
+        display:block !important;
+        position:absolute;
+        top:19px;
+        left:15px;
+        font-size:25px;
+        z-index:100;
+    }
+    .sidenav {
+        transform: translateX(-100%); /* Başlanğıcda gizlidir */
+        transition: transform 0.3s ease; /* Hamar keçid */
+    }
+
+     .sidenav.open {
+            transform: translateX(-1rem) !important; /* Görünür vəziyyət */
+        }
+       
+}

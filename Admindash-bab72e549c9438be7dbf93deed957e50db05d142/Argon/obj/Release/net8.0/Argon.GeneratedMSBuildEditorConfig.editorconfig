@@ -28,6 +28,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Adverts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZHZlcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,8 +44,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmZvZ3JhcGhpY3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Links.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaW5rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Logos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/News.cshtml]
@@ -52,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdzUGFwZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostAdvert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0QWR2ZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,12 +76,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0SW5mLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostLinks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0TGlua3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostLogo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0TG9nby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostNews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0TmV3cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostNewsPaper.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0TmV3c1BhcGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostSubscribers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0U3Vic2NyaWJlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PostVideos.cshtml]
@@ -84,6 +116,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdXRJbmYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PutLinks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdXRMaW5rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/PutNews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdXROZXdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -100,8 +136,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Subscribers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWJzY3JpYmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/tables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0YWJsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Terlan Aliyev/Desktop/16 last/RespNewsAdmin/Admindash-bab72e549c9438be7dbf93deed957e50db05d142/Argon/Views/Home/YtVideos.cshtml]

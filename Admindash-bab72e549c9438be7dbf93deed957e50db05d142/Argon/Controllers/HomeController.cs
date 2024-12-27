@@ -34,7 +34,7 @@ namespace Argon.Controllers
 
             var jsonContent = new StringContent(JsonSerializer.Serialize(loginRequest), System.Text.Encoding.UTF8, "application/json");
 
-            var response = await _httpClient.PostAsync("https://localhost:44314/api/user/login", jsonContent);
+            var response = await _httpClient.PostAsync("https://news.ishop.az/api/user/login", jsonContent);
 
             if (response.IsSuccessStatusCode)
             {
@@ -64,7 +64,7 @@ namespace Argon.Controllers
                 return RedirectToAction("Login");
             }
 
-            var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44314/api/protected-resource");
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://news.ishop.az/api/protected-resource");
             requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var response = await _httpClient.SendAsync(requestMessage);
@@ -133,7 +133,7 @@ namespace Argon.Controllers
         //NewsPapercount
         private async Task<int> GetNewsPaperCount()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/newspaper/count");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/newspaper/count");
 
             if (response.IsSuccessStatusCode)
             {
@@ -148,7 +148,7 @@ namespace Argon.Controllers
         // Kategori sayýsýný almak için API'den GET isteði
         private async Task<int> GetCategoryCount()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/category/count");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/category/count");
 
             if (response.IsSuccessStatusCode)
             {
@@ -162,7 +162,7 @@ namespace Argon.Controllers
         // Kategori sayýsýný almak için API'den GET isteði
         private async Task<int> GetCategoryCountByLang1()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/category/count/1");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/category/count/1");
 
             if (response.IsSuccessStatusCode)
             {
@@ -175,7 +175,7 @@ namespace Argon.Controllers
 
         private async Task<int> GetCategoryCountByLang2()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/category/count/2");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/category/count/2");
 
             if (response.IsSuccessStatusCode)
             {
@@ -187,7 +187,7 @@ namespace Argon.Controllers
         }
         private async Task<int> GetCategoryCountByLang3()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/category/count/3");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/category/count/3");
 
             if (response.IsSuccessStatusCode)
             {
@@ -205,7 +205,7 @@ namespace Argon.Controllers
         // Kategoriye aid xeberler almak için API'den GET isteði
         private async Task<List<CategoryNews>> GetCategoryNews()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/statistic/CategoryNewsCount");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/statistic/CategoryNewsCount");
 
             if (response.IsSuccessStatusCode)
             {
@@ -230,7 +230,7 @@ namespace Argon.Controllers
         // News sayýsýný almak için API'den GET isteði
         private async Task<int> GetNewsCount()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/news/count");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/news/count");
 
             if (response.IsSuccessStatusCode)
             {
@@ -244,7 +244,7 @@ namespace Argon.Controllers
         // Pdf sayý almaq ucun API'dan GET 
         private async Task<int> GetPdfCount()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/newspaper/count");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/newspaper/count");
             if (response.IsSuccessStatusCode)
             {
                 var data = await response.Content.ReadAsStringAsync();
@@ -257,7 +257,7 @@ namespace Argon.Controllers
 
         private async Task<int> GetInfogCount()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/Infographics/count");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/Infographics/count");
             if (response.IsSuccessStatusCode)
             {
                 var data = await response.Content.ReadAsStringAsync();
@@ -271,7 +271,7 @@ namespace Argon.Controllers
 
         private async Task<int> GetNewsCountByLang1()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/news/count/1");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/news/count/1");
 
             if (response.IsSuccessStatusCode)
             {
@@ -283,7 +283,7 @@ namespace Argon.Controllers
         }
         private async Task<int> GetNewsCountByLang2()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/news/count/2");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/news/count/2");
 
             if (response.IsSuccessStatusCode)
             {
@@ -296,7 +296,7 @@ namespace Argon.Controllers
 
         private async Task<int> GetNewsCountByLang3()
         {
-            var response = await _httpClient.GetAsync("https://localhost:44314/api/news/count/3");
+            var response = await _httpClient.GetAsync("https://news.ishop.az/api/news/count/3");
 
             if (response.IsSuccessStatusCode)
             {
