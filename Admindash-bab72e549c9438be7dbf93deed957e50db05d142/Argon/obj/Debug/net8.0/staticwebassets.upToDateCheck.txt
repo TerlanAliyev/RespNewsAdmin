@@ -3,7 +3,10 @@ wwwroot\css\argon-dashboard.min.css
 wwwroot\css\nucleo-icons.css
 wwwroot\css\nucleo-svg.css
 wwwroot\css\responsiv.css
+<<<<<<< HEAD
 wwwroot\css\yenilikler.css
+=======
+>>>>>>> f360e3fbb1e6b3c2105bfb319da954ad3de3a353
 wwwroot\favicon.ico
 wwwroot\fonts\nucleo.eot
 wwwroot\fonts\nucleo.ttf
@@ -51,7 +54,10 @@ wwwroot\img\down-arrow.svg
 wwwroot\img\down-arrow-dark.svg
 wwwroot\img\down-arrow-white.svg
 wwwroot\img\favicon.png
+<<<<<<< HEAD
 wwwroot\img\features\Ekran görüntüsü 2024-12-31 211758.png
+=======
+>>>>>>> f360e3fbb1e6b3c2105bfb319da954ad3de3a353
 wwwroot\img\home-decor-1.jpg
 wwwroot\img\home-decor-2.jpg
 wwwroot\img\home-decor-3.jpg
