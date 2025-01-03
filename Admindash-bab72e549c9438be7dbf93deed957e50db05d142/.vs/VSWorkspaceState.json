@@ -4,7 +4,11 @@
     "\\Argon",
     "\\Argon\\Views",
     "\\Argon\\Views\\Home",
-    "\\Argon\\Views\\Shared"
+    "\\Argon\\Views\\Shared",
+    "\\Argon\\wwwroot",
+    "\\Argon\\wwwroot\\js",
+    "\\Argon\\wwwroot\\js\\index"
   ],
+  "SelectedNode": "\\Argon\\wwwroot\\js\\index\\index.js",
   "PreviewInSolutionExplorer": false
 }
