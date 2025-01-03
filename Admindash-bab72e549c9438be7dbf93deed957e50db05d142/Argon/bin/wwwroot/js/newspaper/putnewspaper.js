@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(result => {
                 Swal.fire({
                     icon: 'success',
-                    title: 'Başarılı!',
+                    title: 'Uğurlu!',
                     text: result.Message || 'Xəbər redaktə edildi.'
                 });
             })
@@ -95,4 +95,3 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 });
-

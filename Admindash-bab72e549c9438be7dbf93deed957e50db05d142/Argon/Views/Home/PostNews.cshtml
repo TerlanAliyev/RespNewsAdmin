@@ -150,26 +150,8 @@
             <input type="text" id="newsTitle" name="NewsTitle" required />
 
             <label for="newsContent">Ətraflı məlumat :</label>
-            <div class="screen">
-                <div id="toolbar">
-                    <select class="ql-font"></select>
-                    <select class="ql-size"></select>
-                    <button class="ql-bold"></button>
-                    <button class="ql-italic"></button>
-                    <button class="ql-underline"></button>
-                    <button class="ql-strike"></button>
-                    <select class="ql-color"></select>
-                    <select class="ql-background"></select>
-                    <button class="ql-link"></button>
-                    <button class="ql-image"></button>
-                    <button class="ql-list" value="ordered"></button>
-                    <button class="ql-list" value="bullet"></button>
-                    <p class="btn" id="fullscreen"><i class="fa-solid fa-expand" style=""></i></p>
-                    <i class="fa-solid fa-x"></i>
-
-                </div>
-
-                <div id="editor"></div>
+            <div class="container">
+                <textarea id="editor"></textarea>
             </div>
 
             <label for="newsLangId">Dil:</label>
@@ -214,7 +196,7 @@
             <img id="photoPreview" style="display:none; max-width: 100px; max-height: 100px;" alt="Fotoğraf Önizlemesi">
 
 
-         @*    <label for="newsVideos">Xəbər videoları:</label>
+            @*    <label for="newsVideos">Xəbər videoları:</label>
             <input type="file" id="newsVideos" name="NewsVideos" multiple accept="video/*" />
             <div id="videoPreviewContainer"></div> *@
 
@@ -225,7 +207,10 @@
 
 
 
-
+<!-- Jodit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jodit/3.20.4/jodit.min.css" />
+<!-- Jodit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jodit/3.20.4/jodit.min.js"></script>
 
 
 
@@ -236,7 +221,39 @@
 
 <!-- SweetAlert2 CDN -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        const editor = Jodit.make('#editor', {
+        height: 500,
+        width: "100%",
+        placeholder: "İçeriği buraya yazın...",
+        defaultMode: Jodit.MODE_WYSIWYG,
+        toolbarSticky: true,
+        toolbarAdaptive: true,
+        toolbarStickyOffset: 50,
+        buttons: [
+            'source', '|',
+            'bold', 'italic', 'underline', 'strikethrough', '|',
+            'superscript', 'subscript', '|',
+            'ul', 'ol', '|',
+            'outdent', 'indent', '|',
+            'font', 'fontsize', 'brush', 'paragraph', '|',
+            'align', 'undo', 'redo', '|',
+            'image', 'file', 'video', 'link', '|',
+            'hr', 'table', 'copyformat', 'fullsize', 'preview', 'print', 'dots'
+        ],
+        uploader: {
+            insertImageAsBase64URI: true, // Fotoğrafları base64 olarak ekle
+        },
+        filebrowser: {
+            ajax: {
+                url: '/filebrowser' // Eğer filebrowser kullanıyorsanız bırakabilirsiniz
+            }
+        },
+        buttonsXS: ['bold', 'italic', 'brush', '|', 'image', 'video', 'dots']
+    });
 
+
+</script>
 <script>
       document.getElementById("fullscreen").addEventListener("click", function () {
         const screenElement = document.querySelector("#editor");
@@ -410,43 +427,15 @@
         // fetchAdmins();
     });
 
-    // Quill editor setup
-    const toolbarOptions = {
-        container: "#toolbar",
-        handlers: {
-            image: () => {
-                const input = document.createElement("input");
-                input.setAttribute("type", "file");
-                input.setAttribute("accept", "image/*");
-                input.click();
-                input.onchange = () => {
-                    const file = input.files[0];
-                    const reader = new FileReader();
-                    reader.onload = () => {
-                        const range = quill.getSelection();
-                        quill.insertEmbed(range.index, "image", reader.result);
-                    };
-                    reader.readAsDataURL(file);
-                };
-            },
-        },
-    };
-
-    const quill = new Quill("#editor", {
-        theme: "snow",
-        modules: {
-            toolbar: toolbarOptions,
-        },
-    });
+    
 
     document.getElementById("newsForm").addEventListener("submit", async (event) => {
         event.preventDefault(); // Formun gerçek gönderimini engelle
 
         const formData = new FormData(event.target);
 
-        // Quill editor içeriğini al
-        const quillContent = quill.root.innerHTML;
-        formData.append("NewsContetText", quillContent); // Quill içeriğini formData'ya ekle
+            const joditContent = editor.value; // Jodit'in HTML içeriğini alır
+                formData.append("NewsContetText", joditContent); // Jodit içeriğini formData'ya ekle
 
         // FormData verilerini konsola yazdır
         console.log("FormData İçeriği:");

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\responsiv.css"
     },
     {
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\css\\yenilikler.css",
+      "PackagePath": "staticwebassets\\css\\yenilikler.css"
+    },
+    {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -73,130 +77,6 @@
       "PackagePath": "staticwebassets\\img\\apple-icon.png"
     },
     {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bg-profile.jpg",
-      "PackagePath": "staticwebassets\\img\\bg-profile.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bg1.jpg",
-      "PackagePath": "staticwebassets\\img\\bg1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bruce-mars.jpg",
-      "PackagePath": "staticwebassets\\img\\bruce-mars.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-1.jpg",
-      "PackagePath": "staticwebassets\\img\\carousel-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-2.jpg",
-      "PackagePath": "staticwebassets\\img\\carousel-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-3.jpg",
-      "PackagePath": "staticwebassets\\img\\carousel-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-10.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved-10.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-11.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved-11.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-6.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved-6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-8.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved-8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved0.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved0.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved1.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved10.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved10.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved11-small.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved11-small.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved11.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved11.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved12.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved12.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved13.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved13.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved14.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved14.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved19.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved19.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved2.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved21.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved21.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved3.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved4.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved5-small.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved5-small.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved5.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved6-small.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved6-small.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved6.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved7.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved8.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved9.jpg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\curved9.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\white-curved.jpeg",
-      "PackagePath": "staticwebassets\\img\\curved-images\\white-curved.jpeg"
-    },
-    {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\down-arrow-dark.svg",
       "PackagePath": "staticwebassets\\img\\down-arrow-dark.svg"
     },
@@ -213,36 +93,8 @@
       "PackagePath": "staticwebassets\\img\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-1.jpg",
-      "PackagePath": "staticwebassets\\img\\home-decor-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-2.jpg",
-      "PackagePath": "staticwebassets\\img\\home-decor-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-3.jpg",
-      "PackagePath": "staticwebassets\\img\\home-decor-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\AU.png",
-      "PackagePath": "staticwebassets\\img\\icons\\flags\\AU.png"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\BR.png",
-      "PackagePath": "staticwebassets\\img\\icons\\flags\\BR.png"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\DE.png",
-      "PackagePath": "staticwebassets\\img\\icons\\flags\\DE.png"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\GB.png",
-      "PackagePath": "staticwebassets\\img\\icons\\flags\\GB.png"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\US.png",
-      "PackagePath": "staticwebassets\\img\\icons\\flags\\US.png"
+      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\features\\Ekran görüntüsü 2024-12-31 211758.png",
+      "PackagePath": "staticwebassets\\img\\features\\Ekran görüntüsü 2024-12-31 211758.png"
     },
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\illustrations\\icon-documentation.svg",
@@ -253,36 +105,12 @@
       "PackagePath": "staticwebassets\\img\\illustrations\\rocket-white.png"
     },
     {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\ivana-square.jpg",
-      "PackagePath": "staticwebassets\\img\\ivana-square.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\ivancik.jpg",
-      "PackagePath": "staticwebassets\\img\\ivancik.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\kal-visuals-square.jpg",
-      "PackagePath": "staticwebassets\\img\\kal-visuals-square.jpg"
-    },
-    {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logo-ct-dark.png",
       "PackagePath": "staticwebassets\\img\\logo-ct-dark.png"
     },
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logo-ct.png",
       "PackagePath": "staticwebassets\\img\\logo-ct.png"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logos\\mastercard.png",
-      "PackagePath": "staticwebassets\\img\\logos\\mastercard.png"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logos\\visa.png",
-      "PackagePath": "staticwebassets\\img\\logos\\visa.png"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\marie.jpg",
-      "PackagePath": "staticwebassets\\img\\marie.jpg"
     },
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\shapes\\pattern-lines.svg",
@@ -353,22 +181,6 @@
       "PackagePath": "staticwebassets\\img\\small-logos\\logo-xd.svg"
     },
     {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-1.jpg",
-      "PackagePath": "staticwebassets\\img\\team-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-2.jpg",
-      "PackagePath": "staticwebassets\\img\\team-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-3.jpg",
-      "PackagePath": "staticwebassets\\img\\team-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-4.jpg",
-      "PackagePath": "staticwebassets\\img\\team-4.jpg"
-    },
-    {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\theme\\angular.jpg",
       "PackagePath": "staticwebassets\\img\\theme\\angular.jpg"
     },
@@ -423,10 +235,6 @@
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\theme\\vue.jpg",
       "PackagePath": "staticwebassets\\img\\theme\\vue.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\vr-bg.jpg",
-      "PackagePath": "staticwebassets\\img\\vr-bg.jpg"
     },
     {
       "Id": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\advert\\advert.js",

@@ -9,8 +9,6 @@ const nextPageButton = document.getElementById("nextPage");
 const currentPageDisplay = document.getElementById("currentPage");
 
 let currentPage = 0;
-const startDate = "2024-12-01";
-const endDate = "2024-12-31";
 
 searchButton.addEventListener("click", () => {
     const langCode = 0;
@@ -51,7 +49,7 @@ searchButton.addEventListener("click", () => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
                     <td>${index + 1 + currentPage * 3}</td>
-                    <td>${newsItem.newsTitle}</td>
+                    <td>${newsItem.newsTitle.length < 10 ? newsItem.newsTitle : (newsItem.newsTitle.slice(0, 10) + '...')}</td>
                     <td>
                         ${newsItem.newsPhotos?.length > 0 ? `
                         <img src="${baseUrl}/${newsItem.newsPhotos[0]?.photoUrl || ''}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">
@@ -64,7 +62,7 @@ searchButton.addEventListener("click", () => {
                         <span class="btn btn-lg status active">Aktiv</span>
                     </td>
                     <td>
-                        <a href="#" class="text-dark me-2 btn">
+                        <a href="https://resp.ishop.az/news/${newsItem.newsId}" class="text-dark me-2 btn">
                             <i class="fa-solid fa-eye"></i>
                         </a>
                         <a href="/Home/PutNews/${newsItem.newsId}" class="text-primary me-2 btn">
@@ -93,8 +91,7 @@ async function fetchNews(page) {
     try {
         tableBody.innerHTML = "";
         const url = new URL(`${baseUrl}/api/news/admin/${page}`);
-        if (startDate) url.searchParams.append("startDate", startDate);
-        if (endDate) url.searchParams.append("endDate", endDate);
+        console.log(url)
 
         const response = await fetch(url, {
             method: "GET",
@@ -121,10 +118,13 @@ async function fetchNews(page) {
         }
 
         newsItems.forEach((newsItem, index) => {
+            console.log(`Məlumat: ${index}, ID: ${newsItem.newsId}, Title: ${newsItem.newsTitle}`);
+
+
             const row = document.createElement("tr");
             row.innerHTML = `
                 <td>${index + 1 + page * 10}</td>
-                <td>${newsItem.newsTitle}</td>
+                <td>${newsItem.newsTitle.length < 10 ? newsItem.newsTitle : (newsItem.newsTitle.slice(0,10) + '...')}</td>
                 <td>
                     ${newsItem.newsPhotos?.length > 0 ? `
                     <img src="${baseUrl}/${newsItem.newsPhotos[0]?.photoUrl || ''}" alt="Xəbər şəkli" style="width: 50px; height: 50px; object-fit: cover;">
@@ -139,8 +139,9 @@ async function fetchNews(page) {
                     </span>
                 </td>
                 <td>
-                    <a href="#" class="text-dark me-2 btn">
-                        <i class="fa-solid fa-eye"></i>
+                    <a href="https://resp.ishop.az/news/${newsItem.newsId}" target="_blank" class="text-dark me-2 btn view-link">
+                         <i class="fa-solid fa-eye"></i>
+    <span class="news-view-count">${newsItem.newsViewCount}</span>
                     </a>
                     <a href="/Home/PutNews/${newsItem.newsId}" class="text-primary me-2 btn">
                         <i class="fa-solid fa-pen"></i>

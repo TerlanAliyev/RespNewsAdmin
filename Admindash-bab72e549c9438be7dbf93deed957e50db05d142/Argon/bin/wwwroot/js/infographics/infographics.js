@@ -44,7 +44,7 @@ document.getElementById("searchButton").addEventListener("click", () => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
                         <td>${index + 1 + page * 10}</td>
-                        <td>${newsItem.infName}</td>
+                        <td>$${newsItem.infName.length < 20 ? newsItem.infName : (newsItem.infName.slice(0, 20) + '...')}</td>
                         <td>
                             ${newsItem.infPhoto?.length > 0 ? `
                                 <img src="${newsItem.infPhoto ? baseUrl + '/' + newsItem.infPhoto : ''}" alt="Haber Fotoğrafı" style="width: 50px; height: 50px; object-fit: cover;">
@@ -108,7 +108,7 @@ function fetchNews(page) {
                 const row = document.createElement("tr");
                 row.innerHTML = `
                         <td>${index + 1 + page * 10}</td>
-                        <td>${newsItem.infName}</td>
+                        <td>${newsItem.infName.length < 20 ? newsItem.infName : (newsItem.infName.slice(0, 20) + '...')}</td>
                         <td>
                                 ${newsItem.infPhoto?.length > 0 ? `
                             <img src="${newsItem.infPhoto ? baseUrl + '/' + newsItem.infPhoto : ''}" alt="Haber Fotoğrafı" style="width: 50px; height: 50px; object-fit: cover;">

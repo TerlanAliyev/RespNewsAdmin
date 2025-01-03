@@ -43,7 +43,7 @@ fetch(`${baseUrl}/api/statistic/AdminMonthlyStatistics`)
                 <div class="card z-index-2 h-100">
                   <div class="card-header pb-0 pt-3 bg-transparent">
                     <h6 class="text-capitalize">${adminName} - statistikası</h6>
-                    <p class="text-sm mb-0">2024</p>
+                    <p class="text-sm mb-0">2025</p>
                   </div>
                   <div class="card-body p-3">
                     <div class="chart">
@@ -58,7 +58,7 @@ fetch(`${baseUrl}/api/statistic/AdminMonthlyStatistics`)
             document.querySelector('.swiper-wrapper').appendChild(chartContainer);
 
             createChart(adminName, yearlyStats);
-        });
+        });                                                     
 
         initializeSwiper();
     })
@@ -67,8 +67,8 @@ fetch(`${baseUrl}/api/statistic/AdminMonthlyStatistics`)
     });
 
 function createChart(adminName, yearlyStats) {
-    const labels = Object.keys(yearlyStats['2024']);
-    const data = Object.values(yearlyStats['2024']);
+    const labels = Object.keys(yearlyStats['2025']);
+    const data = Object.values(yearlyStats['2025']);
 
     const ctx = document.getElementById(`chart-${adminName}`).getContext('2d');
 
@@ -77,7 +77,7 @@ function createChart(adminName, yearlyStats) {
         data: {
             labels: labels,
             datasets: [{
-                label: `${adminName} - 2024`,
+                label: `${adminName} - 2025`,
                 data: data,
                 borderColor: '#5e72e4',
                 backgroundColor: 'rgba(94, 114, 228, 0.2)',

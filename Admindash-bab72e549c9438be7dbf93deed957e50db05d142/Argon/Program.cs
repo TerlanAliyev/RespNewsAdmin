@@ -1,32 +1,48 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+// Kestrel'i yalnýzca HTTP ile yapýlandýrma
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenLocalhost(5002); // Sadece HTTP kullanýlýr
+});
 
-// Add session services before calling Build
+// Servisleri ekleme
+builder.Services.AddControllersWithViews();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
-    options.IdleTimeout = TimeSpan.FromMinutes(30);  // Optional: Adjust according to your needs
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Oturum süresi
 });
 
-var app = builder.Build();  // Build after configuring services
+// CORS yapýlandýrmasý
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", policy =>
+    {
+        policy.AllowAnyOrigin()   // Tüm kaynaklardan gelen isteklere izin verir
+              .AllowAnyHeader()   // Her türlü HTTP baþlýðýna izin verir
+              .AllowAnyMethod();  // Her türlü HTTP metoduna izin verir
+    });
+});
 
-// Configure the HTTP request pipeline.
+var app = builder.Build();
+
+// Hata yönetimi ve statik dosyalar
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
 }
 
-app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseSession();  // Ensure session middleware is included
-
+app.UseSession();
 app.UseRouting();
-
+app.UseCors("AllowSpecificOrigin");
 app.UseAuthorization();
 
 app.MapControllerRoute(

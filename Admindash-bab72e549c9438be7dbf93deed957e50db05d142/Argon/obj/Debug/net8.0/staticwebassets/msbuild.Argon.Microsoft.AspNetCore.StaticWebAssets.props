@@ -108,6 +108,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\responsiv.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\yenilikler.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Argon</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Argon</BasePath>
+      <RelativePath>css/yenilikler.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>s13ax5qdhl</Fingerprint>
+      <Integrity>EP3/aTQkSq6LXP1o+5SrQX7dGDQ3vaGWwu6+WhiyRCc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\yenilikler.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
       <SourceType>Package</SourceType>
       <SourceId>Argon</SourceId>
@@ -953,6 +971,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\favicon.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\features\Ekran görüntüsü 2024-12-31 211758.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Argon</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Argon</BasePath>
+      <RelativePath>img/features/Ekran görüntüsü 2024-12-31 211758.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ukwthekzg5</Fingerprint>
+      <Integrity>0gwO90TG2CW4kO7tMRJm5FbmHEtPXPeLNdJ3kqOvqWE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\features\Ekran görüntüsü 2024-12-31 211758.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\home-decor-1.jpg'))">
       <SourceType>Package</SourceType>
@@ -2028,8 +2064,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>939df8ceww</Fingerprint>
-      <Integrity>RT6br7vBWEBUeJ0P82ybSMIKotv9DOXuYUF0WgOhm7U=</Integrity>
+      <Fingerprint>rfk4ofnxko</Fingerprint>
+      <Integrity>d6ROwmwhpftVx9+1BkX5Dd3rZ4T5XJOyXhi/qa5DaU4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\category\category.js'))</OriginalItemSpec>
@@ -2118,8 +2154,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3hkvb64dot</Fingerprint>
-      <Integrity>Z7zx69EEvngDl/dempoWZV3wpn/kzjL8uC3d1Bxk0kU=</Integrity>
+      <Fingerprint>is5toexspw</Fingerprint>
+      <Integrity>bh02gUdmZUT2+0G7qjm6hBYRAX2LRtrO1VchPyMK5xI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\index\index.js'))</OriginalItemSpec>
@@ -2136,8 +2172,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>itz2tjrgmg</Fingerprint>
-      <Integrity>1jqkfO1rrTB+62TWo3WPvBiXbyN/YKNJHLsR1/RstYE=</Integrity>
+      <Fingerprint>beh53le258</Fingerprint>
+      <Integrity>rWH7/z8ywq3VFBBDWqq8DcBEkQJCoQNO+bI8TTRiiq8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\infographics\infographics.js'))</OriginalItemSpec>
@@ -2280,8 +2316,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>sv796v4cyd</Fingerprint>
-      <Integrity>KHJHCO+UPTcMAQyn99GqCeAduyro8X5A/RMQtd85yb8=</Integrity>
+      <Fingerprint>zzi0tmrmeo</Fingerprint>
+      <Integrity>L+UfkulixLMHkPuk4KSbGbiaqK5YpXaHxzw4ymKJZTY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\news\news.js'))</OriginalItemSpec>
@@ -2334,8 +2370,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>00gwoo8w8v</Fingerprint>
-      <Integrity>ABESDuo2fWFET0J2WthwA/QnYW0C/PoQStr5DKHwKn8=</Integrity>
+      <Fingerprint>xuhoh48cv3</Fingerprint>
+      <Integrity>aTHOY3Nl8T5185+Ts6ECSLuDCUecu9LoBPBZ8S0+zak=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\newspaper\putnewspaper.js'))</OriginalItemSpec>
@@ -2550,8 +2586,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>nrvenjmopo</Fingerprint>
-      <Integrity>rWRzN0M7bV3FERIhge71vCTgc1sgfxdCqXjhHsO5fgA=</Integrity>
+      <Fingerprint>520jhd9qfy</Fingerprint>
+      <Integrity>82MzP7vClr/2h+UgV4ofLb8B7igRXuWVJ8JmPAOen/A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\videos\video.js'))</OriginalItemSpec>

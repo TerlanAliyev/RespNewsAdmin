@@ -115,7 +115,7 @@
                         </thead>
                         <tbody id="tableBody"></tbody>
                     </table>
-                    <nav aria-label="Pagination">
+                   @*  <nav aria-label="Pagination">
                         <ul class="pagination justify-content-center">
                             <li class="page-item">
                                 <button class="page-link" id="prevPage" disabled>
@@ -131,7 +131,7 @@
                                 </button>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> *@
                 </div>
             </div>
         </div>
@@ -292,7 +292,7 @@
                     tableBody.appendChild(row);
                 });
 
-                nextPageButton.disabled = newsItems.length < 10; // Eğer veri 10'dan azsa, son sayfa
+                // nextPageButton.disabled = newsItems.length < 10; // Eğer veri 10'dan azsa, son sayfa
             })
             .catch((error) => {
                 console.error("Hata:", error);
@@ -302,25 +302,25 @@
     // İlk sayfayı yükle
     fetchNews(currentPage);
 
-    // Önceki ve Sonraki düğmelere tıklama olayları
-    prevPageButton.addEventListener("click", () => {
-        if (currentPage > 0) {
-            currentPage--;
-            fetchNews(currentPage);
-            currentPageDisplay.textContent = currentPage + 1;
-            nextPageButton.disabled = false;
-        }
-        if (currentPage === 0) {
-            prevPageButton.disabled = true;
-        }
-    });
+    // // Önceki ve Sonraki düğmelere tıklama olayları
+    // prevPageButton.addEventListener("click", () => {
+    //     if (currentPage > 0) {
+    //         currentPage--;
+    //         fetchNews(currentPage);
+    //         currentPageDisplay.textContent = currentPage + 1;
+    //         nextPageButton.disabled = false;
+    //     }
+    //     if (currentPage === 0) {
+    //         prevPageButton.disabled = true;
+    //     }
+    // });
 
-    nextPageButton.addEventListener("click", () => {
-        currentPage++;
-        fetchNews(currentPage);
-        currentPageDisplay.textContent = currentPage + 1;
-        prevPageButton.disabled = false;
-    });
+    // nextPageButton.addEventListener("click", () => {
+    //     currentPage++;
+    //     fetchNews(currentPage);
+    //     currentPageDisplay.textContent = currentPage + 1;
+    //     prevPageButton.disabled = false;
+    // });
 
     // Durum güncelleme (Aktiv/Passiv)
     tableBody.addEventListener("click", (e) => {

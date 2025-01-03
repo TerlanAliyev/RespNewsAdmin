@@ -4,8 +4,11 @@
     "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142",
     "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon",
     "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views",
-    "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home"
+    "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home",
+    "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot",
+    "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js",
+    "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\index"
   ],
-  "SelectedNode": "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\Views\\Home\\YtVideos.cshtml",
+  "SelectedNode": "\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\index\\index.js",
   "PreviewInSolutionExplorer": false
 }

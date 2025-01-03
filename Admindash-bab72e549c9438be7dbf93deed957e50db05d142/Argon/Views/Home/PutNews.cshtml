@@ -147,28 +147,12 @@
             <label for="newsTitle">Xəbər Başlığı:</label>
             <input type="text" id="newsTitle" name="NewsTitle" required />
 
-            <label for="newsContent">Ətraflı məlumat:</label>
-            <div class="screen">
-                <i class="fa-solid fa-x"></i>
-                <div id="toolbar">
-                    <select class="ql-font"></select>
-                    <select class="ql-size"></select>
-                    <button class="ql-bold"></button>
-                    <button class="ql-italic"></button>
-                    <button class="ql-underline"></button>
-                    <button class="ql-strike"></button>
-                    <select class="ql-color"></select>
-                    <select class="ql-background"></select>
-                    <button class="ql-link"></button>
-                    <button class="ql-image"></button>
-                    <button class="ql-list" value="ordered"></button>
-                    <button class="ql-list" value="bullet"></button>
-                    <p class="btn" id="fullscreen"><i class="fa-solid fa-expand" style="color:red;"></i></p>
 
-                </div>
-
-                <div id="editor"></div>
+            <label for="newsContent">Ətraflı məlumat :</label>
+            <div class="container">
+                <textarea id="editor"></textarea>
             </div>
+      
 
             <label for="newsLangId">Dil : (əgər dili dəyişsəz MÜTLƏQ kateqoriyanı da yenidən dilə uyğun seçin.Əks halda ikisinə də toxunmağa ehtiyac yoxdur)</label>
             <select id="newsLangId" name="NewsLangId">
@@ -216,7 +200,10 @@
             <input type="file" id="newsVideos" name="NewsVideos" multiple accept="video/*" />
             <div id="videoPreviewContainer"></div>
             <input type="hidden" id="newsId" name="name" value="" />
-
+            
+            
+            <label for="newsVideos">Redaktə etdikdən sonra xəbərin statusunu AKTİV olaraq dəyişməyi unutmayin</label>
+            
             <button type="submit">Gönder</button>
         </div>
     </form>
@@ -235,18 +222,85 @@
 <script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+
+
+
+
+<!-- Jodit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jodit/3.20.4/jodit.min.css" />
+<!-- Jodit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jodit/3.20.4/jodit.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
+<!-- Popper.js -->
+<script src="https://unpkg.com/popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+
+<!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-      document.getElementById("fullscreen").addEventListener("click", function () {
-        const screenElement = document.querySelector("#editor");
-        screenElement.classList.add("fullscreen");
+    // Jodit Editör'ü başlatma
+    const editor = Jodit.make('#editor', {
+        height: 500, // Editör yüksekliği
+        width: "100%", // Editör genişliği
+        placeholder: "İçeriği buraya yazın...",
+        defaultMode: Jodit.MODE_WYSIWYG, // WYSIWYG modu
+        toolbarSticky: true, // Toolbar'ın sabit kalması
+        toolbarAdaptive: true, // Responsive toolbar
+        toolbarStickyOffset: 50, // Toolbar sabitleme uzaklığı
+        buttons: [
+            'source', '|',
+            'bold', 'italic', 'underline', 'strikethrough', '|',
+            'superscript', 'subscript', '|',
+            'ul', 'ol', '|',
+            'outdent', 'indent', '|',
+            'font', 'fontsize', 'brush', 'paragraph', '|',
+            'align', 'undo', 'redo', '|',
+            'image', 'file', 'video', 'link', '|',
+            'hr', 'table', 'copyformat', 'fullsize', 'preview', 'print', 'dots'
+        ],
+        uploader: {
+            url: '/upload', // Backend'e gönderilecek URL (örnek olarak '/upload')
+            format: 'json',
+            headers: {
+                'X-CSRF-Token': 'YOUR_CSRF_TOKEN_HERE'
+            },
+            isSuccess: function (resp) {
+                return !resp.error;
+            },
+            getMessage: function (resp) {
+                return resp.msg;
+            },
+            process: function (resp) {
+                return {
+                    files: resp.files || [],
+                    path: resp.path || ''
+                };
+            }
+        },
+        filebrowser: {
+            ajax: {
+                url: '/filebrowser', // Backend için tarayıcı desteği
+            },
+            isSuccess: function (resp) {
+                return !resp.error;
+            }
+        },
+        buttonsXS: ['bold', 'italic', 'brush', '|', 'image', 'video', 'dots']
     });
 
-    document.querySelector(".fa-x").addEventListener("click", function () {
-        const screenElement = document.querySelector("#editor");
-        screenElement.classList.remove("fullscreen");
-    });
 
+
+    // İçeriği alma
+    console.log(editor.value);
 </script>
+
+
+
+
 
 
 <script>
@@ -301,18 +355,18 @@
             .then((data) => {
                 Swal.fire({
                     icon: "success",
-                    title: "Başarılı",
-                    text: "Haber başarıyla güncellendi.",
-                    confirmButtonText: "Tamam",
+                    title: "Uğurlu",
+                    text: "Xəbər uğurla göndərildi!",
+                    confirmButtonText: "Bağla",
                 });
             })
             .catch((error) => {
                 console.error("Hata:", error.message);
                 Swal.fire({
                     icon: "error",
-                    title: "Hata",
-                    text: `Güncelleme sırasında bir hata oluştu: ${error.message}`,
-                    confirmButtonText: "Tamam",
+                    title: "Xəta!",
+                    text: `Redaktə uğursuz oldu: ${error.message}`,
+                    confirmButtonText: "Bağla",
                 });
             });
     });
@@ -440,7 +494,7 @@
                 document.getElementById("newsTitle").value = data.newsTitle || "";
 
                 // Haber içeriği
-                quill.root.innerHTML = data.newsContetText || "";
+        editor.value = data.newsContetText || ""; // Jodit içeriğini doldur
 
                 // Dil ID
                 document.getElementById("newsLangId").value = data.newsLangId || "";

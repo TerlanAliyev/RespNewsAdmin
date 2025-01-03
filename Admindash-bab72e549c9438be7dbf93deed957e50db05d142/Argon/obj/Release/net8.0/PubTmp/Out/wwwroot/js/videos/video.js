@@ -84,7 +84,7 @@ function convertToEmbedUrl(url) {
 
     url = url.split('?')[0]; // Remove parameters
 
-    const regex = /(?:youtu\.be\/|youtube\.com\/(?:[^\/]+\/[^\/]+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=))([a-zA-Z0-9_-]{11})/;
+    const regex = /(?:youtu\.be\/|youtube\.com\/(?:shorts\/|(?:[^\/]+\/[^\/]+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)))([a-zA-Z0-9_-]{11})/;
     const match = url.match(regex);
     if (match && match[1]) {
         return `https://www.youtube.com/embed/${match[1]}`;
@@ -135,7 +135,7 @@ function fetchVideos(page) {
                 tableBody.appendChild(row);
             });
 
-            document.getElementById("nextPage").disabled = videos.length < 10;
+            //document.getElementById("nextPage").disabled = videos.length < 10;
         })
         .catch((error) => {
             console.error("Error:", error);
@@ -145,21 +145,21 @@ function fetchVideos(page) {
 // Initial fetch
 fetchVideos(page);
 
-document.getElementById("prevPage").addEventListener("click", () => {
-    if (page > 0) {
-        page--;
-        fetchVideos(page);
-        document.getElementById("currentPage").textContent = page + 1;
-        document.getElementById("nextPage").disabled = false;
-    }
-});
+//document.getElementById("prevPage").addEventListener("click", () => {
+//    if (page > 0) {
+//        page--;
+//        fetchVideos(page);
+//        document.getElementById("currentPage").textContent = page + 1;
+//        document.getElementById("nextPage").disabled = false;
+//    }
+//});
 
-document.getElementById("nextPage").addEventListener("click", () => {
-    page++;
-    fetchVideos(page);
-    document.getElementById("currentPage").textContent = page + 1;
-    document.getElementById("prevPage").disabled = page === 0;
-});
+//document.getElementById("nextPage").addEventListener("click", () => {
+//    page++;
+//    fetchVideos(page);
+//    document.getElementById("currentPage").textContent = page + 1;
+//    document.getElementById("prevPage").disabled = page === 0;
+//});
 
 // Delete video
 function deleteVideo(id) {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Gt6wlUnihTd9gFfUPoaL7eF6wBD42jJC9EJ8WNbTHUQ=",
+  "Hash": "RaBMrXTqAp1ZXnCjgmKnYIXcj9mIJn+yLQLfmzu3YJ0=",
   "Source": "Argon",
   "BasePath": "_content/Argon",
   "Mode": "Default",
@@ -162,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\responsiv.css"
+    },
+    {
+      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\css\\yenilikler.css",
+      "SourceId": "Argon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
+      "BasePath": "_content/Argon",
+      "RelativePath": "css/yenilikler#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s13ax5qdhl",
+      "Integrity": "EP3/aTQkSq6LXP1o+5SrQX7dGDQ3vaGWwu6+WhiyRCc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\yenilikler.css"
     },
     {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\favicon.ico",
@@ -416,657 +437,6 @@
       "OriginalItemSpec": "wwwroot\\img\\apple-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bg1.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/bg1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "k46mp1jvvt",
-      "Integrity": "hBWGWEE0FOAEJX96MNo/Fvfdlw5WP6aU6kDI1OUqkmw=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\bg1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bg-profile.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/bg-profile#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "7a2pc1af6r",
-      "Integrity": "MZjxVr+pKZeuzrJmkRM/Ooh/NgIIfNBHVokoxV0W4GU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\bg-profile.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bruce-mars.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/bruce-mars#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "90qdytgvwb",
-      "Integrity": "F4XjFxnW6hHy2NyvxNnkq1JSfCaWH313K/8lu+YzY/c=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\bruce-mars.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-1.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/carousel-1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "np07vdbov1",
-      "Integrity": "W4II10dJ5+RroYk7DgbIXoZL60vSHPtGg43FoTOp0Ho=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\carousel-1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-2.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/carousel-2#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "h5u6edkquc",
-      "Integrity": "JcCjhGk3fxBL2hpridVaoqfwWxafteEfwUmEZPr/BKg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\carousel-2.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-3.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/carousel-3#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "irutb5073e",
-      "Integrity": "AuAMoJkP5LKmOr2+IY8guCCxPU5jwlwKiac1rqNUvk4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\carousel-3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved0.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved0#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lgorudi6sh",
-      "Integrity": "lYbD3Yq6g2Yf6A0uaz804onNFfZmDe/ZOv/5KxsnV8s=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved0.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved1.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "gme6fywzfr",
-      "Integrity": "iIZ+zO1oz2dzS4oWSo+xcf+oA+ynmNqmod4ogCXXE80=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved10.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved10#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "5grci5icne",
-      "Integrity": "C0T7l+oUUz6s6WXOSWFoAbcOQIj+cp62dISi7zORYo4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved10.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-10.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved-10#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "3zvzbvw04e",
-      "Integrity": "YawETkpBddzjtxKOsEjtlWz0GisD6ahv54/1ufxnFak=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved-10.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved11.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved11#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "zdssefpi5b",
-      "Integrity": "t/iUWnBZedxsyRS0/wlHf+IDl20TkIKojX7HaIk8i1U=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved11.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-11.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved-11#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "aaxx4c8s62",
-      "Integrity": "PiX8NAe/LZnFq5B/2F/65Z/HPHEtlSl1P2t+PhdluLM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved-11.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved11-small.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved11-small#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ml79el48b0",
-      "Integrity": "uhBWNIwPl61hWf9DOny53ST0tpnVl/Yc5yrzpprdsmY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved11-small.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved12.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved12#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "xyx88756ms",
-      "Integrity": "+bG0XkvCzJMz+ub3a0xvw2MaSoiCOuwdqvQvu08Uk0s=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved12.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved13.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved13#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "uzkq4hm4cg",
-      "Integrity": "yrT+N+d5bjVO2zS2s0SQaT1lFXkeDwnMEIJ0xsDUngk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved13.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved14.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved14#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ybyuopd3r2",
-      "Integrity": "TrWY2s8KwjwRjK/EKZt6yu4noqOp2MFZGrUVLrfezuU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved14.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved19.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved19#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "th1j6kx9dn",
-      "Integrity": "r4upr2i+44rpel5wQNd6Le5QeoBrPGmMDAM+udcTs6k=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved19.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved2.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved2#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "z8y8rtqogg",
-      "Integrity": "Y448bEQDHN19DZj40F93LxwxZFOhPzd7L7vfMlwo4Xk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved2.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved21.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved21#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "n3ixh6h3kj",
-      "Integrity": "4zJm52sFA45rGdjPUMdywp0SeEORRVVf4nUyM8o4x+g=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved21.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved3.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved3#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ajzt9qjgj1",
-      "Integrity": "Jto5YatF/EkKMX7G6q279KXc2w2U0Hikc7iLqXngASQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved4.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved4#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "i7nlh8bwjl",
-      "Integrity": "vun8284uKHxwHtktOA1WD+Xf7BN9c4PjSuF8mLl3T/U=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved4.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved5.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved5#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "n178s80iuz",
-      "Integrity": "qxGDUsMsWd9VN0PR2zhf3nB1cWN2O2tUj55VKLP9/ho=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved5.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved5-small.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved5-small#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "fd9chzqnjg",
-      "Integrity": "czcjs7aGHmMXgAQxc3MuJ0kB+6wG9dWv7sq9t1V2DEg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved5-small.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved6.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved6#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ps0ut6xlkx",
-      "Integrity": "icQghHdKohUEOTwOxpMijy6KurDDRiRYNsLbSd7uMBU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved6.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-6.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved-6#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "njimx1z4zq",
-      "Integrity": "nWMEP5NeYQGumevZSG3sD7xKCuaZTxluPV7IUHty+GM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved-6.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved6-small.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved6-small#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "746sp5xhs2",
-      "Integrity": "90rB3zdD5Ik34K2MPTUmtYy6c94RKHo/krbwm09Swl8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved6-small.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved7.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved7#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "jg9phbymly",
-      "Integrity": "I1mxdNXgwPYmjArCQSwSK9/I1Q+Trbqq9fJTLqzqMb8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved7.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved8.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved8#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "uuog3f2zfe",
-      "Integrity": "1kBg57YDux0OFlfHFbiE2MeCL5bKn6Yx1NAVzbd7Fqk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved8.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-8.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved-8#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "0twba5lamk",
-      "Integrity": "LDfRf3e6aNqCo8S24D9jxEWAJPgVmV8yivoPWOlafo8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved-8.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved9.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/curved9#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "2tx8erwv28",
-      "Integrity": "JjeKAa9EAL5j7qZ9eDe08MaPOctxRPiTMZQ13Q3dWU4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\curved9.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\white-curved.jpeg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/curved-images/white-curved#[.{fingerprint}]?.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "e9yvjb6sv4",
-      "Integrity": "zuEEZOvq8BChxRZfTCocqgXVeAh2ZY5Yy+A4VTP/5/0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\curved-images\\white-curved.jpeg"
-    },
-    {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\down-arrow.svg",
       "SourceId": "Argon",
       "SourceType": "Discovered",
@@ -1151,12 +521,12 @@
       "OriginalItemSpec": "wwwroot\\img\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-1.jpg",
+      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\features\\Ekran görüntüsü 2024-12-31 211758.png",
       "SourceId": "Argon",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
       "BasePath": "_content/Argon",
-      "RelativePath": "img/home-decor-1#[.{fingerprint}]?.jpg",
+      "RelativePath": "img/features/Ekran görüntüsü 2024-12-31 211758#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1165,158 +535,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qp8yip8h6u",
-      "Integrity": "nnbojrV+vKwOghBnmmNvoTsAxirfe/wIz1wrnlvIFOw=",
+      "Fingerprint": "ukwthekzg5",
+      "Integrity": "0gwO90TG2CW4kO7tMRJm5FbmHEtPXPeLNdJ3kqOvqWE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\home-decor-1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-2.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/home-decor-2#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "6k31981ri5",
-      "Integrity": "RmESnL4DE3YfFX2BO68l79CvCGTWy6mIOExLdlY2Trg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\home-decor-2.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-3.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/home-decor-3#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "3qk8reegfv",
-      "Integrity": "6+1wjGiRo4U2CJDOTsVrk/UW23T9uWx1qtVPhT1BLCg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\home-decor-3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\AU.png",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/icons/flags/AU#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "zlepgiyp04",
-      "Integrity": "yfEPV2CDlA3V1mRo15R/uJIFy/lckfDxV1DqAc4wpls=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\icons\\flags\\AU.png"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\BR.png",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/icons/flags/BR#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "bp5mj5riss",
-      "Integrity": "Xx0PaN/sxktTlFM7F9jPlhXqMmBQ+qVRkLoJnDRtmgM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\icons\\flags\\BR.png"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\DE.png",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/icons/flags/DE#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "mwwubnua2a",
-      "Integrity": "6vZOCsAl1tiNJ9BGxU7yZkjALnsKzKcXZ2jEmLwEgQU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\icons\\flags\\DE.png"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\GB.png",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/icons/flags/GB#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "85dukuugcr",
-      "Integrity": "DEqlktZd32gzJ5F+myw4Yylr724ob4cpYyNeKmXPHDs=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\icons\\flags\\GB.png"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\US.png",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/icons/flags/US#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "8tgsf7r5t9",
-      "Integrity": "5OAhQB15+F6z059nfK2cS8FFe26g0i9XolQf81ov5Xo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\icons\\flags\\US.png"
+      "OriginalItemSpec": "wwwroot\\img\\features\\Ekran görüntüsü 2024-12-31 211758.png"
     },
     {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\illustrations\\icon-documentation.svg",
@@ -1361,69 +584,6 @@
       "OriginalItemSpec": "wwwroot\\img\\illustrations\\rocket-white.png"
     },
     {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\ivana-square.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/ivana-square#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "x83daalie7",
-      "Integrity": "TyylDTyYsFKp9VyDulUie4P9gkXOxFEqR4aI2ikzqvY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ivana-square.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\ivancik.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/ivancik#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "4d40w1ohjs",
-      "Integrity": "6GViVHcBsffJFRlIdPxH9/0FPU2A57mLn4iD/4WfiTE=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ivancik.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\kal-visuals-square.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/kal-visuals-square#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "d9gai0gs1y",
-      "Integrity": "Lz3yS4ECo1/aoDslaY6ZJXWqGXCK8qw1UfmobZax5gw=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\kal-visuals-square.jpg"
-    },
-    {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logo-ct.png",
       "SourceId": "Argon",
       "SourceType": "Discovered",
@@ -1464,69 +624,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\logo-ct-dark.png"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logos\\mastercard.png",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/logos/mastercard#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "2mdn1t6zq2",
-      "Integrity": "qvldacD26pljXrnWic5r8NfRO8KUyR0yNLrXrdXz4Is=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\logos\\mastercard.png"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logos\\visa.png",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/logos/visa#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "3hl5xu1j6w",
-      "Integrity": "CTsb4w8OCWGEb+13Gol72Quyt3oIUpOJE710rhSpWEI=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\logos\\visa.png"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\marie.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/marie#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "5jjdy7nd2c",
-      "Integrity": "ITKRdb4XG3RIhUtz/dmr7f6I3/z9DDgIfnRmwf6Ebcs=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\marie.jpg"
     },
     {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\shapes\\pattern-lines.svg",
@@ -1886,90 +983,6 @@
       "OriginalItemSpec": "wwwroot\\img\\small-logos\\logo-xd.svg"
     },
     {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-1.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/team-1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "gllty4d185",
-      "Integrity": "lBQlw1i+YLsnt8+PNfzjFmS0lRmv61xZVGGmPg+jDR8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\team-1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-2.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/team-2#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "9aqn5wo1hu",
-      "Integrity": "0UmGXNJs/5JUySgX9b7z2bOVGjEzDioCj/8CMaPPltM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\team-2.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-3.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/team-3#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ow8ozummuh",
-      "Integrity": "GF44aZAIzvMOEyRmNiLu3VRqftSkVRPsfGyfy+RwgmY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\team-3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-4.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/team-4#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "i7pxge09pi",
-      "Integrity": "3kXYQoKjDKRTewCjlcIu/hP1lkvyFmZCCsLw8U43xbU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\team-4.jpg"
-    },
-    {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\theme\\angular.jpg",
       "SourceId": "Argon",
       "SourceType": "Discovered",
@@ -2264,27 +1277,6 @@
       "OriginalItemSpec": "wwwroot\\img\\theme\\vue.jpg"
     },
     {
-      "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\vr-bg.jpg",
-      "SourceId": "Argon",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\",
-      "BasePath": "_content/Argon",
-      "RelativePath": "img/vr-bg#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ycthgg5iq5",
-      "Integrity": "HjFV8LM5OG+ZU/gE/wzSjPVNo3txLNtyj86/hhkVMB8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vr-bg.jpg"
-    },
-    {
       "Identity": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\advert\\advert.js",
       "SourceId": "Argon",
       "SourceType": "Discovered",
@@ -2404,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "939df8ceww",
-      "Integrity": "RT6br7vBWEBUeJ0P82ybSMIKotv9DOXuYUF0WgOhm7U=",
+      "Fingerprint": "rfk4ofnxko",
+      "Integrity": "d6ROwmwhpftVx9+1BkX5Dd3rZ4T5XJOyXhi/qa5DaU4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\category\\category.js"
@@ -2509,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3hkvb64dot",
-      "Integrity": "Z7zx69EEvngDl/dempoWZV3wpn/kzjL8uC3d1Bxk0kU=",
+      "Fingerprint": "is5toexspw",
+      "Integrity": "bh02gUdmZUT2+0G7qjm6hBYRAX2LRtrO1VchPyMK5xI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\index\\index.js"
@@ -2530,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "itz2tjrgmg",
-      "Integrity": "1jqkfO1rrTB+62TWo3WPvBiXbyN/YKNJHLsR1/RstYE=",
+      "Fingerprint": "beh53le258",
+      "Integrity": "rWH7/z8ywq3VFBBDWqq8DcBEkQJCoQNO+bI8TTRiiq8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\infographics\\infographics.js"
@@ -2698,8 +1690,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sv796v4cyd",
-      "Integrity": "KHJHCO+UPTcMAQyn99GqCeAduyro8X5A/RMQtd85yb8=",
+      "Fingerprint": "zzi0tmrmeo",
+      "Integrity": "L+UfkulixLMHkPuk4KSbGbiaqK5YpXaHxzw4ymKJZTY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\news\\news.js"
@@ -2761,8 +1753,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "00gwoo8w8v",
-      "Integrity": "ABESDuo2fWFET0J2WthwA/QnYW0C/PoQStr5DKHwKn8=",
+      "Fingerprint": "xuhoh48cv3",
+      "Integrity": "aTHOY3Nl8T5185+Ts6ECSLuDCUecu9LoBPBZ8S0+zak=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\newspaper\\putnewspaper.js"
@@ -3013,8 +2005,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nrvenjmopo",
-      "Integrity": "rWRzN0M7bV3FERIhge71vCTgc1sgfxdCqXjhHsO5fgA=",
+      "Fingerprint": "520jhd9qfy",
+      "Integrity": "82MzP7vClr/2h+UgV4ofLb8B7igRXuWVJ8JmPAOen/A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\videos\\video.js"
@@ -8594,6 +7586,88 @@
       ]
     },
     {
+      "Route": "css/yenilikler.css",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\css\\yenilikler.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EP3/aTQkSq6LXP1o+5SrQX7dGDQ3vaGWwu6+WhiyRCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 13:05:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EP3/aTQkSq6LXP1o+5SrQX7dGDQ3vaGWwu6+WhiyRCc="
+        }
+      ]
+    },
+    {
+      "Route": "css/yenilikler.s13ax5qdhl.css",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\css\\yenilikler.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EP3/aTQkSq6LXP1o+5SrQX7dGDQ3vaGWwu6+WhiyRCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 13:05:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s13ax5qdhl"
+        },
+        {
+          "Name": "label",
+          "Value": "css/yenilikler.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EP3/aTQkSq6LXP1o+5SrQX7dGDQ3vaGWwu6+WhiyRCc="
+        }
+      ]
+    },
+    {
       "Route": "favicon.61n19gt1b8.ico",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\favicon.ico",
       "Selectors": [],
@@ -9578,2548 +8652,6 @@
       ]
     },
     {
-      "Route": "img/bg1.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bg1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "165177"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hBWGWEE0FOAEJX96MNo/Fvfdlw5WP6aU6kDI1OUqkmw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hBWGWEE0FOAEJX96MNo/Fvfdlw5WP6aU6kDI1OUqkmw="
-        }
-      ]
-    },
-    {
-      "Route": "img/bg1.k46mp1jvvt.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bg1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "165177"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hBWGWEE0FOAEJX96MNo/Fvfdlw5WP6aU6kDI1OUqkmw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "k46mp1jvvt"
-        },
-        {
-          "Name": "label",
-          "Value": "img/bg1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hBWGWEE0FOAEJX96MNo/Fvfdlw5WP6aU6kDI1OUqkmw="
-        }
-      ]
-    },
-    {
-      "Route": "img/bg-profile.7a2pc1af6r.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bg-profile.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "522008"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MZjxVr+pKZeuzrJmkRM/Ooh/NgIIfNBHVokoxV0W4GU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7a2pc1af6r"
-        },
-        {
-          "Name": "label",
-          "Value": "img/bg-profile.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MZjxVr+pKZeuzrJmkRM/Ooh/NgIIfNBHVokoxV0W4GU="
-        }
-      ]
-    },
-    {
-      "Route": "img/bg-profile.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bg-profile.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "522008"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MZjxVr+pKZeuzrJmkRM/Ooh/NgIIfNBHVokoxV0W4GU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MZjxVr+pKZeuzrJmkRM/Ooh/NgIIfNBHVokoxV0W4GU="
-        }
-      ]
-    },
-    {
-      "Route": "img/bruce-mars.90qdytgvwb.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bruce-mars.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20236"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"F4XjFxnW6hHy2NyvxNnkq1JSfCaWH313K/8lu+YzY/c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "90qdytgvwb"
-        },
-        {
-          "Name": "label",
-          "Value": "img/bruce-mars.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-F4XjFxnW6hHy2NyvxNnkq1JSfCaWH313K/8lu+YzY/c="
-        }
-      ]
-    },
-    {
-      "Route": "img/bruce-mars.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\bruce-mars.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20236"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"F4XjFxnW6hHy2NyvxNnkq1JSfCaWH313K/8lu+YzY/c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-F4XjFxnW6hHy2NyvxNnkq1JSfCaWH313K/8lu+YzY/c="
-        }
-      ]
-    },
-    {
-      "Route": "img/carousel-1.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29318"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"W4II10dJ5+RroYk7DgbIXoZL60vSHPtGg43FoTOp0Ho=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-W4II10dJ5+RroYk7DgbIXoZL60vSHPtGg43FoTOp0Ho="
-        }
-      ]
-    },
-    {
-      "Route": "img/carousel-1.np07vdbov1.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29318"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"W4II10dJ5+RroYk7DgbIXoZL60vSHPtGg43FoTOp0Ho=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "np07vdbov1"
-        },
-        {
-          "Name": "label",
-          "Value": "img/carousel-1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-W4II10dJ5+RroYk7DgbIXoZL60vSHPtGg43FoTOp0Ho="
-        }
-      ]
-    },
-    {
-      "Route": "img/carousel-2.h5u6edkquc.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "18207"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JcCjhGk3fxBL2hpridVaoqfwWxafteEfwUmEZPr/BKg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "h5u6edkquc"
-        },
-        {
-          "Name": "label",
-          "Value": "img/carousel-2.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-JcCjhGk3fxBL2hpridVaoqfwWxafteEfwUmEZPr/BKg="
-        }
-      ]
-    },
-    {
-      "Route": "img/carousel-2.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "18207"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JcCjhGk3fxBL2hpridVaoqfwWxafteEfwUmEZPr/BKg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-JcCjhGk3fxBL2hpridVaoqfwWxafteEfwUmEZPr/BKg="
-        }
-      ]
-    },
-    {
-      "Route": "img/carousel-3.irutb5073e.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14425"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AuAMoJkP5LKmOr2+IY8guCCxPU5jwlwKiac1rqNUvk4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "irutb5073e"
-        },
-        {
-          "Name": "label",
-          "Value": "img/carousel-3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AuAMoJkP5LKmOr2+IY8guCCxPU5jwlwKiac1rqNUvk4="
-        }
-      ]
-    },
-    {
-      "Route": "img/carousel-3.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\carousel-3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14425"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AuAMoJkP5LKmOr2+IY8guCCxPU5jwlwKiac1rqNUvk4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AuAMoJkP5LKmOr2+IY8guCCxPU5jwlwKiac1rqNUvk4="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved0.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved0.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "362523"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lYbD3Yq6g2Yf6A0uaz804onNFfZmDe/ZOv/5KxsnV8s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lYbD3Yq6g2Yf6A0uaz804onNFfZmDe/ZOv/5KxsnV8s="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved0.lgorudi6sh.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved0.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "362523"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lYbD3Yq6g2Yf6A0uaz804onNFfZmDe/ZOv/5KxsnV8s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lgorudi6sh"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved0.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lYbD3Yq6g2Yf6A0uaz804onNFfZmDe/ZOv/5KxsnV8s="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved1.gme6fywzfr.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "136181"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iIZ+zO1oz2dzS4oWSo+xcf+oA+ynmNqmod4ogCXXE80=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gme6fywzfr"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iIZ+zO1oz2dzS4oWSo+xcf+oA+ynmNqmod4ogCXXE80="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved1.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "136181"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iIZ+zO1oz2dzS4oWSo+xcf+oA+ynmNqmod4ogCXXE80=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iIZ+zO1oz2dzS4oWSo+xcf+oA+ynmNqmod4ogCXXE80="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved-10.3zvzbvw04e.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-10.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "134275"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YawETkpBddzjtxKOsEjtlWz0GisD6ahv54/1ufxnFak=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3zvzbvw04e"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved-10.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YawETkpBddzjtxKOsEjtlWz0GisD6ahv54/1ufxnFak="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved10.5grci5icne.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved10.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5872495"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"C0T7l+oUUz6s6WXOSWFoAbcOQIj+cp62dISi7zORYo4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5grci5icne"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved10.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-C0T7l+oUUz6s6WXOSWFoAbcOQIj+cp62dISi7zORYo4="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved10.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved10.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5872495"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"C0T7l+oUUz6s6WXOSWFoAbcOQIj+cp62dISi7zORYo4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-C0T7l+oUUz6s6WXOSWFoAbcOQIj+cp62dISi7zORYo4="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved-10.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-10.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "134275"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YawETkpBddzjtxKOsEjtlWz0GisD6ahv54/1ufxnFak=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YawETkpBddzjtxKOsEjtlWz0GisD6ahv54/1ufxnFak="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved-11.aaxx4c8s62.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-11.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "177181"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PiX8NAe/LZnFq5B/2F/65Z/HPHEtlSl1P2t+PhdluLM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "aaxx4c8s62"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved-11.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PiX8NAe/LZnFq5B/2F/65Z/HPHEtlSl1P2t+PhdluLM="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved11.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved11.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1072844"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"t/iUWnBZedxsyRS0/wlHf+IDl20TkIKojX7HaIk8i1U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-t/iUWnBZedxsyRS0/wlHf+IDl20TkIKojX7HaIk8i1U="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved-11.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-11.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "177181"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PiX8NAe/LZnFq5B/2F/65Z/HPHEtlSl1P2t+PhdluLM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-PiX8NAe/LZnFq5B/2F/65Z/HPHEtlSl1P2t+PhdluLM="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved11.zdssefpi5b.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved11.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1072844"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"t/iUWnBZedxsyRS0/wlHf+IDl20TkIKojX7HaIk8i1U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zdssefpi5b"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved11.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-t/iUWnBZedxsyRS0/wlHf+IDl20TkIKojX7HaIk8i1U="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved11-small.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved11-small.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "578900"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uhBWNIwPl61hWf9DOny53ST0tpnVl/Yc5yrzpprdsmY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-uhBWNIwPl61hWf9DOny53ST0tpnVl/Yc5yrzpprdsmY="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved11-small.ml79el48b0.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved11-small.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "578900"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uhBWNIwPl61hWf9DOny53ST0tpnVl/Yc5yrzpprdsmY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ml79el48b0"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved11-small.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-uhBWNIwPl61hWf9DOny53ST0tpnVl/Yc5yrzpprdsmY="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved12.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved12.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "243610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+bG0XkvCzJMz+ub3a0xvw2MaSoiCOuwdqvQvu08Uk0s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+bG0XkvCzJMz+ub3a0xvw2MaSoiCOuwdqvQvu08Uk0s="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved12.xyx88756ms.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved12.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "243610"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+bG0XkvCzJMz+ub3a0xvw2MaSoiCOuwdqvQvu08Uk0s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xyx88756ms"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved12.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+bG0XkvCzJMz+ub3a0xvw2MaSoiCOuwdqvQvu08Uk0s="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved13.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved13.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "541159"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yrT+N+d5bjVO2zS2s0SQaT1lFXkeDwnMEIJ0xsDUngk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-yrT+N+d5bjVO2zS2s0SQaT1lFXkeDwnMEIJ0xsDUngk="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved13.uzkq4hm4cg.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved13.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "541159"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yrT+N+d5bjVO2zS2s0SQaT1lFXkeDwnMEIJ0xsDUngk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uzkq4hm4cg"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved13.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yrT+N+d5bjVO2zS2s0SQaT1lFXkeDwnMEIJ0xsDUngk="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved14.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved14.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "239289"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TrWY2s8KwjwRjK/EKZt6yu4noqOp2MFZGrUVLrfezuU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-TrWY2s8KwjwRjK/EKZt6yu4noqOp2MFZGrUVLrfezuU="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved14.ybyuopd3r2.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved14.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "239289"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TrWY2s8KwjwRjK/EKZt6yu4noqOp2MFZGrUVLrfezuU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ybyuopd3r2"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved14.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-TrWY2s8KwjwRjK/EKZt6yu4noqOp2MFZGrUVLrfezuU="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved19.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved19.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1694566"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"r4upr2i+44rpel5wQNd6Le5QeoBrPGmMDAM+udcTs6k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-r4upr2i+44rpel5wQNd6Le5QeoBrPGmMDAM+udcTs6k="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved19.th1j6kx9dn.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved19.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1694566"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"r4upr2i+44rpel5wQNd6Le5QeoBrPGmMDAM+udcTs6k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "th1j6kx9dn"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved19.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-r4upr2i+44rpel5wQNd6Le5QeoBrPGmMDAM+udcTs6k="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved2.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "387861"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Y448bEQDHN19DZj40F93LxwxZFOhPzd7L7vfMlwo4Xk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Y448bEQDHN19DZj40F93LxwxZFOhPzd7L7vfMlwo4Xk="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved2.z8y8rtqogg.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "387861"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Y448bEQDHN19DZj40F93LxwxZFOhPzd7L7vfMlwo4Xk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z8y8rtqogg"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved2.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Y448bEQDHN19DZj40F93LxwxZFOhPzd7L7vfMlwo4Xk="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved21.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved21.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "393478"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4zJm52sFA45rGdjPUMdywp0SeEORRVVf4nUyM8o4x+g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4zJm52sFA45rGdjPUMdywp0SeEORRVVf4nUyM8o4x+g="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved21.n3ixh6h3kj.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved21.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "393478"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4zJm52sFA45rGdjPUMdywp0SeEORRVVf4nUyM8o4x+g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "n3ixh6h3kj"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved21.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-4zJm52sFA45rGdjPUMdywp0SeEORRVVf4nUyM8o4x+g="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved3.ajzt9qjgj1.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "526261"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jto5YatF/EkKMX7G6q279KXc2w2U0Hikc7iLqXngASQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ajzt9qjgj1"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jto5YatF/EkKMX7G6q279KXc2w2U0Hikc7iLqXngASQ="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved3.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "526261"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jto5YatF/EkKMX7G6q279KXc2w2U0Hikc7iLqXngASQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jto5YatF/EkKMX7G6q279KXc2w2U0Hikc7iLqXngASQ="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved4.i7nlh8bwjl.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "409160"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vun8284uKHxwHtktOA1WD+Xf7BN9c4PjSuF8mLl3T/U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "i7nlh8bwjl"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved4.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vun8284uKHxwHtktOA1WD+Xf7BN9c4PjSuF8mLl3T/U="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved4.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "409160"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vun8284uKHxwHtktOA1WD+Xf7BN9c4PjSuF8mLl3T/U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vun8284uKHxwHtktOA1WD+Xf7BN9c4PjSuF8mLl3T/U="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved5.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved5.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "565251"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qxGDUsMsWd9VN0PR2zhf3nB1cWN2O2tUj55VKLP9/ho=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qxGDUsMsWd9VN0PR2zhf3nB1cWN2O2tUj55VKLP9/ho="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved5.n178s80iuz.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved5.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "565251"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qxGDUsMsWd9VN0PR2zhf3nB1cWN2O2tUj55VKLP9/ho=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "n178s80iuz"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved5.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qxGDUsMsWd9VN0PR2zhf3nB1cWN2O2tUj55VKLP9/ho="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved5-small.fd9chzqnjg.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved5-small.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5043970"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"czcjs7aGHmMXgAQxc3MuJ0kB+6wG9dWv7sq9t1V2DEg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fd9chzqnjg"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved5-small.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-czcjs7aGHmMXgAQxc3MuJ0kB+6wG9dWv7sq9t1V2DEg="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved5-small.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved5-small.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5043970"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"czcjs7aGHmMXgAQxc3MuJ0kB+6wG9dWv7sq9t1V2DEg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-czcjs7aGHmMXgAQxc3MuJ0kB+6wG9dWv7sq9t1V2DEg="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved6.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved6.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "412607"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"icQghHdKohUEOTwOxpMijy6KurDDRiRYNsLbSd7uMBU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-icQghHdKohUEOTwOxpMijy6KurDDRiRYNsLbSd7uMBU="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved-6.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-6.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "185597"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nWMEP5NeYQGumevZSG3sD7xKCuaZTxluPV7IUHty+GM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nWMEP5NeYQGumevZSG3sD7xKCuaZTxluPV7IUHty+GM="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved-6.njimx1z4zq.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-6.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "185597"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nWMEP5NeYQGumevZSG3sD7xKCuaZTxluPV7IUHty+GM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "njimx1z4zq"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved-6.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-nWMEP5NeYQGumevZSG3sD7xKCuaZTxluPV7IUHty+GM="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved6.ps0ut6xlkx.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved6.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "412607"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"icQghHdKohUEOTwOxpMijy6KurDDRiRYNsLbSd7uMBU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ps0ut6xlkx"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved6.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-icQghHdKohUEOTwOxpMijy6KurDDRiRYNsLbSd7uMBU="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved6-small.746sp5xhs2.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved6-small.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1077530"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"90rB3zdD5Ik34K2MPTUmtYy6c94RKHo/krbwm09Swl8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "746sp5xhs2"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved6-small.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-90rB3zdD5Ik34K2MPTUmtYy6c94RKHo/krbwm09Swl8="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved6-small.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved6-small.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1077530"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"90rB3zdD5Ik34K2MPTUmtYy6c94RKHo/krbwm09Swl8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-90rB3zdD5Ik34K2MPTUmtYy6c94RKHo/krbwm09Swl8="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved7.jg9phbymly.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved7.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "441539"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"I1mxdNXgwPYmjArCQSwSK9/I1Q+Trbqq9fJTLqzqMb8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jg9phbymly"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved7.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-I1mxdNXgwPYmjArCQSwSK9/I1Q+Trbqq9fJTLqzqMb8="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved7.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved7.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "441539"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"I1mxdNXgwPYmjArCQSwSK9/I1Q+Trbqq9fJTLqzqMb8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-I1mxdNXgwPYmjArCQSwSK9/I1Q+Trbqq9fJTLqzqMb8="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved-8.0twba5lamk.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-8.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "108926"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LDfRf3e6aNqCo8S24D9jxEWAJPgVmV8yivoPWOlafo8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0twba5lamk"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved-8.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-LDfRf3e6aNqCo8S24D9jxEWAJPgVmV8yivoPWOlafo8="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved8.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved8.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "262249"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1kBg57YDux0OFlfHFbiE2MeCL5bKn6Yx1NAVzbd7Fqk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1kBg57YDux0OFlfHFbiE2MeCL5bKn6Yx1NAVzbd7Fqk="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved-8.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved-8.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "108926"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LDfRf3e6aNqCo8S24D9jxEWAJPgVmV8yivoPWOlafo8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-LDfRf3e6aNqCo8S24D9jxEWAJPgVmV8yivoPWOlafo8="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved8.uuog3f2zfe.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved8.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "262249"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1kBg57YDux0OFlfHFbiE2MeCL5bKn6Yx1NAVzbd7Fqk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uuog3f2zfe"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved8.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1kBg57YDux0OFlfHFbiE2MeCL5bKn6Yx1NAVzbd7Fqk="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved9.2tx8erwv28.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved9.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "444456"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JjeKAa9EAL5j7qZ9eDe08MaPOctxRPiTMZQ13Q3dWU4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2tx8erwv28"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/curved9.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-JjeKAa9EAL5j7qZ9eDe08MaPOctxRPiTMZQ13Q3dWU4="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/curved9.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\curved9.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "444456"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"JjeKAa9EAL5j7qZ9eDe08MaPOctxRPiTMZQ13Q3dWU4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-JjeKAa9EAL5j7qZ9eDe08MaPOctxRPiTMZQ13Q3dWU4="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/white-curved.e9yvjb6sv4.jpeg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\white-curved.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55537"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zuEEZOvq8BChxRZfTCocqgXVeAh2ZY5Yy+A4VTP/5/0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e9yvjb6sv4"
-        },
-        {
-          "Name": "label",
-          "Value": "img/curved-images/white-curved.jpeg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-zuEEZOvq8BChxRZfTCocqgXVeAh2ZY5Yy+A4VTP/5/0="
-        }
-      ]
-    },
-    {
-      "Route": "img/curved-images/white-curved.jpeg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\curved-images\\white-curved.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55537"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zuEEZOvq8BChxRZfTCocqgXVeAh2ZY5Yy+A4VTP/5/0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zuEEZOvq8BChxRZfTCocqgXVeAh2ZY5Yy+A4VTP/5/0="
-        }
-      ]
-    },
-    {
       "Route": "img/down-arrow.7qdqifvzqz.svg",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\down-arrow.svg",
       "Selectors": [],
@@ -12448,8 +8980,8 @@
       ]
     },
     {
-      "Route": "img/home-decor-1.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-1.jpg",
+      "Route": "img/features/Ekran görüntüsü 2024-12-31 211758.png",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\features\\Ekran görüntüsü 2024-12-31 211758.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12458,19 +8990,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "937206"
+          "Value": "18893"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"nnbojrV+vKwOghBnmmNvoTsAxirfe/wIz1wrnlvIFOw=\""
+          "Value": "\"0gwO90TG2CW4kO7tMRJm5FbmHEtPXPeLNdJ3kqOvqWE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
+          "Value": "Tue, 31 Dec 2024 17:24:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12480,13 +9012,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nnbojrV+vKwOghBnmmNvoTsAxirfe/wIz1wrnlvIFOw="
+          "Value": "sha256-0gwO90TG2CW4kO7tMRJm5FbmHEtPXPeLNdJ3kqOvqWE="
         }
       ]
     },
     {
-      "Route": "img/home-decor-1.qp8yip8h6u.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-1.jpg",
+      "Route": "img/features/Ekran görüntüsü 2024-12-31 211758.ukwthekzg5.png",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\features\\Ekran görüntüsü 2024-12-31 211758.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12495,19 +9027,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "937206"
+          "Value": "18893"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"nnbojrV+vKwOghBnmmNvoTsAxirfe/wIz1wrnlvIFOw=\""
+          "Value": "\"0gwO90TG2CW4kO7tMRJm5FbmHEtPXPeLNdJ3kqOvqWE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
+          "Value": "Tue, 31 Dec 2024 17:24:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12517,589 +9049,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qp8yip8h6u"
+          "Value": "ukwthekzg5"
         },
         {
           "Name": "label",
-          "Value": "img/home-decor-1.jpg"
+          "Value": "img/features/Ekran görüntüsü 2024-12-31 211758.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nnbojrV+vKwOghBnmmNvoTsAxirfe/wIz1wrnlvIFOw="
-        }
-      ]
-    },
-    {
-      "Route": "img/home-decor-2.6k31981ri5.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1088035"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RmESnL4DE3YfFX2BO68l79CvCGTWy6mIOExLdlY2Trg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6k31981ri5"
-        },
-        {
-          "Name": "label",
-          "Value": "img/home-decor-2.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RmESnL4DE3YfFX2BO68l79CvCGTWy6mIOExLdlY2Trg="
-        }
-      ]
-    },
-    {
-      "Route": "img/home-decor-2.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1088035"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RmESnL4DE3YfFX2BO68l79CvCGTWy6mIOExLdlY2Trg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-RmESnL4DE3YfFX2BO68l79CvCGTWy6mIOExLdlY2Trg="
-        }
-      ]
-    },
-    {
-      "Route": "img/home-decor-3.3qk8reegfv.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1159457"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6+1wjGiRo4U2CJDOTsVrk/UW23T9uWx1qtVPhT1BLCg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3qk8reegfv"
-        },
-        {
-          "Name": "label",
-          "Value": "img/home-decor-3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6+1wjGiRo4U2CJDOTsVrk/UW23T9uWx1qtVPhT1BLCg="
-        }
-      ]
-    },
-    {
-      "Route": "img/home-decor-3.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\home-decor-3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1159457"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6+1wjGiRo4U2CJDOTsVrk/UW23T9uWx1qtVPhT1BLCg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6+1wjGiRo4U2CJDOTsVrk/UW23T9uWx1qtVPhT1BLCg="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/AU.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\AU.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1253"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yfEPV2CDlA3V1mRo15R/uJIFy/lckfDxV1DqAc4wpls=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-yfEPV2CDlA3V1mRo15R/uJIFy/lckfDxV1DqAc4wpls="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/AU.zlepgiyp04.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\AU.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1253"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yfEPV2CDlA3V1mRo15R/uJIFy/lckfDxV1DqAc4wpls=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zlepgiyp04"
-        },
-        {
-          "Name": "label",
-          "Value": "img/icons/flags/AU.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yfEPV2CDlA3V1mRo15R/uJIFy/lckfDxV1DqAc4wpls="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/BR.bp5mj5riss.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\BR.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1172"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Xx0PaN/sxktTlFM7F9jPlhXqMmBQ+qVRkLoJnDRtmgM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bp5mj5riss"
-        },
-        {
-          "Name": "label",
-          "Value": "img/icons/flags/BR.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Xx0PaN/sxktTlFM7F9jPlhXqMmBQ+qVRkLoJnDRtmgM="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/BR.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\BR.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1172"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Xx0PaN/sxktTlFM7F9jPlhXqMmBQ+qVRkLoJnDRtmgM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Xx0PaN/sxktTlFM7F9jPlhXqMmBQ+qVRkLoJnDRtmgM="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/DE.mwwubnua2a.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\DE.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "927"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6vZOCsAl1tiNJ9BGxU7yZkjALnsKzKcXZ2jEmLwEgQU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mwwubnua2a"
-        },
-        {
-          "Name": "label",
-          "Value": "img/icons/flags/DE.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6vZOCsAl1tiNJ9BGxU7yZkjALnsKzKcXZ2jEmLwEgQU="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/DE.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\DE.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "927"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6vZOCsAl1tiNJ9BGxU7yZkjALnsKzKcXZ2jEmLwEgQU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6vZOCsAl1tiNJ9BGxU7yZkjALnsKzKcXZ2jEmLwEgQU="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/GB.85dukuugcr.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\GB.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1376"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DEqlktZd32gzJ5F+myw4Yylr724ob4cpYyNeKmXPHDs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "85dukuugcr"
-        },
-        {
-          "Name": "label",
-          "Value": "img/icons/flags/GB.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DEqlktZd32gzJ5F+myw4Yylr724ob4cpYyNeKmXPHDs="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/GB.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\GB.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1376"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DEqlktZd32gzJ5F+myw4Yylr724ob4cpYyNeKmXPHDs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DEqlktZd32gzJ5F+myw4Yylr724ob4cpYyNeKmXPHDs="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/US.8tgsf7r5t9.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\US.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1157"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5OAhQB15+F6z059nfK2cS8FFe26g0i9XolQf81ov5Xo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8tgsf7r5t9"
-        },
-        {
-          "Name": "label",
-          "Value": "img/icons/flags/US.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-5OAhQB15+F6z059nfK2cS8FFe26g0i9XolQf81ov5Xo="
-        }
-      ]
-    },
-    {
-      "Route": "img/icons/flags/US.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\icons\\flags\\US.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1157"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5OAhQB15+F6z059nfK2cS8FFe26g0i9XolQf81ov5Xo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5OAhQB15+F6z059nfK2cS8FFe26g0i9XolQf81ov5Xo="
+          "Value": "sha256-0gwO90TG2CW4kO7tMRJm5FbmHEtPXPeLNdJ3kqOvqWE="
         }
       ]
     },
@@ -13268,252 +9226,6 @@
       ]
     },
     {
-      "Route": "img/ivana-square.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\ivana-square.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27522"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TyylDTyYsFKp9VyDulUie4P9gkXOxFEqR4aI2ikzqvY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-TyylDTyYsFKp9VyDulUie4P9gkXOxFEqR4aI2ikzqvY="
-        }
-      ]
-    },
-    {
-      "Route": "img/ivana-square.x83daalie7.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\ivana-square.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27522"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"TyylDTyYsFKp9VyDulUie4P9gkXOxFEqR4aI2ikzqvY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "x83daalie7"
-        },
-        {
-          "Name": "label",
-          "Value": "img/ivana-square.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-TyylDTyYsFKp9VyDulUie4P9gkXOxFEqR4aI2ikzqvY="
-        }
-      ]
-    },
-    {
-      "Route": "img/ivancik.4d40w1ohjs.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\ivancik.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "64607"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6GViVHcBsffJFRlIdPxH9/0FPU2A57mLn4iD/4WfiTE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4d40w1ohjs"
-        },
-        {
-          "Name": "label",
-          "Value": "img/ivancik.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6GViVHcBsffJFRlIdPxH9/0FPU2A57mLn4iD/4WfiTE="
-        }
-      ]
-    },
-    {
-      "Route": "img/ivancik.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\ivancik.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "64607"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6GViVHcBsffJFRlIdPxH9/0FPU2A57mLn4iD/4WfiTE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6GViVHcBsffJFRlIdPxH9/0FPU2A57mLn4iD/4WfiTE="
-        }
-      ]
-    },
-    {
-      "Route": "img/kal-visuals-square.d9gai0gs1y.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\kal-visuals-square.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40050"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Lz3yS4ECo1/aoDslaY6ZJXWqGXCK8qw1UfmobZax5gw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "d9gai0gs1y"
-        },
-        {
-          "Name": "label",
-          "Value": "img/kal-visuals-square.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Lz3yS4ECo1/aoDslaY6ZJXWqGXCK8qw1UfmobZax5gw="
-        }
-      ]
-    },
-    {
-      "Route": "img/kal-visuals-square.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\kal-visuals-square.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40050"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Lz3yS4ECo1/aoDslaY6ZJXWqGXCK8qw1UfmobZax5gw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Lz3yS4ECo1/aoDslaY6ZJXWqGXCK8qw1UfmobZax5gw="
-        }
-      ]
-    },
-    {
       "Route": "img/logo-ct.png",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logo-ct.png",
       "Selectors": [],
@@ -13674,252 +9386,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-ehLa4pwRkq7PI7o888831ZsgPQbQOXEGMXplD3IvBSA="
-        }
-      ]
-    },
-    {
-      "Route": "img/logos/mastercard.2mdn1t6zq2.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logos\\mastercard.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41970"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qvldacD26pljXrnWic5r8NfRO8KUyR0yNLrXrdXz4Is=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2mdn1t6zq2"
-        },
-        {
-          "Name": "label",
-          "Value": "img/logos/mastercard.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qvldacD26pljXrnWic5r8NfRO8KUyR0yNLrXrdXz4Is="
-        }
-      ]
-    },
-    {
-      "Route": "img/logos/mastercard.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logos\\mastercard.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41970"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qvldacD26pljXrnWic5r8NfRO8KUyR0yNLrXrdXz4Is=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qvldacD26pljXrnWic5r8NfRO8KUyR0yNLrXrdXz4Is="
-        }
-      ]
-    },
-    {
-      "Route": "img/logos/visa.3hl5xu1j6w.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logos\\visa.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "46206"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CTsb4w8OCWGEb+13Gol72Quyt3oIUpOJE710rhSpWEI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3hl5xu1j6w"
-        },
-        {
-          "Name": "label",
-          "Value": "img/logos/visa.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CTsb4w8OCWGEb+13Gol72Quyt3oIUpOJE710rhSpWEI="
-        }
-      ]
-    },
-    {
-      "Route": "img/logos/visa.png",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\logos\\visa.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "46206"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CTsb4w8OCWGEb+13Gol72Quyt3oIUpOJE710rhSpWEI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-CTsb4w8OCWGEb+13Gol72Quyt3oIUpOJE710rhSpWEI="
-        }
-      ]
-    },
-    {
-      "Route": "img/marie.5jjdy7nd2c.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\marie.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "207059"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ITKRdb4XG3RIhUtz/dmr7f6I3/z9DDgIfnRmwf6Ebcs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5jjdy7nd2c"
-        },
-        {
-          "Name": "label",
-          "Value": "img/marie.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ITKRdb4XG3RIhUtz/dmr7f6I3/z9DDgIfnRmwf6Ebcs="
-        }
-      ]
-    },
-    {
-      "Route": "img/marie.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\marie.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "207059"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ITKRdb4XG3RIhUtz/dmr7f6I3/z9DDgIfnRmwf6Ebcs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ITKRdb4XG3RIhUtz/dmr7f6I3/z9DDgIfnRmwf6Ebcs="
         }
       ]
     },
@@ -15318,334 +10784,6 @@
       ]
     },
     {
-      "Route": "img/team-1.gllty4d185.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40080"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lBQlw1i+YLsnt8+PNfzjFmS0lRmv61xZVGGmPg+jDR8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gllty4d185"
-        },
-        {
-          "Name": "label",
-          "Value": "img/team-1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lBQlw1i+YLsnt8+PNfzjFmS0lRmv61xZVGGmPg+jDR8="
-        }
-      ]
-    },
-    {
-      "Route": "img/team-1.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40080"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lBQlw1i+YLsnt8+PNfzjFmS0lRmv61xZVGGmPg+jDR8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lBQlw1i+YLsnt8+PNfzjFmS0lRmv61xZVGGmPg+jDR8="
-        }
-      ]
-    },
-    {
-      "Route": "img/team-2.9aqn5wo1hu.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16940"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0UmGXNJs/5JUySgX9b7z2bOVGjEzDioCj/8CMaPPltM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9aqn5wo1hu"
-        },
-        {
-          "Name": "label",
-          "Value": "img/team-2.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0UmGXNJs/5JUySgX9b7z2bOVGjEzDioCj/8CMaPPltM="
-        }
-      ]
-    },
-    {
-      "Route": "img/team-2.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16940"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0UmGXNJs/5JUySgX9b7z2bOVGjEzDioCj/8CMaPPltM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0UmGXNJs/5JUySgX9b7z2bOVGjEzDioCj/8CMaPPltM="
-        }
-      ]
-    },
-    {
-      "Route": "img/team-3.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32372"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GF44aZAIzvMOEyRmNiLu3VRqftSkVRPsfGyfy+RwgmY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GF44aZAIzvMOEyRmNiLu3VRqftSkVRPsfGyfy+RwgmY="
-        }
-      ]
-    },
-    {
-      "Route": "img/team-3.ow8ozummuh.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32372"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GF44aZAIzvMOEyRmNiLu3VRqftSkVRPsfGyfy+RwgmY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ow8ozummuh"
-        },
-        {
-          "Name": "label",
-          "Value": "img/team-3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-GF44aZAIzvMOEyRmNiLu3VRqftSkVRPsfGyfy+RwgmY="
-        }
-      ]
-    },
-    {
-      "Route": "img/team-4.i7pxge09pi.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22858"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3kXYQoKjDKRTewCjlcIu/hP1lkvyFmZCCsLw8U43xbU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "i7pxge09pi"
-        },
-        {
-          "Name": "label",
-          "Value": "img/team-4.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3kXYQoKjDKRTewCjlcIu/hP1lkvyFmZCCsLw8U43xbU="
-        }
-      ]
-    },
-    {
-      "Route": "img/team-4.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\team-4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22858"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3kXYQoKjDKRTewCjlcIu/hP1lkvyFmZCCsLw8U43xbU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3kXYQoKjDKRTewCjlcIu/hP1lkvyFmZCCsLw8U43xbU="
-        }
-      ]
-    },
-    {
       "Route": "img/theme/angular.jpg",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\theme\\angular.jpg",
       "Selectors": [],
@@ -16794,88 +11932,6 @@
       ]
     },
     {
-      "Route": "img/vr-bg.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\vr-bg.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1015159"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HjFV8LM5OG+ZU/gE/wzSjPVNo3txLNtyj86/hhkVMB8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HjFV8LM5OG+ZU/gE/wzSjPVNo3txLNtyj86/hhkVMB8="
-        }
-      ]
-    },
-    {
-      "Route": "img/vr-bg.ycthgg5iq5.jpg",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\img\\vr-bg.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1015159"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HjFV8LM5OG+ZU/gE/wzSjPVNo3txLNtyj86/hhkVMB8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 15:55:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ycthgg5iq5"
-        },
-        {
-          "Name": "label",
-          "Value": "img/vr-bg.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HjFV8LM5OG+ZU/gE/wzSjPVNo3txLNtyj86/hhkVMB8="
-        }
-      ]
-    },
-    {
       "Route": "js/advert/advert.jdrcpac65z.js",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\advert\\advert.js",
       "Selectors": [],
@@ -17286,51 +12342,6 @@
       ]
     },
     {
-      "Route": "js/category/category.939df8ceww.js",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\category\\category.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6821"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RT6br7vBWEBUeJ0P82ybSMIKotv9DOXuYUF0WgOhm7U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:21:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "939df8ceww"
-        },
-        {
-          "Name": "label",
-          "Value": "js/category/category.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RT6br7vBWEBUeJ0P82ybSMIKotv9DOXuYUF0WgOhm7U="
-        }
-      ]
-    },
-    {
       "Route": "js/category/category.js",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\category\\category.js",
       "Selectors": [],
@@ -17341,7 +12352,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6821"
+          "Value": "6875"
         },
         {
           "Name": "Content-Type",
@@ -17349,11 +12360,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RT6br7vBWEBUeJ0P82ybSMIKotv9DOXuYUF0WgOhm7U=\""
+          "Value": "\"d6ROwmwhpftVx9+1BkX5Dd3rZ4T5XJOyXhi/qa5DaU4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:21:46 GMT"
+          "Value": "Sat, 28 Dec 2024 18:17:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17363,7 +12374,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RT6br7vBWEBUeJ0P82ybSMIKotv9DOXuYUF0WgOhm7U="
+          "Value": "sha256-d6ROwmwhpftVx9+1BkX5Dd3rZ4T5XJOyXhi/qa5DaU4="
+        }
+      ]
+    },
+    {
+      "Route": "js/category/category.rfk4ofnxko.js",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\category\\category.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d6ROwmwhpftVx9+1BkX5Dd3rZ4T5XJOyXhi/qa5DaU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 18:17:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rfk4ofnxko"
+        },
+        {
+          "Name": "label",
+          "Value": "js/category/category.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d6ROwmwhpftVx9+1BkX5Dd3rZ4T5XJOyXhi/qa5DaU4="
         }
       ]
     },
@@ -17390,7 +12446,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:22:48 GMT"
+          "Value": "Sat, 28 Dec 2024 18:14:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17435,7 +12491,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:22:48 GMT"
+          "Value": "Sat, 28 Dec 2024 18:14:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17696,7 +12752,7 @@
       ]
     },
     {
-      "Route": "js/index/index.3hkvb64dot.js",
+      "Route": "js/index/index.is5toexspw.js",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\index\\index.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -17706,7 +12762,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3801"
+          "Value": "3854"
         },
         {
           "Name": "Content-Type",
@@ -17714,11 +12770,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z7zx69EEvngDl/dempoWZV3wpn/kzjL8uC3d1Bxk0kU=\""
+          "Value": "\"bh02gUdmZUT2+0G7qjm6hBYRAX2LRtrO1VchPyMK5xI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 11:49:35 GMT"
+          "Value": "Wed, 01 Jan 2025 07:33:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17728,7 +12784,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3hkvb64dot"
+          "Value": "is5toexspw"
         },
         {
           "Name": "label",
@@ -17736,7 +12792,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Z7zx69EEvngDl/dempoWZV3wpn/kzjL8uC3d1Bxk0kU="
+          "Value": "sha256-bh02gUdmZUT2+0G7qjm6hBYRAX2LRtrO1VchPyMK5xI="
         }
       ]
     },
@@ -17751,7 +12807,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3801"
+          "Value": "3854"
         },
         {
           "Name": "Content-Type",
@@ -17759,11 +12815,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z7zx69EEvngDl/dempoWZV3wpn/kzjL8uC3d1Bxk0kU=\""
+          "Value": "\"bh02gUdmZUT2+0G7qjm6hBYRAX2LRtrO1VchPyMK5xI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 11:49:35 GMT"
+          "Value": "Wed, 01 Jan 2025 07:33:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17773,12 +12829,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Z7zx69EEvngDl/dempoWZV3wpn/kzjL8uC3d1Bxk0kU="
+          "Value": "sha256-bh02gUdmZUT2+0G7qjm6hBYRAX2LRtrO1VchPyMK5xI="
         }
       ]
     },
     {
-      "Route": "js/infographics/infographics.itz2tjrgmg.js",
+      "Route": "js/infographics/infographics.beh53le258.js",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\infographics\\infographics.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -17788,7 +12844,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8140"
+          "Value": "8287"
         },
         {
           "Name": "Content-Type",
@@ -17796,11 +12852,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1jqkfO1rrTB+62TWo3WPvBiXbyN/YKNJHLsR1/RstYE=\""
+          "Value": "\"rWH7/z8ywq3VFBBDWqq8DcBEkQJCoQNO+bI8TTRiiq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:42:16 GMT"
+          "Value": "Sat, 28 Dec 2024 11:57:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17810,7 +12866,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "itz2tjrgmg"
+          "Value": "beh53le258"
         },
         {
           "Name": "label",
@@ -17818,7 +12874,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1jqkfO1rrTB+62TWo3WPvBiXbyN/YKNJHLsR1/RstYE="
+          "Value": "sha256-rWH7/z8ywq3VFBBDWqq8DcBEkQJCoQNO+bI8TTRiiq8="
         }
       ]
     },
@@ -17833,7 +12889,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8140"
+          "Value": "8287"
         },
         {
           "Name": "Content-Type",
@@ -17841,11 +12897,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1jqkfO1rrTB+62TWo3WPvBiXbyN/YKNJHLsR1/RstYE=\""
+          "Value": "\"rWH7/z8ywq3VFBBDWqq8DcBEkQJCoQNO+bI8TTRiiq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:42:16 GMT"
+          "Value": "Sat, 28 Dec 2024 11:57:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17855,7 +12911,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1jqkfO1rrTB+62TWo3WPvBiXbyN/YKNJHLsR1/RstYE="
+          "Value": "sha256-rWH7/z8ywq3VFBBDWqq8DcBEkQJCoQNO+bI8TTRiiq8="
         }
       ]
     },
@@ -18444,7 +13500,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10805"
+          "Value": "11069"
         },
         {
           "Name": "Content-Type",
@@ -18452,11 +13508,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KHJHCO+UPTcMAQyn99GqCeAduyro8X5A/RMQtd85yb8=\""
+          "Value": "\"L+UfkulixLMHkPuk4KSbGbiaqK5YpXaHxzw4ymKJZTY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:00:59 GMT"
+          "Value": "Tue, 31 Dec 2024 10:28:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18466,12 +13522,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KHJHCO+UPTcMAQyn99GqCeAduyro8X5A/RMQtd85yb8="
+          "Value": "sha256-L+UfkulixLMHkPuk4KSbGbiaqK5YpXaHxzw4ymKJZTY="
         }
       ]
     },
     {
-      "Route": "js/news/news.sv796v4cyd.js",
+      "Route": "js/news/news.zzi0tmrmeo.js",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\news\\news.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -18481,7 +13537,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10805"
+          "Value": "11069"
         },
         {
           "Name": "Content-Type",
@@ -18489,11 +13545,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KHJHCO+UPTcMAQyn99GqCeAduyro8X5A/RMQtd85yb8=\""
+          "Value": "\"L+UfkulixLMHkPuk4KSbGbiaqK5YpXaHxzw4ymKJZTY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:00:59 GMT"
+          "Value": "Tue, 31 Dec 2024 10:28:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18503,7 +13559,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sv796v4cyd"
+          "Value": "zzi0tmrmeo"
         },
         {
           "Name": "label",
@@ -18511,7 +13567,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KHJHCO+UPTcMAQyn99GqCeAduyro8X5A/RMQtd85yb8="
+          "Value": "sha256-L+UfkulixLMHkPuk4KSbGbiaqK5YpXaHxzw4ymKJZTY="
         }
       ]
     },
@@ -18680,51 +13736,6 @@
       ]
     },
     {
-      "Route": "js/newspaper/putnewspaper.00gwoo8w8v.js",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\newspaper\\putnewspaper.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4226"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ABESDuo2fWFET0J2WthwA/QnYW0C/PoQStr5DKHwKn8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:40:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "00gwoo8w8v"
-        },
-        {
-          "Name": "label",
-          "Value": "js/newspaper/putnewspaper.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ABESDuo2fWFET0J2WthwA/QnYW0C/PoQStr5DKHwKn8="
-        }
-      ]
-    },
-    {
       "Route": "js/newspaper/putnewspaper.js",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\newspaper\\putnewspaper.js",
       "Selectors": [],
@@ -18735,7 +13746,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4226"
+          "Value": "4220"
         },
         {
           "Name": "Content-Type",
@@ -18743,11 +13754,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ABESDuo2fWFET0J2WthwA/QnYW0C/PoQStr5DKHwKn8=\""
+          "Value": "\"aTHOY3Nl8T5185+Ts6ECSLuDCUecu9LoBPBZ8S0+zak=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:40:39 GMT"
+          "Value": "Sat, 28 Dec 2024 19:08:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18757,7 +13768,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ABESDuo2fWFET0J2WthwA/QnYW0C/PoQStr5DKHwKn8="
+          "Value": "sha256-aTHOY3Nl8T5185+Ts6ECSLuDCUecu9LoBPBZ8S0+zak="
+        }
+      ]
+    },
+    {
+      "Route": "js/newspaper/putnewspaper.xuhoh48cv3.js",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\newspaper\\putnewspaper.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aTHOY3Nl8T5185+Ts6ECSLuDCUecu9LoBPBZ8S0+zak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 19:08:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xuhoh48cv3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/newspaper/putnewspaper.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aTHOY3Nl8T5185+Ts6ECSLuDCUecu9LoBPBZ8S0+zak="
         }
       ]
     },
@@ -19664,6 +14720,51 @@
       ]
     },
     {
+      "Route": "js/videos/video.520jhd9qfy.js",
+      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\videos\\video.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"82MzP7vClr/2h+UgV4ofLb8B7igRXuWVJ8JmPAOen/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 19:03:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "520jhd9qfy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/videos/video.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-82MzP7vClr/2h+UgV4ofLb8B7igRXuWVJ8JmPAOen/A="
+        }
+      ]
+    },
+    {
       "Route": "js/videos/video.js",
       "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\videos\\video.js",
       "Selectors": [],
@@ -19674,7 +14775,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7854"
+          "Value": "7897"
         },
         {
           "Name": "Content-Type",
@@ -19682,11 +14783,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rWRzN0M7bV3FERIhge71vCTgc1sgfxdCqXjhHsO5fgA=\""
+          "Value": "\"82MzP7vClr/2h+UgV4ofLb8B7igRXuWVJ8JmPAOen/A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:51:22 GMT"
+          "Value": "Tue, 31 Dec 2024 19:03:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19696,52 +14797,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rWRzN0M7bV3FERIhge71vCTgc1sgfxdCqXjhHsO5fgA="
-        }
-      ]
-    },
-    {
-      "Route": "js/videos/video.nrvenjmopo.js",
-      "AssetFile": "C:\\Users\\Terlan Aliyev\\Desktop\\16 last\\RespNewsAdmin\\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\\Argon\\wwwroot\\js\\videos\\video.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7854"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rWRzN0M7bV3FERIhge71vCTgc1sgfxdCqXjhHsO5fgA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 12:51:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nrvenjmopo"
-        },
-        {
-          "Name": "label",
-          "Value": "js/videos/video.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-rWRzN0M7bV3FERIhge71vCTgc1sgfxdCqXjhHsO5fgA="
+          "Value": "sha256-82MzP7vClr/2h+UgV4ofLb8B7igRXuWVJ8JmPAOen/A="
         }
       ]
     },

@@ -3,6 +3,31 @@
         background-color: #f8f9fe;
     }
 
+    .view-link {
+        align-items: center;
+        text-decoration: none;
+        text-align:center;
+        position: relative;
+    }
+
+        .view-link .fa-eye {
+            margin-right: 5px; /* İkon ve metin arası boşluk */
+        }
+
+        .view-link .news-view-count {
+            transition: opacity 0.3s ease; /* Yumuşak geçiş efekti */
+            display: none;
+        }
+
+        .view-link:hover .news-view-count {
+            display:block;
+        }
+
+        .view-link:hover .fa-eye {
+            margin-right: 0; /* İkonu sola hizalar */
+            display: none;
+        }
+
     .table-container {
         padding: 20px;
     }
@@ -185,10 +210,10 @@
                                 </button>
                             </li>
                             <li class="page-item">
-                                <span class="page-link" id="currentPage">1</span>
+                                <span class="page-link" id="currentPage" disabled>1</span>
                             </li>
                             <li class="page-item">
-                                <button class="page-link" id="nextPage">
+                                <button class="page-link" id="nextPage" disabled>
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                             </li>

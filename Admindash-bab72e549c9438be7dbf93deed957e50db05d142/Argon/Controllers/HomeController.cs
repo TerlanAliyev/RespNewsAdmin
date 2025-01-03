@@ -390,7 +390,7 @@ namespace Argon.Controllers
 
 
         // Diðer aksiyonlar
-        public IActionResult tables() => View();
+        public IActionResult features() => View();
         public IActionResult Subscribers() => View();
         public IActionResult Users() => View();
         public IActionResult Adverts() => View();

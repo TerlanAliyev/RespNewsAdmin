@@ -102,6 +102,7 @@ function deleteCategory(id) {
                             'Kateqoriya uğurla silindi.',
                             'success'
                         ).then(() => {
+                            window.location.reload()
                             document.querySelector(`#category-${id}`)?.remove();
                         });
                     } else if (response.status === 404) {

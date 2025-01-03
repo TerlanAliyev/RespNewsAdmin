@@ -134,10 +134,10 @@ C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.Argon.props
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.Argon.props
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\staticwebassets.pack.json
-C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\Argon.csproj.Up2Date
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\Argon.dll
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\refint\Argon.dll
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\Argon.pdb
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\Argon.genruntimeconfig.cache
 C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\ref\Argon.dll
+C:\Users\Terlan Aliyev\Desktop\16 last\RespNewsAdmin\Admindash-bab72e549c9438be7dbf93deed957e50db05d142\Argon\obj\Release\net8.0\staticwebassets.upToDateCheck.txt
